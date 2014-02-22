@@ -11,15 +11,15 @@ public class SceneChanger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyUp("q"))
+        if (Input.GetKeyUp("1"))
         {
             Application.LoadLevel(0);
         }
-        if (Input.GetKeyUp("w"))
+        if (Input.GetKeyUp("2"))
         {
             Application.LoadLevel(1);
         }
-        if (Input.GetKeyUp("e"))
+        if (Input.GetKeyUp("3"))
         {
             Application.LoadLevel(2);
         }
