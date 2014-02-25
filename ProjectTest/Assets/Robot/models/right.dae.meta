@@ -1,37 +1,15 @@
 fileFormatVersion: 2
-guid: 0153ea8d9e841204787459a18b45d23e
+guid: 3585a1aa46f841b4bb4b5131a66ee43a
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: ID10
-    100002: ID16
-    100004: ID22
-    100006: ID28
-    100008: //RootNode
-    100010: ID34
-    100012: ID40
+    100002: //RootNode
     400000: ID10
-    400002: ID16
-    400004: ID22
-    400006: ID28
-    400008: //RootNode
-    400010: ID34
-    400012: ID40
-    2300000: ID10
-    2300002: ID16
-    2300004: //RootNode
-    2300006: ID22
-    2300008: ID28
-    3300000: ID10
-    3300002: ID16
-    3300004: //RootNode
-    3300006: ID22
-    3300008: ID28
+    400002: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: SketchUp
-    4300002: ID10
-    4300004: ID16
-    4300006: ID22
-    4300008: ID28
     9500000: //RootNode
   materials:
     importMaterials: 1
