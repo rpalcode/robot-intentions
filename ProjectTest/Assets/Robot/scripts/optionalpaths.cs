@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class side : MonoBehaviour {
+public class optionalpaths : MonoBehaviour {
     public int counter = 0;
     public double timediff = 0.0;
     public GameObject straight;
     public GameObject left;
     public GameObject right;
     public GameObject robot;
+
+
+
 
     void leftArrow()
     {
