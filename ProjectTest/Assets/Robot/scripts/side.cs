@@ -124,13 +124,13 @@ public class side : MonoBehaviour {
         { l15.SetActive(false); l19.SetActive(true); }
         if (counter > 352)
         { l16.SetActive(false); l20.SetActive(true); }
-        if (counter > 353)
+        if (counter > 363)
         { l17.SetActive(false);  }
-        if (counter > 354)
+        if (counter > 374)
         { l18.SetActive(false); }
-        if (counter > 355)
+        if (counter > 385)
         { l19.SetActive(false); }
-        if (counter > 356)
+        if (counter > 396)
         { l20.SetActive(false); }
 
         if (timediff > 0) { counter += 1; }
