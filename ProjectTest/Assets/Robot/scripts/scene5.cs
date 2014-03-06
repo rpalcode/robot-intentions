@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class scene5 : MonoBehaviour {
-    public int counter = 0;
+    private int counter = 0;
     public double timediff = 0.0;
     public GameObject straight;
     public GameObject left;
@@ -38,7 +38,6 @@ public class scene5 : MonoBehaviour {
         transform.Translate(0, -5 * Time.deltaTime, 0);
         timediff = Time.deltaTime - timediff;
         //print(timediff);
-
         if (timediff > 0) { counter += 1; }
         if (counter % 10 == 0) { print(counter); }
 

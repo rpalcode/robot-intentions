@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class scene4 : MonoBehaviour {
-    public int counter = 0;
+    private int counter = 0;
     public double timediff = 0.0;
     public GameObject straight;
     public GameObject left;
@@ -38,15 +38,14 @@ public class scene4 : MonoBehaviour {
         transform.Translate(0, -5 * Time.deltaTime, 0);
         timediff = Time.deltaTime - timediff;
         //print(timediff);
-
         if (timediff > 0) { counter += 1; }
         if (counter % 10 == 0) { print(counter); }
-
-        if (counter > 0 && counter < 45) { leftArrow(); }
-        if (counter > 45 && counter < 130) { rightArrow(); }
-        if (counter > 130 && counter > 250) { upArrow(); }
-        if (counter > 250 && counter < 395) { leftArrow(); }
-        if (counter > 395 && counter < 460) { rightArrow(); }
+        upArrow();
+        if (counter > 20 && counter < 70) { leftArrow(); }
+       // if (counter > 85 && counter < 120) { rightArrow(); }
+        if (counter > 120 && counter > 250) { upArrow(); }
+        if (counter > 250 && counter < 395) { rightArrow(); }
+        if (counter > 395 && counter < 440) { rightArrow(); }
 
         if (counter > 45 && counter < 75)
         {
@@ -64,7 +63,7 @@ public class scene4 : MonoBehaviour {
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
 
-        if (counter >= 520)
+        if (counter >= 540)
         {
             Destroy(gameObject);
             robot.rigidbody.velocity = Vector3.zero;
