@@ -21,11 +21,11 @@ public class optionalpaths : MonoBehaviour {
         }
         if (Input.GetKeyUp("5"))
         {
-            Application.LoadLevel(4);
+            Application.LoadLevel(5);
         }
         if (Input.GetKeyUp("6"))
         {
-            Application.LoadLevel(5);
+            Application.LoadLevel(7);
         }
 	}
 }
