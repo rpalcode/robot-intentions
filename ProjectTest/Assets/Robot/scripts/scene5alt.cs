@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class scene4 : MonoBehaviour {
+public class scene5alt : MonoBehaviour {
     private int counter = 0;
     public double timediff = 0.0;
     public GameObject straight;
@@ -33,53 +33,59 @@ public class scene4 : MonoBehaviour {
         right.SetActive(true);
     }
 
-    private void option1()
+
+    private void run()
     {
-       // print(counter);
+        //print(counter);
+        upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
+
         timediff = Time.deltaTime - timediff;
         //print(timediff);
+
         if (timediff > 0) { counter += 1; }
         if (counter % 10 == 0) { print(counter); }
-        upArrow();
-        if (counter > 20 && counter < 50) { leftArrow(); }
-       // if (counter > 85 && counter < 120) { rightArrow(); }
-        if (counter > 120 && counter > 250) { upArrow(); }
-        if (counter > 180 && counter < 325) { rightArrow(); }
-        if (counter > 325 && counter < 370) { rightArrow(); }
 
-        if (counter > 45 && counter < 75)
+        if (counter>25 && counter<65) { rightArrow(); }
+        if (counter>65 && counter<150) { leftArrow(); }
+        if (counter > 140 && counter > 230) { upArrow(); }
+        if (counter > 200 && counter < 270) { leftArrow(); }
+        if (counter > 270 && counter < 395) { rightArrow(); } 
+
+        if (counter > 55 && counter < 80)
+        {
+            transform.Rotate(0, 0, 90 * Time.deltaTime);
+        }
+        if (counter > 105 && counter < 150)
+         {
+             transform.Rotate(0, 0, -45 * Time.deltaTime);
+             transform.Translate(0, -5 * Time.deltaTime, 0);
+         }
+        if (counter > 250 && counter < 305)
         {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
+            transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-
-        if (counter > 220 && counter < 240)
+        if (counter > 320 && counter < 385)
         {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-        if (counter > 330 && counter < 380)
+        if (counter>=400)
         {
-            transform.Rotate(0, 0, 45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
+            Application.LoadLevel(5);
         }
 
-        if (counter >= 430)
-        {
-            Application.LoadLevel(2);
-        }        
     }
-
-
 	// Use this for initialization
 
 	void Start () {
-        //counter = 0;
+        
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-        option1();
+        run();
 	}
 }

@@ -34,8 +34,9 @@ public class scene6 : MonoBehaviour {
     }
 
 
-    void option3()
+    private void option3()
     {
+        //print(counter);
         upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
@@ -46,14 +47,14 @@ public class scene6 : MonoBehaviour {
         if (counter % 10 == 0) { print(counter); }
 
         if (counter > 30 && counter < 65) { rightArrow(); }
-        if (counter > 240 && counter < 330) { leftArrow(); }
+        if (counter > 200 && counter < 320) { leftArrow(); }
         if (counter > 380 && counter < 450) { leftArrow(); }
 
         if (counter > 55 && counter < 70)
         {
             transform.Rotate(0, 0, 90 * Time.deltaTime);
         }
-        if (counter > 320 && counter < 340)
+        if (counter > 300 && counter < 320)
         {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
@@ -66,8 +67,7 @@ public class scene6 : MonoBehaviour {
 
         if (counter >= 600)
         {
-            Destroy(gameObject);
-            robot.rigidbody.velocity = Vector3.zero;
+            Application.LoadLevel(2);
         }
     }
 

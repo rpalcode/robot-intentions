@@ -13,13 +13,13 @@ public class Front : MonoBehaviour {
     {
         transform.Translate(0, -5*Time.deltaTime, 0);
 
-        if (Input.GetKeyDown("right"))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(0, 0, -90);
+            transform.Rotate(0, 0, -90*Time.deltaTime);
         }
-        if (Input.GetKeyDown("left"))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(0, 0, 90);
+            transform.Rotate(0, 0, 90*Time.deltaTime);
         }
 
 	}
