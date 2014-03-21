@@ -12,7 +12,11 @@ public class backto5 : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown("0"))
         {
-            Application.LoadLevel(5);
+            Application.LoadLevel(7);
+        }
+        if (Input.GetKeyDown("9"))
+        {
+            Application.LoadLevel(9);
         }
 	}
 }

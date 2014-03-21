@@ -1,23 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class alt5 : MonoBehaviour {
-  
+public class backto6front : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-       // int camSwitch = 0;
-
         if (Input.GetKeyDown("0"))
         {
-            Application.LoadLevel(8);
+            Application.LoadLevel(10);
         }
         if (Input.GetKeyDown("9"))
         {
-            Application.LoadLevel(9);
-        }   
+            Application.LoadLevel(11);
+        }
 	}
 }

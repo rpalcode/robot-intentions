@@ -13,9 +13,12 @@ public class alt6 : MonoBehaviour {
 
     if(Input.GetKeyDown("0"))
         {
-            Application.LoadLevel(8);
+            Application.LoadLevel(11);
         }
-
+    if (Input.GetKeyDown("9"))
+    {
+        Application.LoadLevel(12);
+    }
 
 
 	}

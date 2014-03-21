@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class optionalpaths : MonoBehaviour {
+public class optionalpaths1 : MonoBehaviour {
 
     void OnGUI()
     {
@@ -16,7 +16,7 @@ public class optionalpaths : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown("0"))
         {
-            Application.LoadLevel(3);
+            Application.LoadLevel(2);
         }
         if (Input.GetKeyUp("4"))
         {
