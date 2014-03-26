@@ -40,11 +40,7 @@ public class scene5 : MonoBehaviour {
         upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-        timediff = Time.deltaTime - timediff;
-        //print(timediff);
-
-        if (timediff > 0) { counter += 1; }
-        if (counter % 10 == 0) { print(counter); }
+		float a = Time.time;
 
         if (counter>45 && counter<85) { rightArrow(); }
         if (counter>85 && counter<160) { leftArrow(); }
