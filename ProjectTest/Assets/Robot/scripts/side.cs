@@ -82,89 +82,90 @@ public class side : MonoBehaviour {
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
         timediff = Time.deltaTime - timediff;
-        //print(timediff);
-        int i = 0;
-        if (counter > 47)
+		if(timediff%10 == 0) { counter+=1; }
+		Debug.Log(timediff);
+		int i = 0;
+        if (counter > 17)
         { l1.SetActive(false); l5.SetActive(true); }
-        if (counter > 80)
+        if (counter > 50)
         { l2.SetActive(false); l6.SetActive(true); }
-        if (counter > 90)
+        if (counter > 60)
         { l3.SetActive(false); l7.SetActive(true); }
-        if (counter > 130)
+        if (counter > 100)
         { l4.SetActive(false); l8.SetActive(true); }
-        if (counter > 160)
+        if (counter > 120)
         { l5.SetActive(false); l9.SetActive(true); }
-        if (counter > 200)
+        if (counter > 170)
         { l6.SetActive(false); l10.SetActive(true); }
-        if (counter > 220)
+        if (counter > 190)
         { l7.SetActive(false); l11.SetActive(true); }
-        if (counter > 250)
+        if (counter > 220)
         { l8.SetActive(false); l12.SetActive(true); }
+        if (counter > 250)
+        { l9.SetActive(false); l13.SetActive(true); }
+        if (counter > 270)
+        { l10.SetActive(false); l14.SetActive(true); }
         if (counter > 280)
-        { l9.SetActive(false); l13.SetActive(true); }
+        { l11.SetActive(false); l15.SetActive(true); }
         if (counter > 310)
-        { l10.SetActive(false); l14.SetActive(true); }
-        if (counter > 320)
-        { l11.SetActive(false); l15.SetActive(true); }
-        if (counter > 340)
         { l12.SetActive(false); l16.SetActive(true); }
-        if(counter > 345)
+        if(counter > 315)
         { l9.SetActive(false); l13.SetActive(true); }
-        if (counter > 350)
+        if (counter > 320)
         { l10.SetActive(false); l14.SetActive(true); }
-        if (counter > 351)
+        if (counter > 331)
         { l11.SetActive(false); l15.SetActive(true); }
-        if (counter > 352)
+        if (counter > 336)
         { l12.SetActive(false); l16.SetActive(true); }
-        if (counter > 345)
+        if (counter > 340)
         { l13.SetActive(false); l17.SetActive(true); }
-        if (counter > 350)
+        if (counter > 345)
         { l14.SetActive(false); l18.SetActive(true); }
-        if (counter > 351)
+        if (counter > 350)
         { l15.SetActive(false); l19.SetActive(true); }
-        if (counter > 352)
+        if (counter > 355)
         { l16.SetActive(false); l20.SetActive(true); }
-        if (counter > 363)
+        if (counter > 351)
         { l17.SetActive(false);  }
-        if (counter > 374)
+        if (counter > 352)
         { l18.SetActive(false); }
-        if (counter > 385)
+        if (counter > 353)
         { l19.SetActive(false); }
-        if (counter > 396)
+        if (counter > 354)
         { l20.SetActive(false); }
 
-        if (timediff > 0) { counter += 1; }
-        if (counter % 10 == 0) { print(counter); }
+		//Debug.Log(Time.timeSinceLevelLoad);
+		if(timediff>0) { counter+=1; }
 
-        if (counter > 45 && counter < 85) { rightArrow(); l1.SetActive(false); }
-        if (counter>85 && counter<160) { leftArrow(); }
-        if (counter > 160 && counter > 250) { upArrow(); }
-        if (counter > 250 && counter < 395) { leftArrow(); }
-        if (counter > 395 && counter < 460) { rightArrow(); } 
-
-        if (counter > 75 && counter < 100)
-        {
-            transform.Rotate(0, 0, 90 * Time.deltaTime);
-        }
-        if (counter > 125 && counter < 170)
-         {
-             transform.Rotate(0, 0, -45 * Time.deltaTime);
-             transform.Translate(0, -5 * Time.deltaTime, 0);
-         }
-        if (counter > 340 && counter < 405)
-        {
-            transform.Rotate(0, 0, -45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
-        }
-        if (counter > 415 && counter < 470)
-        {
-            transform.Rotate(0, 0, 45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
-        }
-        if (counter>=500)
-        {
-            robot.rigidbody.velocity = Vector3.zero;
-        }
+		if (Time.timeSinceLevelLoad > .7 && Time.timeSinceLevelLoad < 2) { rightArrow(); l1.SetActive(false); }
+		if (Time.timeSinceLevelLoad>2 && Time.timeSinceLevelLoad<5) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad > 7) { upArrow(); }
+		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 13) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 15) { rightArrow(); } 
+		
+		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
+		{
+			transform.Rotate(0, 0, 90 * Time.deltaTime);
+		}
+		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
+		{
+			transform.Rotate(0, 0, -45 * Time.deltaTime);
+			transform.Translate(0, -5 * Time.deltaTime, 0);
+		}
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13)
+		{
+			transform.Rotate(0, 0, -45 * Time.deltaTime);
+			transform.Translate(0, -5 * Time.deltaTime, 0);
+		}
+		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 16)
+		{
+			transform.Rotate(0, 0, 45 * Time.deltaTime);
+			transform.Translate(0, -5 * Time.deltaTime, 0);
+		}
+		if (Time.timeSinceLevelLoad>=18)
+		{
+			Application.LoadLevel(1);
+		}
 
     }
 	// Use this for initialization

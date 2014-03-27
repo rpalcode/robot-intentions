@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class scene5 : MonoBehaviour {
-    private int counter = 0;
-    public double timediff = 0.0;
     public GameObject straight;
     public GameObject left;
     public GameObject right;
@@ -36,52 +34,62 @@ public class scene5 : MonoBehaviour {
 
     private void run()
     {
-        //print(counter);
+		Debug.Log(Time.timeSinceLevelLoad);
+
         upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-		float a = Time.time;
-
-        if (counter>45 && counter<85) { rightArrow(); }
-        if (counter>85 && counter<160) { leftArrow(); }
-        if (counter > 160 && counter > 250) { upArrow(); }
-        if (counter > 220 && counter < 290) { leftArrow(); }
-        if (counter > 290 && counter < 415) { rightArrow(); } 
-
-        if (counter > 75 && counter < 100)
-        {
-            transform.Rotate(0, 0, 90 * Time.deltaTime);
-        }
-        if (counter > 125 && counter < 170)
-         {
-             transform.Rotate(0, 0, -45 * Time.deltaTime);
-             transform.Translate(0, -5 * Time.deltaTime, 0);
-         }
-        if (counter > 270 && counter < 325)
-        {
-            transform.Rotate(0, 0, -45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
-        }
-        if (counter > 350 && counter < 405)
-        {
-            transform.Rotate(0, 0, 45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
-        }
-        if (counter>=500)
-        {
-            Application.LoadLevel(2);
-        }
-
-    }
+		if (Time.timeSinceLevelLoad > .7 && Time.timeSinceLevelLoad < 2) { rightArrow(); }
+		if (Time.timeSinceLevelLoad>2 && Time.timeSinceLevelLoad<5) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad > 7) { upArrow(); }
+		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 13) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 15) { rightArrow(); } 
+		
+		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
+		{
+			transform.Rotate(0, 0, 90 * Time.deltaTime);
+		}
+		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
+		{
+			transform.Rotate(0, 0, -45 * Time.deltaTime);
+			transform.Translate(0, -5 * Time.deltaTime, 0);
+		}
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13)
+		{
+			transform.Rotate(0, 0, -45 * Time.deltaTime);
+			transform.Translate(0, -5 * Time.deltaTime, 0);
+		}
+		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 16)
+		{
+			transform.Rotate(0, 0, 45 * Time.deltaTime);
+			transform.Translate(0, -5 * Time.deltaTime, 0);
+		}
+		if (Time.timeSinceLevelLoad>=17)
+		{
+			Application.LoadLevel(2);
+		}
+		
+	}
 	// Use this for initialization
-
+	
 	void Start () {
         
 	}
 
 	// Update is called once per frame
 	void Update () {
-
+		if (Input.GetKeyDown("8"))
+		{
+			Application.LoadLevel(7);
+		}
+		if (Input.GetKeyDown("9"))
+		{
+			Application.LoadLevel(8);
+		}
+		if (Input.GetKeyDown("0"))
+		{
+			Application.LoadLevel(9);
+		}
         run();
 	}
 }

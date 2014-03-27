@@ -2,15 +2,10 @@
 using System.Collections;
 
 public class scene6 : MonoBehaviour {
-    private int counter = 0;
-    public double timediff = 0.0;
     public GameObject straight;
     public GameObject left;
     public GameObject right;
     public GameObject robot;
-
-    public int choice;
-
 
     void leftArrow()
     {
@@ -36,36 +31,39 @@ public class scene6 : MonoBehaviour {
 
     private void option3()
     {
-        //print(counter);
-        upArrow();
+		Debug.Log (Time.timeSinceLevelLoad);
+
+		upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-        timediff = Time.deltaTime - timediff;
-        //print(timediff);
+		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 6 && Time.timeSinceLevelLoad < 7.6) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 8.4 && Time.timeSinceLevelLoad < 9) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 14.5 && Time.timeSinceLevelLoad < 16.5) { leftArrow(); }
 
-        if (timediff > 0) { counter += 1; }
-        if (counter % 10 == 0) { print(counter); }
-
-        if (counter > 30 && counter < 65) { rightArrow(); }
-        if (counter > 200 && counter < 320) { leftArrow(); }
-        if (counter > 380 && counter < 450) { leftArrow(); }
-
-        if (counter > 55 && counter < 70)
+		
+		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
         {
             transform.Rotate(0, 0, 90 * Time.deltaTime);
         }
-        if (counter > 300 && counter < 320)
+		if (Time.timeSinceLevelLoad > 7 && Time.timeSinceLevelLoad < 7.6)
         {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-        if (counter > 430 && counter < 460)
+		if (Time.timeSinceLevelLoad > 8.4 && Time.timeSinceLevelLoad < 9)
         {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
 
-        if (counter >= 600)
+		if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 16.5)
+		{
+			transform.Rotate(0, 0, -45 * Time.deltaTime);
+			transform.Translate(0, -5 * Time.deltaTime, 0);
+		}
+		
+		if (Time.timeSinceLevelLoad >= 17.5)
         {
             Application.LoadLevel(2);
         }
@@ -80,7 +78,18 @@ public class scene6 : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
-        option3();
+		if (Input.GetKeyDown("8"))
+		{
+			Application.LoadLevel(10);
+		}
+		if (Input.GetKeyDown("9"))
+		{
+			Application.LoadLevel(11);
+		}
+		if (Input.GetKeyDown("0"))
+		{
+			Application.LoadLevel(12);
+		}
+		option3();
 	}
 }

@@ -1,10 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Robot/scripts/Scene5Side.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Robot/scripts/scene5.cs">
     <Files>
-      <File FileName="Assets/Robot/scripts/SceneChanger.cs" Line="10" Column="2" />
-      <File FileName="Assets/Robot/scripts/scene5.cs" Line="5" Column="1" />
-      <File FileName="Assets/Robot/scripts/Scene5Side.js" Line="6" Column="6" />
+      <File FileName="Assets/Robot/scripts/side.cs" Line="136" Column="1" />
+      <File FileName="Assets/Robot/scripts/scene4.cs" Line="23" Column="23" />
+      <File FileName="Assets/Robot/scripts/scene5.cs" Line="42" Column="3" />
+      <File FileName="Assets/Robot/scripts/scene6.cs" Line="5" Column="1" />
+      <File FileName="Assets/Robot/scripts/sidesceneview/backto5.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
