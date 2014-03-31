@@ -14,10 +14,14 @@ public class optionalpaths : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("0"))
+        if (Input.GetKeyDown("9"))
         {
-            Application.LoadLevel(3);
+            Application.LoadLevel(2);
         }
+		if (Input.GetKeyDown("0"))
+		{
+			Application.LoadLevel(3);
+		}
         if (Input.GetKeyUp("4"))
         {
             Application.LoadLevel(4);

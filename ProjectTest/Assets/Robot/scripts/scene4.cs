@@ -36,26 +36,26 @@ public class scene4 : MonoBehaviour {
         upArrow();
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { leftArrow(); }
 		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad > 8) { upArrow(); }
-		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 12) { rightArrow(); }
-		if (Time.timeSinceLevelLoad > 12 && Time.timeSinceLevelLoad < 15) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 14) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 17) { rightArrow(); }
 
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
         {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
         }
 
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 12)
+		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
         {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15)
+		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 17)
         {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
 
-		if (Time.timeSinceLevelLoad >= 17)
+		if (Time.timeSinceLevelLoad >= 18.5)
         {
             Application.LoadLevel(2);
         }        

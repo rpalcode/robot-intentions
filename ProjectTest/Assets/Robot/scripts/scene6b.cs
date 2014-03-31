@@ -1,45 +1,85 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class scene6 : MonoBehaviour {
+public class scene6b : MonoBehaviour {
     public GameObject straight;
     public GameObject left;
     public GameObject right;
     public GameObject robot;
 
-    void leftArrow()
-    {
-        straight.SetActive(false);
-        left.SetActive(true);
-        right.SetActive(false);
-    }
+	public GameObject one;
+	public GameObject two;
+	public GameObject three;
 
-    void upArrow()
-    {
-        straight.SetActive(true);
-        left.SetActive(false);
-        right.SetActive(false);
-    }
-
-    void rightArrow()
+    void StartSide()
     {
         straight.SetActive(false);
         left.SetActive(false);
-        right.SetActive(true);
-    }
+        right.SetActive(false);
 
+		one.SetActive(false);
+		two.SetActive(false);
+		three.SetActive(false);
+    }
 
     private void option3()
     {
+		StartSide();
 		Debug.Log (Time.timeSinceLevelLoad);
 
-		upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { rightArrow(); }
-		if (Time.timeSinceLevelLoad > 7 && Time.timeSinceLevelLoad < 11) { leftArrow(); }
-		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 17) { leftArrow(); }
-		if (Time.timeSinceLevelLoad > 19 && Time.timeSinceLevelLoad < 21) { leftArrow(); }
+
+
+		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
+		{
+			one.SetActive(true);
+			two.SetActive(false);
+			three.SetActive(false);
+		}
+		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
+		{
+			one.SetActive(true);
+			two.SetActive(false);
+			three.SetActive(false);
+		}
+		if (Time.timeSinceLevelLoad > 3.6 && Time.timeSinceLevelLoad < 10)
+		{
+			one.SetActive(false);
+			two.SetActive(true);
+			three.SetActive(false);
+		}
+		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(true);
+		}
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 16)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(true);
+		}
+		if (Time.timeSinceLevelLoad > 16 && Time.timeSinceLevelLoad < 17)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(true);
+		}
+		if (Time.timeSinceLevelLoad > 17 && Time.timeSinceLevelLoad < 20)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(true);
+		}		
+		if (Time.timeSinceLevelLoad > 20 && Time.timeSinceLevelLoad < 21)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(true);
+		}
+
 
 		
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
