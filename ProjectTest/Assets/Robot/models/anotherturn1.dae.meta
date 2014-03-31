@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-guid: cc326dfcd64b5478681b4303c83c12bd
+guid: f66a73059868f49bc924b5ec5d558d57
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
     100002: ID10
-    100004: ID16
-    100006: ID20
-    100008: ID24
-    100010: ID28
     400000: //RootNode
     400002: ID10
-    400004: ID16
-    400006: ID20
-    400008: ID24
-    400010: ID28
     2300000: //RootNode
     3300000: //RootNode
     4300000: SketchUp
