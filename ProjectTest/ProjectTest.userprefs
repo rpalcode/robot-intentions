@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Robot/scripts/scene6btest.cs">
     <Files>
-      <File FileName="Assets/Robot/scripts/scene6btest.cs" Line="4" Column="25" />
+      <File FileName="Assets/Robot/scripts/scene6btest.cs" Line="31" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
