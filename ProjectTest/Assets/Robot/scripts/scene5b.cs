@@ -6,6 +6,7 @@ public class scene5b : MonoBehaviour {
     public GameObject left;
     public GameObject right;
     public GameObject robot;
+	public Camera camera01;
 
 	public GameObject one;
 	public GameObject two;
@@ -25,6 +26,18 @@ public class scene5b : MonoBehaviour {
 
     private void run()
     {
+		if (Input.GetKeyDown("p"))
+		{
+			Time.timeScale =0;
+			camera01.enabled = false;
+		}
+		if (Input.GetKeyDown("o"))
+		{
+			camera01.enabled = true;
+			
+			Time.timeScale =1;
+		}
+
 		StartSide();
 		Debug.Log(Time.timeSinceLevelLoad);
 

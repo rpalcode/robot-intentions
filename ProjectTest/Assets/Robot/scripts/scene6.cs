@@ -6,6 +6,7 @@ public class scene6 : MonoBehaviour {
     public GameObject left;
     public GameObject right;
     public GameObject robot;
+	public Camera camera01;
 
     void leftArrow()
     {
@@ -31,6 +32,18 @@ public class scene6 : MonoBehaviour {
 
     private void option3()
     {
+		if (Input.GetKeyDown("p"))
+		{
+			Time.timeScale =0;
+			camera01.enabled = false;
+		}
+		if (Input.GetKeyDown("o"))
+		{
+			camera01.enabled = true;
+			
+			Time.timeScale =1;
+		}
+
 		Debug.Log (Time.timeSinceLevelLoad);
 
 		upArrow();
