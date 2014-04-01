@@ -79,7 +79,6 @@ public class side : MonoBehaviour {
 
     void run()
     {
-		Time.timeScale = 1;
         upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 

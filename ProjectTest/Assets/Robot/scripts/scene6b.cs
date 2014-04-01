@@ -25,6 +25,7 @@ public class scene6b : MonoBehaviour {
 
     private void option3()
     {
+
 		if (Input.GetKeyDown("p"))
 		{
 			Time.timeScale =0;
