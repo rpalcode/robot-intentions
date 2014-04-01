@@ -79,19 +79,7 @@ public class side : MonoBehaviour {
 
     void run()
     {
-		if (Input.GetKeyDown("p"))
-		{
-			Time.timeScale =0;
-			camera01.enabled = false;
-		}
-		if (Input.GetKeyDown("o"))
-		{
-			camera01.enabled = true;
-			
-			Time.timeScale =1;
-		}
-
-
+		Time.timeScale = 1;
         upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
@@ -138,13 +126,13 @@ public class side : MonoBehaviour {
         { l15.SetActive(false); l19.SetActive(true); }
         if (counter > 355)
         { l16.SetActive(false); l20.SetActive(true); }
-        if (counter > 351)
+        if (counter > 356)
         { l17.SetActive(false);  }
-        if (counter > 352)
+        if (counter > 357)
         { l18.SetActive(false); }
-        if (counter > 353)
+        if (counter > 358)
         { l19.SetActive(false); }
-        if (counter > 354)
+        if (counter > 359)
         { l20.SetActive(false); }
 
 		//Debug.Log(Time.timeSinceLevelLoad);
