@@ -3,13 +3,13 @@ using System.Collections;
 
 public class optionalpaths : MonoBehaviour {
 
-    void OnGUI()
+   /* void OnGUI()
     {
        GUI.Box(new Rect(250, 900, 200, 270), "Please pick a path.\n4.Top(Red)\n5.Mid(Green)\n6.Bottom(Blue)");
 	   GUI.Box(new Rect(850, 900, 200, 270), "Please pick a path.\n4.Top(Red)\n5.Mid(Green)\n6.Bottom(Blue)");
 
 	}
-
+*/
 	void Start () {
         
 	}
