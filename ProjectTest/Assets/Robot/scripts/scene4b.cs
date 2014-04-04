@@ -23,7 +23,7 @@ public class scene4b : MonoBehaviour {
 	public int stop2=0;
 	public int stop3=0;
 
-	static int pause=0;
+	public static int pause=0;
 
 
 	void StartSide()
@@ -166,22 +166,38 @@ public class scene4b : MonoBehaviour {
 		{
 			int choice=0;
 
-			GUI.Box(new Rect(200,350,300,100), "Which way is the robot going to go?");
+			GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 
-			if(GUI.Button(new Rect(200,400,100,50), "left")) 
+			if(GUI.Button(new Rect(150,400,100,50), "left")) 
 			{
 				choice=1;
 			}
-			if(GUI.Button(new Rect(300,400,100,50), "forward")) 
+			if(GUI.Button(new Rect(250,400,100,50), "forward")) 
 			{
 				choice=1;
 			}
 	
-			if(GUI.Button(new Rect(400,400,100,50), "right")) 
+			if(GUI.Button(new Rect(350,400,100,50), "right")) 
 			{
 				choice=1;
 			}
-
+			/*
+			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
+			
+			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
+			{
+				choice=1;
+			}
+			if(GUI.Button(new Rect(250+500,400,100,50), "forward")) 
+			{
+				choice=1;
+			}
+			
+			if(GUI.Button(new Rect(350+500,400,100,50), "right")) 
+			{
+				choice=1;
+			}
+*/
 			if(choice==1)
 			{
 				date2 = System.DateTime.Now;
