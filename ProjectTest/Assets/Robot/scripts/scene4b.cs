@@ -19,6 +19,10 @@ public class scene4b : MonoBehaviour {
 	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
 	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
 
+	public int stop1=0;
+	public int stop2=0;
+	public int stop3=0;
+
 	static int pause=0;
 
 
@@ -37,6 +41,7 @@ public class scene4b : MonoBehaviour {
 
     private void option1()
     {
+
 		StartSide ();
 
 		if (Input.GetKeyDown("p"))
@@ -45,6 +50,33 @@ public class scene4b : MonoBehaviour {
 			pause=1;
 			Time.timeScale =0;
 			camera01.enabled = false;
+		}
+
+		if ((Time.timeSinceLevelLoad > 1 && Time.timeSinceLevelLoad < 1.1) && stop1==0)
+		{
+			date1 = System.DateTime.Now;
+			pause=1;
+			Time.timeScale =0;
+			camera01.enabled = false;
+			stop1=1;
+		}
+
+		if ((Time.timeSinceLevelLoad > 12.8 && Time.timeSinceLevelLoad < 12.9) && stop2==0)
+		{
+			date1 = System.DateTime.Now;
+			pause=1;
+			Time.timeScale =0;
+			camera01.enabled = false;
+			stop2=1;
+		}
+
+		if ((Time.timeSinceLevelLoad > 14.8 && Time.timeSinceLevelLoad < 14.9) && stop3==0)
+		{
+			date1 = System.DateTime.Now;
+			pause=1;
+			Time.timeScale =0;
+			camera01.enabled = false;
+			stop3=1;
 		}
 
 
