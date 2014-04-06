@@ -106,9 +106,9 @@ public class scene4 : MonoBehaviour {
 		if (Time.timeSinceLevelLoad >= 16.5)
 		{
 
-			if(Application.loadedLevel == 0)
+			if(Application.loadedLevel == 7)
 			{
-				using (StreamWriter writer = new StreamWriter("leftpatharrowchest.txt"))
+				using (StreamWriter writer = new StreamWriter("leftpathshortarrowchest.txt"))
 				{
 					writer.WriteLine("short-term view with arrows on screen");
 					writer.WriteLine(res1 + " " + deltaDate1);
@@ -118,9 +118,9 @@ public class scene4 : MonoBehaviour {
 				}
 			}
 
-			if(Application.loadedLevel == 1)
+			if(Application.loadedLevel == 6)
 			{
-				using (StreamWriter writer = new StreamWriter("leftpatharrowfloor.txt"))
+				using (StreamWriter writer = new StreamWriter("leftpathshortarrowfloor.txt"))
 				{
 					writer.WriteLine("short-term view with arrows on floor");
 					writer.WriteLine(res1 + " " + deltaDate1);
@@ -282,18 +282,7 @@ public class scene4 : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown("8"))
-		{
-			Application.LoadLevel(4);
-		}
-		if (Input.GetKeyDown("9"))
-		{
-			Application.LoadLevel(5);
-		}
-		if (Input.GetKeyDown("0"))
-		{
-			Application.LoadLevel(6);
-		}
+
         option1();
 	}
 }

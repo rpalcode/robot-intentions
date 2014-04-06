@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 //
-//using System.Diagnostics;
-//using System.Threading;
 using System.IO;
 //
 
@@ -145,13 +143,13 @@ public class scene4b : MonoBehaviour {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-
+	
 		if (Time.timeSinceLevelLoad >= 16.5)
 		{
-
-			if(Application.loadedLevel == 0)
+//
+			if(Application.loadedLevel == 5)
 			{
-				using (StreamWriter writer = new StreamWriter("leftpatharrowchest.txt"))
+				using (StreamWriter writer = new StreamWriter("leftpathmidarrowchest.txt"))
 				{
 					writer.WriteLine("mid-term view with map on screen");
 					writer.WriteLine(res1 + " " + deltaDate1);
@@ -161,9 +159,9 @@ public class scene4b : MonoBehaviour {
 				}
 			}
 			
-			if(Application.loadedLevel == 1)
+			if(Application.loadedLevel == 4)
 			{
-				using (StreamWriter writer = new StreamWriter("leftpatharrowfloor.txt"))
+				using (StreamWriter writer = new StreamWriter("leftpathmidarrowfloor.txt"))
 				{
 					writer.WriteLine("mid-term view without map on screen");
 					writer.WriteLine(res1 + " " + deltaDate1);
@@ -172,7 +170,7 @@ public class scene4b : MonoBehaviour {
 					writer.WriteLine(" ");
 				}
 			}
-			
+//
 			Application.LoadLevel(2);
 		}         
     }
@@ -327,18 +325,7 @@ public class scene4b : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown("8"))
-		{
-			Application.LoadLevel(4);
-		}
-		if (Input.GetKeyDown("9"))
-		{
-			Application.LoadLevel(5);
-		}
-		if (Input.GetKeyDown("0"))
-		{
-			Application.LoadLevel(6);
-		}
+
         option1();
 	}
 }
