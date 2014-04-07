@@ -134,7 +134,7 @@ public class scene5b : MonoBehaviour {
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		if (Time.timeSinceLevelLoad>=14)
+		if (Time.timeSinceLevelLoad>=15)
 		{
 			if(Application.loadedLevel == 9)
 			{
@@ -227,7 +227,7 @@ public class scene5b : MonoBehaviour {
 				}
 				choice=1;
 			}
-			/*
+/*
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 

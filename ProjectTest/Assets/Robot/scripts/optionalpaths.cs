@@ -6,18 +6,12 @@ public class optionalpaths : MonoBehaviour {
 	public GameObject blue;
 	public GameObject green;
 	public GameObject map;
-   /* void OnGUI()
-    {
-       GUI.Box(new Rect(250, 900, 200, 270), "Please pick a path.\n4.Top(Red)\n5.Mid(Green)\n6.Bottom(Blue)");
-	   GUI.Box(new Rect(850, 900, 200, 270), "Please pick a path.\n4.Top(Red)\n5.Mid(Green)\n6.Bottom(Blue)");
-
-	}
-*/
+   
 	void Start () {
 		red.SetActive(false);
 		blue.SetActive(false);
 		green.SetActive(false);
-		map.SetActive(true);
+		map.SetActive(false);
 	}
 
 	// Update is called once per frame
@@ -25,28 +19,28 @@ public class optionalpaths : MonoBehaviour {
 
 		//change paths
 
-		if (Input.GetKeyDown("q"))
+		if (Input.GetKeyDown("e"))
 		{
 			red.SetActive(true);
 			blue.SetActive(false);
 			green.SetActive(false);
 			map.SetActive(false);
 		}
-		if (Input.GetKeyDown("w"))
+		if (Input.GetKeyDown("d"))
 		{
 			red.SetActive(false);
 			blue.SetActive(false);
 			green.SetActive(true);
 			map.SetActive(false);
 		}
-		if (Input.GetKeyUp("e"))
+		if (Input.GetKeyUp("c"))
 		{
 			red.SetActive(false);
 			green.SetActive(false);
 			blue.SetActive(true);
 			map.SetActive(false);
 		}
-		if (Input.GetKeyUp("r"))
+		if (Input.GetKeyUp("w"))
 		{
 			red.SetActive(false);
 			green.SetActive(false);
@@ -64,17 +58,6 @@ public class optionalpaths : MonoBehaviour {
 		{
 			Application.LoadLevel(3);
 		}
-        if (Input.GetKeyUp("4"))
-        {
-            Application.LoadLevel(4);
-        }
-        if (Input.GetKeyUp("5"))
-        {
-            Application.LoadLevel(7);
-        }
-        if (Input.GetKeyUp("6"))
-        {
-            Application.LoadLevel(10);
-        }
+
 	}
 }

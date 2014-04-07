@@ -27,35 +27,35 @@ public class SceneChanger : MonoBehaviour {
 		{
 			Application.LoadLevel(3);
 		}
-		if (Input.GetKeyUp("t"))
+		if (Input.GetKeyUp("r"))
 		{
 			Application.LoadLevel(4);
 		}
-		if (Input.GetKeyUp("y"))
+		if (Input.GetKeyUp("t"))
 		{
 			Application.LoadLevel(5);
 		}
-		if (Input.GetKeyUp("u"))
+		if (Input.GetKeyUp("y"))
 		{
 			Application.LoadLevel(6);
 		}
-		if (Input.GetKeyUp("i"))
+		if (Input.GetKeyUp("u"))
 		{
 			Application.LoadLevel(7);
 		}
-		if (Input.GetKeyUp("g"))
+		if (Input.GetKeyUp("f"))
 		{
 			Application.LoadLevel(8);
 		}
-		if (Input.GetKeyUp("h"))
+		if (Input.GetKeyUp("g"))
 		{
 			Application.LoadLevel(9);
 		}
-		if (Input.GetKeyUp("j"))
+		if (Input.GetKeyUp("h"))
 		{
 			Application.LoadLevel(10);
 		}
-		if (Input.GetKeyUp("k"))
+		if (Input.GetKeyUp("j"))
 		{
 			Application.LoadLevel(11);
 		}
