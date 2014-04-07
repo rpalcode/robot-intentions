@@ -13,6 +13,7 @@ public class Front : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+		Time.timeScale=1;
 		Debug.Log (Time.timeSinceLevelLoad);
         transform.Translate(0, -5*Time.deltaTime, 0);
 
@@ -25,17 +26,6 @@ public class Front : MonoBehaviour {
             transform.Rotate(0, 0, 90*Time.deltaTime);
         }
 
-		if (Input.GetKeyDown("p"))
-		{
-			Time.timeScale =0;
-			camera01.enabled = false;
-		}
-		if (Input.GetKeyDown("o"))
-		{
-			camera01.enabled = true;
-
-			Time.timeScale =1;
-		}
 
 	}
 }
