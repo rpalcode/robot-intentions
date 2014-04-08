@@ -45,8 +45,9 @@ public class scene5b : MonoBehaviour {
 
 
 		StartSide();
-		UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
-		
+		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
+		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
+
 		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
 			date1 = System.DateTime.Now;
@@ -56,7 +57,7 @@ public class scene5b : MonoBehaviour {
 			stop1=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 4.8 && Time.timeSinceLevelLoad < 4.9) && stop2==0)
+		if ((Time.timeSinceLevelLoad > 6.3 && Time.timeSinceLevelLoad < 6.4) && stop2==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -65,7 +66,7 @@ public class scene5b : MonoBehaviour {
 			stop2=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 10.8 && Time.timeSinceLevelLoad < 10.9) && stop3==0)
+		if ((Time.timeSinceLevelLoad > 12.8 && Time.timeSinceLevelLoad < 12.9) && stop3==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -77,44 +78,46 @@ public class scene5b : MonoBehaviour {
 
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 2)
+		if(Application.loadedLevel == 8)
 		{
-			one.SetActive(true);
-			two.SetActive(false);
-			three.SetActive(false);
-		}
+			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 2)
+			{
+				one.SetActive(true);
+				two.SetActive(false);
+				three.SetActive(false);
+			}
 
-		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
-		{
-			one.SetActive(true);
-			two.SetActive(false);
-			three.SetActive(false);
+			if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
+			{
+				one.SetActive(true);
+				two.SetActive(false);
+				three.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
+			{
+				one.SetActive(true);
+				two.SetActive(false);
+				three.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 9)
+			{
+				one.SetActive(false);
+				two.SetActive(true);
+				three.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 11)
+			{
+				one.SetActive(false);
+				two.SetActive(true);
+				three.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+			}
 		}
-		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
-		{
-			one.SetActive(true);
-			two.SetActive(false);
-			three.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 9)
-		{
-			one.SetActive(false);
-			two.SetActive(true);
-			three.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 11)
-		{
-			one.SetActive(false);
-			two.SetActive(true);
-			three.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 14)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-		}
-		
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
 		{
 			transform.Rotate(0, 0, 90 * Time.deltaTime);
@@ -129,12 +132,12 @@ public class scene5b : MonoBehaviour {
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 14)
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5)
 		{
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		if (Time.timeSinceLevelLoad>=15)
+		if (Time.timeSinceLevelLoad>=13.5)
 		{
 			if(Application.loadedLevel == 9)
 			{

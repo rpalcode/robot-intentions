@@ -1,5 +1,5 @@
 mid-term view without map on screen
-right 00:00:02.0364870
-forward 00:00:01.5476970
-right 00:00:01.4058770
+right 00:00:01.7782130
+right 00:00:02.8396530
+left 00:00:20.2404940
  

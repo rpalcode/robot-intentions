@@ -47,12 +47,13 @@ public class scene4 : MonoBehaviour {
 
     private void option1()
     {
-		UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
+		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
+		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
 		transform.Translate(0, -5 * Time.deltaTime, 0);
         upArrow();
 		
-		if ((Time.timeSinceLevelLoad > 1.5 && Time.timeSinceLevelLoad < 1.6) && stop1==0)
+		if ((Time.timeSinceLevelLoad > 4.6 && Time.timeSinceLevelLoad < 4.7) && stop1==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -61,7 +62,7 @@ public class scene4 : MonoBehaviour {
 			stop1=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 12.8 && Time.timeSinceLevelLoad < 12.9) && stop2==0)
+		if ((Time.timeSinceLevelLoad > 11.6 && Time.timeSinceLevelLoad < 11.7) && stop2==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;

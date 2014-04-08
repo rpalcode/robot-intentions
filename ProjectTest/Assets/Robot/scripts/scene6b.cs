@@ -42,7 +42,7 @@ public class scene6b : MonoBehaviour {
     {
 		UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
 		
-		if ((Time.timeSinceLevelLoad > 6.7 && Time.timeSinceLevelLoad < 6.8) && stop1==0)
+		if ((Time.timeSinceLevelLoad > 2.0 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -51,7 +51,7 @@ public class scene6b : MonoBehaviour {
 			stop1=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 13.8 && Time.timeSinceLevelLoad < 13.9) && stop2==0)
+		if ((Time.timeSinceLevelLoad > 4.8 && Time.timeSinceLevelLoad < 4.9) && stop2==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -60,7 +60,7 @@ public class scene6b : MonoBehaviour {
 			stop2=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 18.8 && Time.timeSinceLevelLoad < 18.9) && stop3==0)
+		if ((Time.timeSinceLevelLoad > 16.2 && Time.timeSinceLevelLoad < 16.3) && stop3==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -70,61 +70,62 @@ public class scene6b : MonoBehaviour {
 		}
 
 		StartSide();
-		Debug.Log (Time.timeSinceLevelLoad);
+		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
 
-
-		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
+		if(Application.loadedLevel == 12)
 		{
-			one.SetActive(true);
-			two.SetActive(false);
-			three.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
-		{
-			one.SetActive(true);
-			two.SetActive(false);
-			three.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 3.6 && Time.timeSinceLevelLoad < 10)
-		{
-			one.SetActive(false);
-			two.SetActive(true);
-			three.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-		}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 16)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-		}
-		if (Time.timeSinceLevelLoad > 16 && Time.timeSinceLevelLoad < 17)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-		}
-		if (Time.timeSinceLevelLoad > 17 && Time.timeSinceLevelLoad < 20)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-		}		
-		if (Time.timeSinceLevelLoad > 20 && Time.timeSinceLevelLoad < 21)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-		}
-
+			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
+			{
+				one.SetActive(true);
+				two.SetActive(false);
+				three.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
+			{
+				one.SetActive(true);
+				two.SetActive(false);
+				three.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 3.6 && Time.timeSinceLevelLoad < 10)
+			{
+				one.SetActive(false);
+				two.SetActive(true);
+				three.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+			}
+			if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 16)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+			}
+			if (Time.timeSinceLevelLoad > 16 && Time.timeSinceLevelLoad < 17)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+			}
+			if (Time.timeSinceLevelLoad > 17 && Time.timeSinceLevelLoad < 20)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+			}		
+			if (Time.timeSinceLevelLoad > 20 && Time.timeSinceLevelLoad < 21)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+			}
+	    }
 
 		
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
@@ -148,7 +149,7 @@ public class scene6b : MonoBehaviour {
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
 		
-		if (Time.timeSinceLevelLoad >= 23)
+		if (Time.timeSinceLevelLoad >= 20.5)
         {
 			if(Application.loadedLevel == 13)
 			{

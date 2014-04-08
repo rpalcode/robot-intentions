@@ -53,9 +53,10 @@ public class scene4b : MonoBehaviour {
 		StartSide ();
 
 		//
-		UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
+		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
+		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
-		if ((Time.timeSinceLevelLoad > 1.5 && Time.timeSinceLevelLoad < 1.6) && stop1==0)
+		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -64,7 +65,7 @@ public class scene4b : MonoBehaviour {
 			stop1=1;
 		}
 
-		if ((Time.timeSinceLevelLoad > 12.8 && Time.timeSinceLevelLoad < 12.9) && stop2==0)
+		if ((Time.timeSinceLevelLoad > 4.4 && Time.timeSinceLevelLoad < 4.5) && stop2==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -73,7 +74,7 @@ public class scene4b : MonoBehaviour {
 			stop2=1;
 		}
 
-		if ((Time.timeSinceLevelLoad > 14.8 && Time.timeSinceLevelLoad < 14.9) && stop3==0)
+		if ((Time.timeSinceLevelLoad > 13.3 && Time.timeSinceLevelLoad < 13.4) && stop3==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -82,50 +83,51 @@ public class scene4b : MonoBehaviour {
 			stop3=1;
 		}
 		//
-
-		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
+		if(Application.loadedLevel == 4)
 		{
-			one.SetActive(true);
-			two.SetActive(false);
-			three.SetActive(false);
-			four.SetActive(false);
+			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
+			{
+				one.SetActive(true);
+				two.SetActive(false);
+				three.SetActive(false);
+				four.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
+			{
+				one.SetActive(false);
+				two.SetActive(true);
+				three.SetActive(false);
+				four.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 13)
+			{
+				one.SetActive(false);
+				two.SetActive(true);
+				three.SetActive(false);
+				four.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+				four.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+				four.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.5)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(false);
+				four.SetActive(true);
+			}
 		}
-		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
-		{
-			one.SetActive(false);
-			two.SetActive(true);
-			three.SetActive(false);
-			four.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 13)
-		{
-			one.SetActive(false);
-			two.SetActive(true);
-			three.SetActive(false);
-			four.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-			four.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-			four.SetActive(false);
-		}
-		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.5)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(false);
-			four.SetActive(true);
-		}
-
 		transform.Translate(0, -5 * Time.deltaTime, 0);
 
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
