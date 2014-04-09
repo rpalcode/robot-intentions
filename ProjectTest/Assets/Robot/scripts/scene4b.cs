@@ -52,7 +52,6 @@ public class scene4b : MonoBehaviour {
 
 		StartSide ();
 
-		//
 		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
 		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
@@ -83,8 +82,8 @@ public class scene4b : MonoBehaviour {
 			stop3=1;
 		}
 		//
-		if(Application.loadedLevel == 4)
-		{
+		//if(Application.loadedLevel == 4)
+		//{
 			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
 			{
 				one.SetActive(true);
@@ -127,7 +126,7 @@ public class scene4b : MonoBehaviour {
 				three.SetActive(false);
 				four.SetActive(true);
 			}
-		}
+		//}
 		transform.Translate(0, -5 * Time.deltaTime, 0);
 
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)

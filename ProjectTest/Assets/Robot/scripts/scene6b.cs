@@ -75,8 +75,8 @@ public class scene6b : MonoBehaviour {
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
 
-		if(Application.loadedLevel == 12)
-		{
+		//if(Application.loadedLevel == 12)
+		//{
 			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
 			{
 				one.SetActive(true);
@@ -125,7 +125,7 @@ public class scene6b : MonoBehaviour {
 				two.SetActive(false);
 				three.SetActive(true);
 			}
-	    }
+	    //}
 
 		
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)

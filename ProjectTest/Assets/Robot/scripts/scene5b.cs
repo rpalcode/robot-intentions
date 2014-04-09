@@ -78,8 +78,8 @@ public class scene5b : MonoBehaviour {
 
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-		if(Application.loadedLevel == 8)
-		{
+		//if(Application.loadedLevel == 8)
+		//{
 			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 2)
 			{
 				one.SetActive(true);
@@ -117,7 +117,7 @@ public class scene5b : MonoBehaviour {
 				two.SetActive(false);
 				three.SetActive(true);
 			}
-		}
+		//}
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
 		{
 			transform.Rotate(0, 0, 90 * Time.deltaTime);
