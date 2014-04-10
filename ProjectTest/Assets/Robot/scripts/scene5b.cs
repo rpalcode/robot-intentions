@@ -92,6 +92,8 @@ public class scene5b : MonoBehaviour {
 				one.SetActive(true);
 				two.SetActive(false);
 				three.SetActive(false);
+
+
 			}
 			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
 			{
