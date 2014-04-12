@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
+
 
 public class optionalpaths : MonoBehaviour {
 	public GameObject red;
@@ -9,12 +11,21 @@ public class optionalpaths : MonoBehaviour {
 	public int path=0;
 	public Camera camera01;
 	public int pause;
-   
+
+	int r=0; int b=0; int g=0;
+
+	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
+	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
+	public System.TimeSpan deltaDate1;
+
+	public GameObject holo;
+
 	void Start () {
 		red.SetActive(false);
 		blue.SetActive(false);
 		green.SetActive(false);
 		map.SetActive(false);
+		holo.SetActive(false);
 		Time.timeScale=0;
 	}
 
@@ -26,7 +37,7 @@ public class optionalpaths : MonoBehaviour {
 		{
 			camera01.enabled = false;
 			pause = 1;
-			
+			date1 = System.DateTime.Now;
 		}
 		if(pause==1)
 		{
@@ -36,19 +47,60 @@ public class optionalpaths : MonoBehaviour {
 			
 			if(GUI.Button(new Rect(150,400,100,50), "left")) 
 			{
-				Application.LoadLevel(16);
-				
+				date2 = System.DateTime.Now;
+				deltaDate1 = (date2-date1);
+				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
+
+				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+				{
+					writer.WriteLine("initial longterm path select");
+					writer.WriteLine("left " + deltaDate1);
+					writer.WriteLine(" ");
+				}
+
+				if(r==1)
+				{
+					Application.LoadLevel(16);
+				}
+				if(b==1)
+				{
+					Application.LoadLevel(18);
+				}
+				if(g==1)
+				{
+					Application.LoadLevel(17);
+				}
 			}
 			if(GUI.Button(new Rect(250,400,100,50), "forward")) 
 			{
-				Application.LoadLevel(17);
-
+				if(r==1)
+				{
+					Application.LoadLevel(16);
+				}
+				if(b==1)
+				{
+					Application.LoadLevel(18);
+				}
+				if(g==1)
+				{
+					Application.LoadLevel(17);
+				}
 			}
 			
 			if(GUI.Button(new Rect(350,400,100,50), "right")) 
 			{
-				Application.LoadLevel(18);
-
+				if(r==1)
+				{
+					Application.LoadLevel(16);
+				}
+				if(b==1)
+				{
+					Application.LoadLevel(18);
+				}
+				if(g==1)
+				{
+					Application.LoadLevel(17);
+				}
 			}
 			/*
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
@@ -134,12 +186,15 @@ public class optionalpaths : MonoBehaviour {
 		if (Input.GetKeyDown("e") || Input.GetKeyDown("d") || Input.GetKeyDown("c"))
 		{
 			path=1;
+			holo.SetActive(true);
+
 		}
 		if(path==1)
 		{
 			if(choice==1)
 			{
 			red.SetActive(true);
+			r=1;
 			blue.SetActive(false);
 			green.SetActive(false);
 			map.SetActive(false);
@@ -158,6 +213,7 @@ public class optionalpaths : MonoBehaviour {
 				red.SetActive(false);
 				blue.SetActive(false);
 				green.SetActive(true);
+				g=1;
 				map.SetActive(false);
 				Time.timeScale=1;
 
@@ -173,6 +229,7 @@ public class optionalpaths : MonoBehaviour {
 				red.SetActive(false);
 				green.SetActive(false);
 				blue.SetActive(true);
+				b=1;
 				map.SetActive(false);
 				Time.timeScale=1;
 
