@@ -134,12 +134,12 @@ public class scene5b : MonoBehaviour {
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5)
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13)
 		{
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
-		}
-		if (Time.timeSinceLevelLoad>=13.5)
+		} 
+		if (Time.timeSinceLevelLoad>=18)
 		{
 			if(Application.loadedLevel == 9)
 			{
@@ -154,6 +154,17 @@ public class scene5b : MonoBehaviour {
 			}
 			
 			if(Application.loadedLevel == 8)
+			{
+				using (StreamWriter writer = new StreamWriter("midpathmidarrowfloor.txt"))
+				{
+					writer.WriteLine("mid-term view without map on screen");
+					writer.WriteLine(res1 + " " + deltaDate1);
+					writer.WriteLine(res2 + " " + deltaDate2);
+					writer.WriteLine(res3 + " " + deltaDate3);
+					writer.WriteLine(" ");
+				}
+			}
+			if(Application.loadedLevel == 17)
 			{
 				using (StreamWriter writer = new StreamWriter("midpathmidarrowfloor.txt"))
 				{

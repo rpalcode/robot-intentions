@@ -134,22 +134,23 @@ public class scene6b : MonoBehaviour {
         }
 		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
         {
-            transform.Rotate(0, 0, -45 * Time.deltaTime);
+            transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
+		/*
 		if (Time.timeSinceLevelLoad > 16 && Time.timeSinceLevelLoad < 17)
         {
-            transform.Rotate(0, 0, -45 * Time.deltaTime);
+            transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
 
 		if (Time.timeSinceLevelLoad > 20 && Time.timeSinceLevelLoad < 21)
 		{
-			transform.Rotate(0, 0, -45 * Time.deltaTime);
+			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		
-		if (Time.timeSinceLevelLoad >= 20.5)
+		*/ 
+		if (Time.timeSinceLevelLoad >= 23)
         {
 			if(Application.loadedLevel == 13)
 			{
@@ -175,6 +176,17 @@ public class scene6b : MonoBehaviour {
 				}
 			}
 
+			if(Application.loadedLevel == 18)
+			{
+				using (StreamWriter writer = new StreamWriter("rightroboteye.txt"))
+				{
+					writer.WriteLine("mid-term robot's eye view without map on screen");
+					writer.WriteLine(res1 + " " + deltaDate1);
+					writer.WriteLine(res2 + " " + deltaDate2);
+					writer.WriteLine(res3 + " " + deltaDate3);
+					writer.WriteLine(" ");
+				}
+			}
             Application.LoadLevel(2);
         }
     }

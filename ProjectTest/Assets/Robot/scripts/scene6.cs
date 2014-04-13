@@ -93,22 +93,24 @@ public class scene6 : MonoBehaviour {
         }
 		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
         {
-            transform.Rotate(0, 0, -45 * Time.deltaTime);
+            transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
+		/*
 		if (Time.timeSinceLevelLoad > 16 && Time.timeSinceLevelLoad < 17)
         {
-            transform.Rotate(0, 0, -45 * Time.deltaTime);
+			UnityEngine.Debug.Log("TURNING RIGHT");
+            transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
 
-		if (Time.timeSinceLevelLoad > 20 && Time.timeSinceLevelLoad < 21)
+	 if (Time.timeSinceLevelLoad > 20 && Time.timeSinceLevelLoad < 21)
 		{
-			transform.Rotate(0, 0, -45 * Time.deltaTime);
+			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		
-		if (Time.timeSinceLevelLoad >= 20.5)
+		*/
+		if (Time.timeSinceLevelLoad >= 20)
         {
 			if(Application.loadedLevel == 15)
 			{

@@ -1,5 +1,5 @@
 mid-term view with arrow on floor
-forward 00:00:00
-right 00:00:00
-right 00:00:00
+forward 00:00:04.4441810
+forward 00:00:01.6472490
+right 00:00:07.0987430
  

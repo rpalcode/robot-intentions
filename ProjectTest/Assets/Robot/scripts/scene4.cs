@@ -83,8 +83,10 @@ public class scene4 : MonoBehaviour {
 
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { leftArrow(); }
 		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad > 8) { upArrow(); }
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 14) { rightArrow(); }
-		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 16.5) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 14.5) { upArrow(); }
+		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 16.25 && Time.timeSinceLevelLoad < 22) { upArrow(); }
 
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
         {
@@ -96,15 +98,15 @@ public class scene4 : MonoBehaviour {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 17)
+		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25)
         {
-            transform.Rotate(0, 0, 45 * Time.deltaTime);
+            transform.Rotate(0, 0, -45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
 
         }
 
 		
-		if (Time.timeSinceLevelLoad >= 16.5)
+		if (Time.timeSinceLevelLoad >= 22)
 		{
 
 			if(Application.loadedLevel == 7)

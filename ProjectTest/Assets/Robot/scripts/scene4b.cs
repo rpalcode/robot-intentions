@@ -126,6 +126,20 @@ public class scene4b : MonoBehaviour {
 				three.SetActive(false);
 				four.SetActive(true);
 			}
+		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25)
+		{
+			one.SetActive(true);
+			two.SetActive(false);
+			three.SetActive(false);
+			four.SetActive(false);
+		}
+		if (Time.timeSinceLevelLoad > 16.25 && Time.timeSinceLevelLoad < 22)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(true);
+			four.SetActive(false);
+		}
 		//}
 		transform.Translate(0, -5 * Time.deltaTime, 0);
 
@@ -139,13 +153,13 @@ public class scene4b : MonoBehaviour {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.5)
+		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25)
         {
-            transform.Rotate(0, 0, 45 * Time.deltaTime);
+            transform.Rotate(0, 0, -45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
 	
-		if (Time.timeSinceLevelLoad >= 16.5)
+		if (Time.timeSinceLevelLoad >= 22)
 		{
 //
 			if(Application.loadedLevel == 5)
@@ -170,6 +184,19 @@ public class scene4b : MonoBehaviour {
 					writer.WriteLine(res3 + " " + deltaDate3);
 					writer.WriteLine(" ");
 				}
+
+				if(Application.loadedLevel == 16)
+				{
+					using (StreamWriter writer = new StreamWriter("leftrobotseye.txt"))
+					{
+						writer.WriteLine("short-term view with arrows on screen");
+						writer.WriteLine(res1 + " " + deltaDate1);
+						writer.WriteLine(res2 + " " + deltaDate2);
+						writer.WriteLine(res3 + " " + deltaDate3);
+						writer.WriteLine(" ");
+					}
+				}
+
 			}
 //
 			Application.LoadLevel(2);
