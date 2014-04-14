@@ -9,9 +9,9 @@ public class scene5b : MonoBehaviour {
     public GameObject robot;
 	public Camera camera01;
 
-	public GameObject one;
+	//public GameObject one;
 	public GameObject two;
-	public GameObject three;
+	//public GameObject three;
 
 	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
 	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
@@ -27,6 +27,39 @@ public class scene5b : MonoBehaviour {
 	public int pause=0;
 	public string res1, res2, res3;
 
+	void leftArrow()
+    {
+        straight.SetActive(false);
+        left.SetActive(true);
+        right.SetActive(false);
+		two.SetActive(false);
+
+    }
+
+    void upArrow()
+    {
+        straight.SetActive(true);
+        left.SetActive(false);
+        right.SetActive(false);
+		two.SetActive(false);
+
+    }
+
+    void rightArrow()
+    {
+        straight.SetActive(false);
+        left.SetActive(false);
+        right.SetActive(true);
+		two.SetActive(false);
+    }
+
+	void midArrow()
+	{
+		straight.SetActive(false);
+		left.SetActive(false);
+		right.SetActive(false);
+		two.SetActive(true);
+	}
 
 	void StartSide()
 	{
@@ -34,9 +67,7 @@ public class scene5b : MonoBehaviour {
 		left.SetActive(false);
 		right.SetActive(false);
 
-		one.SetActive(false);
 		two.SetActive(false);
-		three.SetActive(false);
 	}
 
 
@@ -66,7 +97,7 @@ public class scene5b : MonoBehaviour {
 			stop2=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 12.8 && Time.timeSinceLevelLoad < 12.9) && stop3==0)
+		if ((Time.timeSinceLevelLoad > 13.8 && Time.timeSinceLevelLoad < 13.9) && stop3==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -80,45 +111,12 @@ public class scene5b : MonoBehaviour {
 
 		//if(Application.loadedLevel == 8)
 		//{
-			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 2)
-			{
-				one.SetActive(true);
-				two.SetActive(false);
-				three.SetActive(false);
-			}
-
-			if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
-			{
-				one.SetActive(true);
-				two.SetActive(false);
-				three.SetActive(false);
-
-
-			}
-			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
-			{
-				one.SetActive(true);
-				two.SetActive(false);
-				three.SetActive(false);
-			}
-			if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 9)
-			{
-				one.SetActive(false);
-				two.SetActive(true);
-				three.SetActive(false);
-			}
-			if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 11)
-			{
-				one.SetActive(false);
-				two.SetActive(true);
-				three.SetActive(false);
-			}
-			if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5)
-			{
-				one.SetActive(false);
-				two.SetActive(false);
-				three.SetActive(true);
-			}
+		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 2) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5) { upArrow(); }
+		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 12){ midArrow ();} 
+		//if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 12) {  midArrow(); }
+		if (Time.timeSinceLevelLoad > 12 && Time.timeSinceLevelLoad < 18) { upArrow(); }
 		//}
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
 		{
@@ -134,7 +132,7 @@ public class scene5b : MonoBehaviour {
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13)
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5)
 		{
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);

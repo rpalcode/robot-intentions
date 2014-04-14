@@ -103,7 +103,7 @@ public class scene5 : MonoBehaviour {
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13)
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 18)
 		{
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
