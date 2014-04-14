@@ -82,16 +82,15 @@ public class scene6 : MonoBehaviour {
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { rightArrow(); }
-		if (Time.timeSinceLevelLoad > 7 && Time.timeSinceLevelLoad < 11) { leftArrow(); }
-		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 17) { leftArrow(); }
-		if (Time.timeSinceLevelLoad > 19 && Time.timeSinceLevelLoad < 21) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 10.5) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 10.5 && Time.timeSinceLevelLoad < 21) { upArrow(); }
 
 		
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
         {
             transform.Rotate(0, 0, 90 * Time.deltaTime);
         }
-		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
+		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 10.5)
         {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);

@@ -132,7 +132,7 @@ public class scene6b : MonoBehaviour {
         {
             transform.Rotate(0, 0, 90 * Time.deltaTime);
         }
-		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
+		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 10.5)
         {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
@@ -150,7 +150,7 @@ public class scene6b : MonoBehaviour {
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
 		*/ 
-		if (Time.timeSinceLevelLoad >= 23)
+		if (Time.timeSinceLevelLoad >= 20)
         {
 			if(Application.loadedLevel == 13)
 			{
