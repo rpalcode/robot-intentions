@@ -7,7 +7,7 @@ public class optionalpaths : MonoBehaviour {
 	public GameObject red;
 	public GameObject blue;
 	public GameObject green;
-	public GameObject map;
+	//public GameObject map;
 	public int path=0;
 	public Camera camera01;
 	public int pause;
@@ -24,7 +24,7 @@ public class optionalpaths : MonoBehaviour {
 		red.SetActive(false);
 		blue.SetActive(false);
 		green.SetActive(false);
-		map.SetActive(false);
+		//map.SetActive(false);
 		holo.SetActive(false);
 		Time.timeScale=0;
 	}
@@ -197,7 +197,7 @@ public class optionalpaths : MonoBehaviour {
 			r=1;
 			blue.SetActive(false);
 			green.SetActive(false);
-			map.SetActive(false);
+			//map.SetActive(false);
 			Time.timeScale=1;
 
 			if(Time.timeSinceLevelLoad>3)
@@ -214,7 +214,7 @@ public class optionalpaths : MonoBehaviour {
 				blue.SetActive(false);
 				green.SetActive(true);
 				g=1;
-				map.SetActive(false);
+				//map.SetActive(false);
 				Time.timeScale=1;
 
 				if(Time.timeSinceLevelLoad>3)
@@ -230,7 +230,7 @@ public class optionalpaths : MonoBehaviour {
 				green.SetActive(false);
 				blue.SetActive(true);
 				b=1;
-				map.SetActive(false);
+				//map.SetActive(false);
 				Time.timeScale=1;
 
 				if(Time.timeSinceLevelLoad>3)
