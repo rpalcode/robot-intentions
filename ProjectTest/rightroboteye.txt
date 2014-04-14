@@ -1,0 +1,5 @@
+mid-term robot's eye view without map on screen
+right 00:00:01.2751460
+right 00:00:01.1086040
+right 00:00:01.8605090
+ 
