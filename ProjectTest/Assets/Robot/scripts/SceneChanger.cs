@@ -75,5 +75,9 @@ public class SceneChanger : MonoBehaviour {
 		{
 			Application.LoadLevel(15);
 		}
+		if (Input.GetKeyUp("z"))
+		{
+			Application.LoadLevel(19);
+		}
 	}
 }

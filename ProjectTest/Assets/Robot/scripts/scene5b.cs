@@ -115,7 +115,6 @@ public class scene5b : MonoBehaviour {
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { leftArrow(); }
 		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5) { upArrow(); }
 		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 12){ midArrow ();} 
-		//if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 12) {  midArrow(); }
 		if (Time.timeSinceLevelLoad > 12 && Time.timeSinceLevelLoad < 18) { upArrow(); }
 		//}
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
@@ -241,7 +240,7 @@ public class scene5b : MonoBehaviour {
 				}
 				choice=1;
 			}
-/*
+
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
@@ -259,7 +258,7 @@ public class scene5b : MonoBehaviour {
 					res3 = "left";
 				}
 				choice=1;
-
+				
 			}
 			if(GUI.Button(new Rect(250+500,400,100,50), "forward")) 
 			{
@@ -294,7 +293,7 @@ public class scene5b : MonoBehaviour {
 				}
 				choice=1;
 			}
-*/
+
 			if(choice==1)
 			{
 				date2 = System.DateTime.Now;

@@ -42,7 +42,6 @@ public class optionalpaths : MonoBehaviour {
 		if(pause==1)
 		{
 
-			
 			GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150,400,100,50), "left")) 
@@ -102,60 +101,67 @@ public class optionalpaths : MonoBehaviour {
 					Application.LoadLevel(17);
 				}
 			}
-			/*
-			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
+
+		GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
 			{
-				if(stop1 == 1 && stop2==0 && stop3==0) 
-				{
-					res1 = "left";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==0)
-				{
-					res2 = "left";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==1)
-				{
-					res3 = "left";
-				}
-				choice=1;
+				date2 = System.DateTime.Now;
+				deltaDate1 = (date2-date1);
+				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
 
+				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+				{
+					writer.WriteLine("initial longterm path select");
+					writer.WriteLine("left " + deltaDate1);
+					writer.WriteLine(" ");
+				}
+
+				if(r==1)
+				{
+					Application.LoadLevel(16);
+				}
+				if(b==1)
+				{
+					Application.LoadLevel(18);
+				}
+				if(g==1)
+				{
+					Application.LoadLevel(17);
+				}
 			}
 			if(GUI.Button(new Rect(250+500,400,100,50), "forward")) 
 			{
-				if(stop1 == 1 && stop2==0 && stop3==0) 
+				if(r==1)
 				{
-					res1 = "forward";
+					Application.LoadLevel(16);
 				}
-				if(stop1 == 1 && stop2==1 && stop3==0)
+				if(b==1)
 				{
-					res2 = "forward";
+					Application.LoadLevel(18);
 				}
-				if(stop1 == 1 && stop2==1 && stop3==1)
+				if(g==1)
 				{
-					res3 = "forward";
+					Application.LoadLevel(17);
 				}
-				choice=1;
 			}
 			
 			if(GUI.Button(new Rect(350+500,400,100,50), "right")) 
 			{
-				if(stop1 == 1 && stop2==0 && stop3==0) 
+				if(r==1)
 				{
-					res1 = "right";
+					Application.LoadLevel(16);
 				}
-				if(stop1 == 1 && stop2==1 && stop3==0)
+				if(b==1)
 				{
-					res2 = "right";
+					Application.LoadLevel(18);
 				}
-				if(stop1 == 1 && stop2==1 && stop3==1)
+				if(g==1)
 				{
-					res3 = "right";
+					Application.LoadLevel(17);
 				}
-				choice=1;
 			}
-*/
+
 
 				
 
@@ -197,7 +203,6 @@ public class optionalpaths : MonoBehaviour {
 			r=1;
 			blue.SetActive(false);
 			green.SetActive(false);
-			//map.SetActive(false);
 			Time.timeScale=1;
 
 			if(Time.timeSinceLevelLoad>3)
@@ -214,7 +219,6 @@ public class optionalpaths : MonoBehaviour {
 				blue.SetActive(false);
 				green.SetActive(true);
 				g=1;
-				//map.SetActive(false);
 				Time.timeScale=1;
 
 				if(Time.timeSinceLevelLoad>3)
@@ -230,7 +234,6 @@ public class optionalpaths : MonoBehaviour {
 				green.SetActive(false);
 				blue.SetActive(true);
 				b=1;
-				//map.SetActive(false);
 				Time.timeScale=1;
 
 				if(Time.timeSinceLevelLoad>3)
@@ -244,19 +247,7 @@ public class optionalpaths : MonoBehaviour {
 
 		}
 
-		/* if (Input.GetKeyUp("w"))
-		{
-			red.SetActive(false);
-			green.SetActive(false);
-			blue.SetActive(false);
-			map.SetActive(true);
-			Time.timeScale=1;
-			if(Time.timeSinceLevelLoad>5)
-			{
-				camera01.enabled = false;
-			}
-		}
-*/ 
+ 
 		//load levels
 
         if (Input.GetKeyDown("9"))

@@ -40,7 +40,7 @@ public class scene6b : MonoBehaviour {
 
     private void option3()
     {
-		UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
+		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
 		
 		if ((Time.timeSinceLevelLoad > 2.0 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
@@ -255,10 +255,10 @@ public class scene6b : MonoBehaviour {
 				}
 				choice=1;
 			}
-			/*
+
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
-			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
+			if(GUI.Button(new Rect(150,400,100,50), "left")) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -273,7 +273,7 @@ public class scene6b : MonoBehaviour {
 					res3 = "left";
 				}
 				choice=1;
-
+				
 			}
 			if(GUI.Button(new Rect(250+500,400,100,50), "forward")) 
 			{
@@ -308,7 +308,7 @@ public class scene6b : MonoBehaviour {
 				}
 				choice=1;
 			}
-*/
+
 			if(choice==1)
 			{
 				date2 = System.DateTime.Now;
