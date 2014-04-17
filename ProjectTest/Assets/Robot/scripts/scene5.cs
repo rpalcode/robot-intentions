@@ -25,6 +25,11 @@ public class scene5 : MonoBehaviour {
 	public int pause=0;
 	public string res1, res2, res3;
 
+	public string conf1 = "change this to a number ranging from 1-7";
+	public string conf2 = "change this to a number ranging from 1-7";
+	public string conf3 = "change this to a number ranging from 1-7";
+	
+
     void leftArrow()
     {
         straight.SetActive(false);
@@ -115,9 +120,9 @@ public class scene5 : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter("midpathshortarrowchest.txt"))
 				{
 					writer.WriteLine("mid-term view with arrow on screen");
-					writer.WriteLine(res1 + " " + deltaDate1);
-					writer.WriteLine(res2 + " " + deltaDate2);
-					writer.WriteLine(res3 + " " + deltaDate3);
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3);
 					writer.WriteLine(" ");
 				}
 			}
@@ -127,10 +132,10 @@ public class scene5 : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter("midpathshortarrowfloor.txt"))
 				{
 					writer.WriteLine("mid-term view with arrow on floor");
-					writer.WriteLine(res1 + " " + deltaDate1);
-					writer.WriteLine(res2 + " " + deltaDate2);
-					writer.WriteLine(res3 + " " + deltaDate3);
-					writer.WriteLine(" ");
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3);
+					writer.WriteLine(" ");;
 				}
 			}
 
@@ -150,7 +155,30 @@ public class scene5 : MonoBehaviour {
 			int choice=0;
 			
 			GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
+			//
+			if(stop1 == 1 && stop2==0 && stop3==0) 
+			{
+				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				conf1 = GUI.TextField(new Rect(150,    500, 300, 25), conf1, 250);
+				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
+			}
+			if(stop1 == 1 && stop2==1 && stop3==0)
+			{
+				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				conf2 = GUI.TextField(new Rect(150,    500, 300, 25), conf2, 250);
+				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
+			}
+			if(stop1 == 1 && stop2==1 && stop3==1)
+			{
+				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				conf3 = GUI.TextField(new Rect(150,    500, 300, 25), conf3, 250);
+				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
+			}
 			
+			//
 			if(GUI.Button(new Rect(150,400,100,50), "left")) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
