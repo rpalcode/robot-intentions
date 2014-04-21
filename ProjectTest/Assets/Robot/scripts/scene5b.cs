@@ -144,7 +144,7 @@ public class scene5b : MonoBehaviour {
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		} 
-		if (Time.timeSinceLevelLoad>=18)
+		if (Time.timeSinceLevelLoad>=15)
 		{
 			if(Application.loadedLevel == 9)
 			{
@@ -200,23 +200,23 @@ public class scene5b : MonoBehaviour {
 			//
 			if(stop1 == 1 && stop2==0 && stop3==0) 
 			{
-				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf1 = GUI.TextField(new Rect(150,    500, 300, 25), conf1, 250);
-				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
-				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf2 = GUI.TextField(new Rect(150,    500, 300, 25), conf2, 250);
 				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
 				conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
-				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf3 = GUI.TextField(new Rect(150,    500, 300, 25), conf3, 250);
-				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
+				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
 			}
 			
