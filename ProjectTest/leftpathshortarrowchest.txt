@@ -1,0 +1,5 @@
+short-term view with arrows on screen
+Picked forward with a confidence of   with a time of 00:00:06.0543463
+Picked forward with a confidence of   with a time of 00:00:02.0481172
+Picked forward with a confidence of   with a time of 00:00:02.1491229
+ 

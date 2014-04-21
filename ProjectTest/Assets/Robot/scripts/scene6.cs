@@ -7,6 +7,7 @@ public class scene6 : MonoBehaviour {
     public GameObject right;
     public GameObject robot;
 	public Camera camera01;
+	public GameObject rift;
 
 	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
 	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
@@ -61,7 +62,7 @@ public class scene6 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			camera01.enabled = false;
+			rift.SetActive(false);
 			stop1=1;
 		}
 		
@@ -70,7 +71,7 @@ public class scene6 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			camera01.enabled = false;
+			rift.SetActive(false);
 			stop2=1;
 		}
 		
@@ -79,7 +80,7 @@ public class scene6 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			camera01.enabled = false;
+			rift.SetActive(false);
 			stop3=1;
 		}
 
@@ -162,25 +163,25 @@ public class scene6 : MonoBehaviour {
 			{
 				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf1 = GUI.TextField(new Rect(150,    500, 300, 25), conf1, 250);
-				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
+				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				//conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
 				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf2 = GUI.TextField(new Rect(150,    500, 300, 25), conf2, 250);
-				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
+				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				//conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
 				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf3 = GUI.TextField(new Rect(150,    500, 300, 25), conf3, 250);
-				GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
+				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				//conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
 			}
 			
-			//
+
 			if(GUI.Button(new Rect(150,400,100,50), "left")) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
@@ -231,7 +232,7 @@ public class scene6 : MonoBehaviour {
 				}
 				choice=1;
 			}
-
+/*
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
@@ -284,7 +285,7 @@ public class scene6 : MonoBehaviour {
 				}
 				choice=1;
 			}
-
+*/
 			if(choice==1)
 			{
 				date2 = System.DateTime.Now;

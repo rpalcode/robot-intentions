@@ -8,6 +8,8 @@ public class optionalpaths : MonoBehaviour {
 	public GameObject blue;
 	public GameObject green;
 	//public GameObject map;
+	public GameObject rift;
+
 	public int path=0;
 	public Camera camera01;
 	public int pause;
@@ -35,7 +37,9 @@ public class optionalpaths : MonoBehaviour {
 	{
 		if(Time.timeSinceLevelLoad>3)
 		{
-			camera01.enabled = false;
+			//camera01.enabled = false;
+			rift.SetActive(false);
+
 			pause = 1;
 			date1 = System.DateTime.Now;
 		}
@@ -121,7 +125,7 @@ public class optionalpaths : MonoBehaviour {
 					Application.LoadLevel(17);
 				}
 			}
-
+/*
 		GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150+500,400,100,50), "1")) 
@@ -204,7 +208,7 @@ public class optionalpaths : MonoBehaviour {
 				}
 			}
 
-
+*/
 				
 
 			
