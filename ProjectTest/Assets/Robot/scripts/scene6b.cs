@@ -27,9 +27,9 @@ public class scene6b : MonoBehaviour {
 	public string res1, res2, res3;
 
 	
-	public string conf1 = "change this to a number ranging from 1-7";
-	public string conf2 = "change this to a number ranging from 1-7";
-	public string conf3 = "change this to a number ranging from 1-7";
+	public string conf1 = " ";
+	public string conf2 = " ";
+	public string conf3 = " ";
 	
 
     void StartSide()
@@ -56,7 +56,7 @@ public class scene6b : MonoBehaviour {
 			stop1=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 4.8 && Time.timeSinceLevelLoad < 4.9) && stop2==0)
+		if ((Time.timeSinceLevelLoad > 5.8 && Time.timeSinceLevelLoad < 5.9) && stop2==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -82,29 +82,38 @@ public class scene6b : MonoBehaviour {
 
 		//if(Application.loadedLevel == 12)
 		//{
-			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
+			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5)
 			{
 				one.SetActive(true);
 				two.SetActive(false);
 				three.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
+			if (Time.timeSinceLevelLoad > 1.5 && Time.timeSinceLevelLoad < 3.6)
 			{
-				one.SetActive(true);
+				one.SetActive(false);
 				two.SetActive(false);
 				three.SetActive(false);
+				right.SetActive(true);
 			}
-			if (Time.timeSinceLevelLoad > 3.6 && Time.timeSinceLevelLoad < 10)
+			if (Time.timeSinceLevelLoad > 3.6 && Time.timeSinceLevelLoad < 5)
 			{
 				one.SetActive(false);
 				two.SetActive(true);
 				three.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 11)
+			if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 9)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
-				three.SetActive(true);
+				three.SetActive(false);
+				straight.SetActive(true);
+			}
+			if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 10.5)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(false);
+				right.SetActive(true);
 			}
 			if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 16)
 			{

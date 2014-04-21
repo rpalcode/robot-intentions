@@ -1,5 +1,5 @@
 mid-term view with map on screen
-left 00:00:02.2724230
-right 00:00:01.2914630
-right 00:00:01.4078240
+Picked left with a confidence of change this to a number ranging from 1-7 with a time of 00:00:02.0136700
+Picked left with a confidence of change this to a number ranging from 1-7 with a time of 00:00:02.8658230
+Picked right with a confidence of change this to a number ranging from 1-7 with a time of 00:00:01.7928590
  

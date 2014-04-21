@@ -23,9 +23,9 @@ public class scene6 : MonoBehaviour {
 	public string res1, res2, res3;
 
 	
-	public string conf1 = "change this to a number ranging from 1-7";
-	public string conf2 = "change this to a number ranging from 1-7";
-	public string conf3 = "change this to a number ranging from 1-7";
+	public string conf1 = " ";
+	public string conf2 = " ";
+	public string conf3 = " ";
 	
 
     void leftArrow()

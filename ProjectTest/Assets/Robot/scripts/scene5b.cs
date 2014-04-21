@@ -27,9 +27,9 @@ public class scene5b : MonoBehaviour {
 	public int pause=0;
 	public string res1, res2, res3;
 	
-	public string conf1 = "change this to a number ranging from 1-7";
-	public string conf2 = "change this to a number ranging from 1-7";
-	public string conf3 = "change this to a number ranging from 1-7";
+	public string conf1 = " ";
+	public string conf2 = " ";
+	public string conf3 = " ";
 	
 
 
@@ -94,7 +94,7 @@ public class scene5b : MonoBehaviour {
 			stop1=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 6.3 && Time.timeSinceLevelLoad < 6.4) && stop2==0)
+		if ((Time.timeSinceLevelLoad > 8.3 && Time.timeSinceLevelLoad < 8.4) && stop2==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -120,7 +120,9 @@ public class scene5b : MonoBehaviour {
 		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 2) { rightArrow(); }
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { leftArrow(); }
 		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5) { upArrow(); }
-		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 12){ midArrow ();} 
+		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 7){ midArrow(); } 
+		if (Time.timeSinceLevelLoad > 7 && Time.timeSinceLevelLoad < 9){ leftArrow(); } 
+		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 12){ rightArrow(); } 
 		if (Time.timeSinceLevelLoad > 12 && Time.timeSinceLevelLoad < 18) { upArrow(); }
 		//}
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)

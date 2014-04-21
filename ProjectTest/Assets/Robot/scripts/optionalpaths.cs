@@ -104,7 +104,7 @@ public class optionalpaths : MonoBehaviour {
 
 		GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
-			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
+			if(GUI.Button(new Rect(150+500,400,100,50), "1")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
@@ -113,7 +113,7 @@ public class optionalpaths : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 				{
 					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("left " + deltaDate1);
+					writer.WriteLine("1 " + deltaDate1);
 					writer.WriteLine(" ");
 				}
 
@@ -130,8 +130,19 @@ public class optionalpaths : MonoBehaviour {
 					Application.LoadLevel(17);
 				}
 			}
-			if(GUI.Button(new Rect(250+500,400,100,50), "forward")) 
+			if(GUI.Button(new Rect(250+500,400,100,50), "2")) 
 			{
+				date2 = System.DateTime.Now;
+				deltaDate1 = (date2-date1);
+				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
+				
+				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+				{
+					writer.WriteLine("initial longterm path select");
+					writer.WriteLine("2 " + deltaDate1);
+					writer.WriteLine(" ");
+				}
+
 				if(r==1)
 				{
 					Application.LoadLevel(16);
@@ -146,8 +157,19 @@ public class optionalpaths : MonoBehaviour {
 				}
 			}
 			
-			if(GUI.Button(new Rect(350+500,400,100,50), "right")) 
+			if(GUI.Button(new Rect(350+500,400,100,50), "3")) 
 			{
+				date2 = System.DateTime.Now;
+				deltaDate1 = (date2-date1);
+				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
+				
+				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+				{
+					writer.WriteLine("initial longterm path select");
+					writer.WriteLine("3 " + deltaDate1);
+					writer.WriteLine(" ");
+				}
+
 				if(r==1)
 				{
 					Application.LoadLevel(16);

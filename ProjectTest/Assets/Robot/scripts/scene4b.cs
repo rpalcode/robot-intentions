@@ -33,9 +33,9 @@ public class scene4b : MonoBehaviour {
 	public string res1, res2, res3;
 
 	//
-	public string conf1 = "change this to a number ranging from 1-7";
-	public string conf2 = "change this to a number ranging from 1-7";
-	public string conf3 = "change this to a number ranging from 1-7";
+	public string conf1 = " ";
+	public string conf2 = " ";
+	public string conf3 = " ";
 	//
 
 	void StartSide()
@@ -43,6 +43,42 @@ public class scene4b : MonoBehaviour {
 		straight.SetActive(false);
 		left.SetActive(false);
 		right.SetActive(false);
+
+		one.SetActive(false);
+		two.SetActive(false);
+		three.SetActive(false);
+		four.SetActive(false);
+	}
+
+	void leftArrow()
+	{
+		straight.SetActive(false);
+		left.SetActive(true);
+		right.SetActive(false);
+
+		one.SetActive(false);
+		two.SetActive(false);
+		three.SetActive(false);
+		four.SetActive(false);
+	}
+	
+	void upArrow()
+	{
+		straight.SetActive(true);
+		left.SetActive(false);
+		right.SetActive(false);
+
+		one.SetActive(false);
+		two.SetActive(false);
+		three.SetActive(false);
+		four.SetActive(false);
+	}
+	
+	void rightArrow()
+	{
+		straight.SetActive(false);
+		left.SetActive(false);
+		right.SetActive(true);
 
 		one.SetActive(false);
 		two.SetActive(false);
@@ -68,7 +104,7 @@ public class scene4b : MonoBehaviour {
 			stop1=1;
 		}
 
-		if ((Time.timeSinceLevelLoad > 4.4 && Time.timeSinceLevelLoad < 4.5) && stop2==0)
+		if ((Time.timeSinceLevelLoad > 6.4 && Time.timeSinceLevelLoad < 6.5) && stop2==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -88,12 +124,20 @@ public class scene4b : MonoBehaviour {
 		//
 		//if(Application.loadedLevel == 4)
 		//{
-			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3)
+			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5)
 			{
 				one.SetActive(true);
 				two.SetActive(false);
 				three.SetActive(false);
 				four.SetActive(false);
+			}
+			if (Time.timeSinceLevelLoad > 1.5 && Time.timeSinceLevelLoad < 3)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(false);
+				four.SetActive(false);
+				left.SetActive(true);
 			}
 			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
 			{
@@ -102,19 +146,36 @@ public class scene4b : MonoBehaviour {
 				three.SetActive(false);
 				four.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 13)
+			if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5)
 			{
 				one.SetActive(false);
 				two.SetActive(true);
 				three.SetActive(false);
 				four.SetActive(false);
 			}
+			if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 11)
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(false);
+				four.SetActive(false);
+				straight.SetActive(true);
+			}
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(false);
+			four.SetActive(false);
+			right.SetActive(true);
+		}
 			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
-				three.SetActive(true);
+				three.SetActive(false);
 				four.SetActive(false);
+				right.SetActive(true);
 			}
 			if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15)
 			{
@@ -123,27 +184,38 @@ public class scene4b : MonoBehaviour {
 				three.SetActive(true);
 				four.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.5)
+			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 15.5)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
 				three.SetActive(false);
 				four.SetActive(true);
 			}
-		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25)
+
+		if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 16.25)
 		{
-			one.SetActive(true);
+			one.SetActive(false);
 			two.SetActive(false);
 			three.SetActive(false);
 			four.SetActive(false);
+			right.SetActive(true);
 		}
-		if (Time.timeSinceLevelLoad > 16.25 && Time.timeSinceLevelLoad < 22)
+		if (Time.timeSinceLevelLoad > 16.25 && Time.timeSinceLevelLoad < 17.5)
 		{
 			one.SetActive(false);
 			two.SetActive(false);
 			three.SetActive(true);
 			four.SetActive(false);
+		}		
+		if (Time.timeSinceLevelLoad > 17.5 && Time.timeSinceLevelLoad < 22)
+		{
+			straight.SetActive(true);
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(false);
+			four.SetActive(false);
 		}
+
 		//}
 		transform.Translate(0, -5 * Time.deltaTime, 0);
 
