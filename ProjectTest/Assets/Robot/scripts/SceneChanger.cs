@@ -3,6 +3,30 @@ using System.Collections;
 
 public class SceneChanger : MonoBehaviour {
 
+	//GUI IS AN ANDROID FUNCTION IN THIS CASE 
+	/*
+	void OnGUI()
+	{
+		if(GUI.Button(new Rect(50,50,100,50), "RESET")) 
+		{
+			Application.LoadLevel(2);
+		}
+		if(GUI.Button(new Rect(150,50,100,50), "1")) 
+		{
+			Application.LoadLevel(16);
+		}
+		if(GUI.Button(new Rect(250,50,100,50), "2")) 
+		{
+			Application.LoadLevel(17);
+		}
+		if(GUI.Button(new Rect(350,50,100,50), "3")) 
+		{
+			Application.LoadLevel(18);
+		}
+	}
+*/
+
+
 	// Use this for initialization
 	void Start () {
 	
