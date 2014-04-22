@@ -118,10 +118,10 @@ public class scene5b : MonoBehaviour {
 
 		//if(Application.loadedLevel == 8)
 		//{
-		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 2) { rightArrow(); }
-		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { leftArrow(); }
-		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5) { upArrow(); }
-		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 7){ midArrow(); } 
+		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3) { rightArrow(); }
+		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 6) { upArrow(); }
+		if (Time.timeSinceLevelLoad > 6 && Time.timeSinceLevelLoad < 7){ midArrow(); } 
 		if (Time.timeSinceLevelLoad > 7 && Time.timeSinceLevelLoad < 9){ leftArrow(); } 
 		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 12){ rightArrow(); } 
 		if (Time.timeSinceLevelLoad > 12 && Time.timeSinceLevelLoad < 18) { upArrow(); }
@@ -272,6 +272,13 @@ public class scene5b : MonoBehaviour {
 				}
 				choice=1;
 			}
+			int enter = 0;
+			if(enter==0) 
+			{ 
+				if(GUI.Button(new Rect(150, 550, 300, 25), "Enter")) { enter=1; choice=1; } 
+			}
+			//UnityEngine.Debug.Log ("ENTER = " + enter + " and choice = " + choice);
+			
 			/*
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
@@ -326,7 +333,7 @@ public class scene5b : MonoBehaviour {
 				choice=1;
 			}
 */
-			if(choice==1)
+			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
 				UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));

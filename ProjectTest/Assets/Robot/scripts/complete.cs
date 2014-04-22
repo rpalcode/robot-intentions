@@ -16,9 +16,9 @@ public class complete : MonoBehaviour {
 		//GUI.Box(new Rect(150+500,350,300,100), "What did you think of the robot?");
 
 		userResponse = GUI.TextField(new Rect(100,     350, 500, 150), userResponse, 250);
-		userResponse = GUI.TextField(new Rect(100+600, 350, 500, 150), userResponse, 250);
+		//userResponse = GUI.TextField(new Rect(100+600, 350, 500, 150), userResponse, 250);
 		userResponse2 = GUI.TextField(new Rect(100,    500, 500, 150), userResponse2, 250);
-		userResponse2 = GUI.TextField(new Rect(100+600, 500, 500, 150), userResponse2, 250);
+		//userResponse2 = GUI.TextField(new Rect(100+600, 500, 500, 150), userResponse2, 250);
 
 	}
 

@@ -96,7 +96,7 @@ public class scene6 : MonoBehaviour {
         {
             transform.Rotate(0, 0, 90 * Time.deltaTime);
         }
-		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 10.5)
+		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 10.25)
         {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
@@ -232,7 +232,14 @@ public class scene6 : MonoBehaviour {
 				}
 				choice=1;
 			}
-/*
+			int enter = 0;
+			if(enter==0) 
+			{ 
+				if(GUI.Button(new Rect(150, 550, 300, 25), "Enter")) { enter=1; choice=1; } 
+			}
+			//UnityEngine.Debug.Log ("ENTER = " + enter + " and choice = " + choice);
+			
+			/*
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
@@ -286,7 +293,7 @@ public class scene6 : MonoBehaviour {
 				choice=1;
 			}
 */
-			if(choice==1)
+			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
 				UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));

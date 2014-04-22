@@ -230,6 +230,13 @@ public class scene5 : MonoBehaviour {
 				}
 				choice=1;
 			}
+			int enter = 0;
+			if(enter==0) 
+			{ 
+				if(GUI.Button(new Rect(150, 550, 300, 25), "Enter")) { enter=1; choice=1; } 
+			}
+			//UnityEngine.Debug.Log ("ENTER = " + enter + " and choice = " + choice);
+			
 			/*
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
@@ -284,7 +291,7 @@ public class scene5 : MonoBehaviour {
 				choice=1;
 			}
 */
-			if(choice==1)
+			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
 				UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));

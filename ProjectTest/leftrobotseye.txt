@@ -1,5 +1,5 @@
 short-term view with arrows on screen
-Picked left with a confidence of 4 with a time of 00:00:08.7575009
-Picked left with a confidence of 3 with a time of 00:00:19.1230938
-Picked left with a confidence of  with a time of 00:00:11.7866742
+Picked left with a confidence of 9 with a time of 00:00:02.9103610
+Picked left with a confidence of 9 with a time of 00:00:04.6234050
+Picked forward with a confidence of 7 with a time of 00:00:03.3708980
  

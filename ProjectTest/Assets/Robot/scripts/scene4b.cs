@@ -193,30 +193,21 @@ public class scene4b : MonoBehaviour {
 				three.SetActive(false);
 				four.SetActive(true);
 			}
-
-		if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 16.25)
-		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(false);
-			four.SetActive(false);
-			right.SetActive(true);
-		}
-		if (Time.timeSinceLevelLoad > 16.25 && Time.timeSinceLevelLoad < 17.5)
+		if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 22)
 		{
 			one.SetActive(false);
 			two.SetActive(false);
 			three.SetActive(true);
 			four.SetActive(false);
 		}		
-		if (Time.timeSinceLevelLoad > 17.5 && Time.timeSinceLevelLoad < 22)
+		/* if (Time.timeSinceLevelLoad > 17.5 && Time.timeSinceLevelLoad < 22)
 		{
 			straight.SetActive(true);
 			one.SetActive(false);
 			two.SetActive(false);
 			three.SetActive(false);
 			four.SetActive(false);
-		}
+		} */
 
 		//}
 		transform.Translate(0, -5 * Time.deltaTime, 0);
@@ -373,6 +364,13 @@ public class scene4b : MonoBehaviour {
 				}
 				choice=1;
 			}
+			int enter = 0;
+			if(enter==0) 
+			{ 
+				if(GUI.Button(new Rect(150, 550, 300, 25), "Enter")) { enter=1; choice=1; } 
+			}
+			//UnityEngine.Debug.Log ("ENTER = " + enter + " and choice = " + choice);
+
 		/*
 			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
@@ -427,7 +425,7 @@ public class scene4b : MonoBehaviour {
 				choice=1;
 			}
 */
-			if(choice==1)
+			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
 				UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
