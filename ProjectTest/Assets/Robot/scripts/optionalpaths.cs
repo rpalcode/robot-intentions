@@ -238,8 +238,10 @@ public class optionalpaths : MonoBehaviour {
 		if (Input.GetKeyDown("e") || Input.GetKeyDown("d") || Input.GetKeyDown("c"))
 		{
 			path=1;
-			holo.SetActive(true);
-
+			if(Application.loadedLevel != 3)
+			{ 
+				holo.SetActive(true);
+			}
 		}
 		if(path==1)
 		{
@@ -253,7 +255,8 @@ public class optionalpaths : MonoBehaviour {
 
 			if(Time.timeSinceLevelLoad>3)
 			{
-				camera01.enabled = false;
+				//camera01.enabled = false;
+				rift.SetActive(false);
 				pause = 1;
 
 			}
@@ -269,7 +272,8 @@ public class optionalpaths : MonoBehaviour {
 
 				if(Time.timeSinceLevelLoad>3)
 				{
-					camera01.enabled = false;
+					//camera01.enabled = false;
+					rift.SetActive(false);
 					pause = 1;
 				}
 
@@ -284,7 +288,8 @@ public class optionalpaths : MonoBehaviour {
 
 				if(Time.timeSinceLevelLoad>3)
 				{
-					camera01.enabled = false;
+					//camera01.enabled = false;
+					rift.SetActive(false);
 					pause = 1;
 					
 				}
