@@ -307,7 +307,7 @@ public class scene5 : MonoBehaviour {
 				{
 					deltaDate3 = (date2-date1);
 				}
-				camera01.enabled = true;
+				rift.SetActive(false);
 				Time.timeScale =1;
 				pause=0;
 				run ();

@@ -62,7 +62,7 @@ public class scene4 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			rift.SetActive(false);
+			rift.SetActive(true);
 			stop1=1;
 		}
 		
@@ -71,7 +71,7 @@ public class scene4 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			rift.SetActive(false);
+			rift.SetActive(true);
 			stop2=1;
 		}
 		
@@ -80,7 +80,7 @@ public class scene4 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			rift.SetActive(false);
+			rift.SetActive(true);
 			stop3=1;
 		}
 		//
@@ -88,8 +88,8 @@ public class scene4 : MonoBehaviour {
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 4) { leftArrow(); }
 		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad > 8) { upArrow(); }
 		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5) { rightArrow(); }
-		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 14.5) { upArrow(); }
-		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25) { leftArrow(); }
+		if (Time.timeSinceLevelLoad > 13.5 && Time.timeSinceLevelLoad < 14.5) { upArrow(); }
+		if (Time.timeSinceLevelLoad > 14.5 && Time.timeSinceLevelLoad < 16.25) { leftArrow(); }
 		if (Time.timeSinceLevelLoad > 16.25 && Time.timeSinceLevelLoad < 22) { upArrow(); }
 
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
@@ -307,7 +307,7 @@ public class scene4 : MonoBehaviour {
 				{
 					deltaDate3 = (date2-date1);
 				}
-				camera01.enabled = true;
+				rift.SetActive(false);
 				Time.timeScale =1;
 				pause=0;
 				option1 ();

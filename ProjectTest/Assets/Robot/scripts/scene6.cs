@@ -62,7 +62,7 @@ public class scene6 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			rift.SetActive(false);
+			rift.SetActive(true);
 			stop1=1;
 		}
 		
@@ -71,7 +71,7 @@ public class scene6 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			rift.SetActive(false);
+			rift.SetActive(true);
 			stop2=1;
 		}
 		
@@ -80,7 +80,7 @@ public class scene6 : MonoBehaviour {
 			date1 = System.DateTime.Now;
 			pause=1;
 			Time.timeScale =0;
-			rift.SetActive(false);
+			rift.SetActive(true);
 			stop3=1;
 		}
 
@@ -309,7 +309,7 @@ public class scene6 : MonoBehaviour {
 				{
 					deltaDate3 = (date2-date1);
 				}
-				camera01.enabled = true;
+				rift.SetActive(false);
 				Time.timeScale =1;
 				pause=0;
 				option3 ();
