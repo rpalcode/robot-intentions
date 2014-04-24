@@ -1,5 +1,1 @@
-short-term view with arrows on floor
-Picked left with a confidence of   with a time of 00:00:02.7016470
-Picked left with a confidence of   with a time of 00:00:02.6411080
-Picked left with a confidence of   with a time of 00:00:02.6871290
  

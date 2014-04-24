@@ -1,5 +1,5 @@
 mid-term view without map on screen
-forward 00:00:02.3550250
-forward 00:00:02.4856510
-right 00:00:03.4722780
+Picked left with a confidence of 7 with a time of 00:00:08.3053360
+Picked forward with a confidence of 5 with a time of 00:00:04.4130660
+Picked left with a confidence of 7 with a time of 00:00:14.2921710
  

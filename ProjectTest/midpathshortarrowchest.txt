@@ -1,5 +1,1 @@
-mid-term view with arrow on screen
-Picked forward with a confidence of  8 with a time of 00:00:03.2407750
-Picked left with a confidence of  9 with a time of 00:00:01.9963130
-Picked forward with a confidence of  9 with a time of 00:00:03.3241560
  

@@ -1,5 +1,1 @@
-mid-term view without map on screen
-right 00:00:02.4432340
-left 00:00:01.8867140
-left 00:00:01.0305600
  

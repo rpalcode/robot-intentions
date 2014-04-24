@@ -1,9 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Robot/scripts/scene4b.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Robot/scripts/scene4.cs">
     <Files>
-      <File FileName="Assets/Robot/scripts/optionalpaths.cs" Line="261" Column="6" />
-      <File FileName="Assets/Robot/scripts/scene4b.cs" Line="1" Column="1" />
+      <File FileName="Assets/Robot/scripts/scene4b.cs" Line="441" Column="6" />
+      <File FileName="Assets/Robot/scripts/scene5b.cs" Line="352" Column="25" />
+      <File FileName="Assets/Robot/scripts/scene6b.cs" Line="374" Column="1" />
+      <File FileName="Assets/Robot/scripts/scene4.cs" Line="83" Column="17" />
+      <File FileName="Assets/Robot/scripts/scene5.cs" Line="310" Column="25" />
+      <File FileName="Assets/Robot/scripts/scene6.cs" Line="66" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
