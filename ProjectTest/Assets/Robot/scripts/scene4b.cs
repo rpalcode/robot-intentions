@@ -286,34 +286,34 @@ public class scene4b : MonoBehaviour {
 		{
 			int choice=0;
 
-			GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
+			GUI.Box(new Rect(170,250,240,100), "Which way is the robot going to go?\n(From robot's point of view)");
 
 //
 			if(stop1 == 1 && stop2==0 && stop3==0) 
 			{
-				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf1 = GUI.TextField(new Rect(150,    500, 300, 25), conf1, 250);
+				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				conf1 = GUI.TextField(new Rect(170,    400, 240, 25), conf1, 250);
 				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				//conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
-				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf2 = GUI.TextField(new Rect(150,    500, 300, 25), conf2, 250);
+				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				conf2 = GUI.TextField(new Rect(170,    400, 240, 25), conf2, 250);
 				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				//conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
-				GUI.Box(new Rect(150,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf3 = GUI.TextField(new Rect(150,    500, 300, 25), conf3, 250);
+				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				conf3 = GUI.TextField(new Rect(170,    400, 240, 25), conf3, 250);
 				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				//conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
 			}
 
 //
 
-			if(GUI.Button(new Rect(150,400,100,50), "left")) 
+			if(GUI.Button(new Rect(170,300,80,50), "left")) 
 			{
 
 				if(stop1 == 1 && stop2==0 && stop3==0) 
@@ -331,7 +331,7 @@ public class scene4b : MonoBehaviour {
 				choice=1;
 				
 			}
-			if(GUI.Button(new Rect(250,400,100,50), "forward")) 
+			if(GUI.Button(new Rect(250,300,80,50), "forward")) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -348,7 +348,7 @@ public class scene4b : MonoBehaviour {
 				choice=1;
 			}
 			
-			if(GUI.Button(new Rect(350,400,100,50), "right")) 
+			if(GUI.Button(new Rect(330,300,80,50), "right")) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -367,64 +367,11 @@ public class scene4b : MonoBehaviour {
 			int enter = 0;
 			if(enter==0) 
 			{ 
-				if(GUI.Button(new Rect(150, 550, 300, 25), "Enter")) { enter=1; choice=1; } 
+				if(GUI.Button(new Rect(170, 450, 240, 25), "Enter")) { enter=1; choice=1; } 
 			}
 			//UnityEngine.Debug.Log ("ENTER = " + enter + " and choice = " + choice);
 
-		/*
-			GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
-			
-			if(GUI.Button(new Rect(150+500,400,100,50), "left")) 
-			{
-				if(stop1 == 1 && stop2==0 && stop3==0) 
-				{
-					res1 = "left";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==0)
-				{
-					res2 = "left";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==1)
-				{
-					res3 = "left";
-				}
-				choice=1;
-				
-			}
-			if(GUI.Button(new Rect(250+500,400,100,50), "forward")) 
-			{
-				if(stop1 == 1 && stop2==0 && stop3==0) 
-				{
-					res1 = "forward";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==0)
-				{
-					res2 = "forward";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==1)
-				{
-					res3 = "forward";
-				}
-				choice=1;
-			}
-			
-			if(GUI.Button(new Rect(350+500,400,100,50), "right")) 
-			{
-				if(stop1 == 1 && stop2==0 && stop3==0) 
-				{
-					res1 = "right";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==0)
-				{
-					res2 = "right";
-				}
-				if(stop1 == 1 && stop2==1 && stop3==1)
-				{
-					res3 = "right";
-				}
-				choice=1;
-			}
-*/
+
 			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
