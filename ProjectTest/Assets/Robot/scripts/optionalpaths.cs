@@ -22,6 +22,12 @@ public class optionalpaths : MonoBehaviour {
 
 	public GameObject holo;
 
+	//for debugging:
+	public GameObject riftObj;
+	public Camera leftCam;
+	public Camera rightCam;
+
+
 	void Start () {
 		red.SetActive(false);
 		blue.SetActive(false);
@@ -35,10 +41,12 @@ public class optionalpaths : MonoBehaviour {
 
 	void OnGUI()
 	{
+
+
 		if(Time.timeSinceLevelLoad>3)
 		{
 			//camera01.enabled = false;
-			rift.SetActive(false);
+			rift.SetActive(true);
 
 			pause = 1;
 			date1 = System.DateTime.Now;
@@ -52,7 +60,7 @@ public class optionalpaths : MonoBehaviour {
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
-				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
+				//UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
 
 				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 				{
@@ -78,7 +86,7 @@ public class optionalpaths : MonoBehaviour {
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
-				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
+				//UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
 				
 				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 				{
@@ -104,7 +112,7 @@ public class optionalpaths : MonoBehaviour {
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
-				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
+				//UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
 				
 				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 				{
@@ -125,90 +133,7 @@ public class optionalpaths : MonoBehaviour {
 					Application.LoadLevel(17);
 				}
 			}
-/*
-		GUI.Box(new Rect(150+500,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
-			
-			if(GUI.Button(new Rect(150+500,400,100,50), "1")) 
-			{
-				date2 = System.DateTime.Now;
-				deltaDate1 = (date2-date1);
-				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
 
-				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
-				{
-					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("1 " + deltaDate1);
-					writer.WriteLine(" ");
-				}
-
-				if(r==1)
-				{
-					Application.LoadLevel(16);
-				}
-				if(b==1)
-				{
-					Application.LoadLevel(18);
-				}
-				if(g==1)
-				{
-					Application.LoadLevel(17);
-				}
-			}
-			if(GUI.Button(new Rect(250+500,400,100,50), "2")) 
-			{
-				date2 = System.DateTime.Now;
-				deltaDate1 = (date2-date1);
-				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
-				
-				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
-				{
-					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("2 " + deltaDate1);
-					writer.WriteLine(" ");
-				}
-
-				if(r==1)
-				{
-					Application.LoadLevel(16);
-				}
-				if(b==1)
-				{
-					Application.LoadLevel(18);
-				}
-				if(g==1)
-				{
-					Application.LoadLevel(17);
-				}
-			}
-			
-			if(GUI.Button(new Rect(350+500,400,100,50), "3")) 
-			{
-				date2 = System.DateTime.Now;
-				deltaDate1 = (date2-date1);
-				UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
-				
-				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
-				{
-					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("3 " + deltaDate1);
-					writer.WriteLine(" ");
-				}
-
-				if(r==1)
-				{
-					Application.LoadLevel(16);
-				}
-				if(b==1)
-				{
-					Application.LoadLevel(18);
-				}
-				if(g==1)
-				{
-					Application.LoadLevel(17);
-				}
-			}
-
-*/
 				
 
 			
@@ -218,7 +143,7 @@ public class optionalpaths : MonoBehaviour {
 
 	void Update () {
 		//rotate camera
-		Debug.Log(Time.timeSinceLevelLoad);
+		//Debug.Log(Time.timeSinceLevelLoad);
 		//change paths
 		int choice=0;
 		if (Input.GetKeyDown("e"))
@@ -256,7 +181,7 @@ public class optionalpaths : MonoBehaviour {
 			if(Time.timeSinceLevelLoad>3)
 			{
 				//camera01.enabled = false;
-				rift.SetActive(false);
+				rift.SetActive(true);
 				pause = 1;
 
 			}
@@ -273,7 +198,7 @@ public class optionalpaths : MonoBehaviour {
 				if(Time.timeSinceLevelLoad>3)
 				{
 					//camera01.enabled = false;
-					rift.SetActive(false);
+					rift.SetActive(true);
 					pause = 1;
 				}
 
@@ -289,7 +214,7 @@ public class optionalpaths : MonoBehaviour {
 				if(Time.timeSinceLevelLoad>3)
 				{
 					//camera01.enabled = false;
-					rift.SetActive(false);
+					rift.SetActive(true);
 					pause = 1;
 					
 				}
@@ -311,5 +236,6 @@ public class optionalpaths : MonoBehaviour {
 		}
 
 	}
+
 
 }

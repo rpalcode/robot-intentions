@@ -45,7 +45,7 @@ public class Front : MonoBehaviour {
 	void Update () 
     {
 		Time.timeScale=1;
-		Debug.Log (Time.timeSinceLevelLoad);
+		//Debug.Log (Time.timeSinceLevelLoad);
         transform.Translate(0, -5*Time.deltaTime, 0);
 
         if (Input.GetKey(KeyCode.RightArrow))

@@ -33,5 +33,10 @@ public class complete : MonoBehaviour {
 			writer.WriteLine(" ");
 		}
 
+		if(Input.GetKeyDown("a"))
+		{
+			Application.LoadLevel(20);
+		}
+
 	}
 }

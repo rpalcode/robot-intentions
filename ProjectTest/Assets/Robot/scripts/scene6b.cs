@@ -76,7 +76,7 @@ public class scene6b : MonoBehaviour {
 		}
 
 		StartSide();
-		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
+		//UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
@@ -193,7 +193,7 @@ public class scene6b : MonoBehaviour {
 
 			if(Application.loadedLevel == 18)
 			{
-				using (StreamWriter writer = new StreamWriter("rightroboteye.txt"))
+				using (StreamWriter writer = new StreamWriter("rightrobotseye.txt"))
 				{
 					writer.WriteLine("mid-term robot's eye view without map on screen");
 					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
@@ -304,7 +304,7 @@ public class scene6b : MonoBehaviour {
 			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
-				UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
+				//UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					deltaDate1 = (date2-date1);

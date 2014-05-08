@@ -95,7 +95,7 @@ public class scene4b : MonoBehaviour {
 		StartSide ();
 
 		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
-		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
+		//UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
 		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
@@ -258,7 +258,7 @@ public class scene4b : MonoBehaviour {
 				{
 					using (StreamWriter writer = new StreamWriter("leftrobotseye.txt"))
 					{
-						writer.WriteLine("short-term view with arrows on screen");
+					writer.WriteLine("mid-term robot's eye view without map on screen");
 					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
 					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2);
 					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3);
@@ -375,7 +375,7 @@ public class scene4b : MonoBehaviour {
 			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
-				UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
+				//UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					deltaDate1 = (date2-date1);

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class side : MonoBehaviour {
@@ -84,7 +84,7 @@ public class side : MonoBehaviour {
 
         timediff = Time.deltaTime - timediff;
 		if(timediff%10 == 0) { counter+=1; }
-		Debug.Log(timediff);
+		//Debug.Log(timediff);
         if (counter > 17)
         { l1.SetActive(false); l5.SetActive(true); }
         if (counter > 50)

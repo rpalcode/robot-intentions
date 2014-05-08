@@ -60,7 +60,7 @@ public class scene5 : MonoBehaviour {
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
 		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
-		UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
+		//UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
 		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
@@ -241,7 +241,7 @@ public class scene5 : MonoBehaviour {
 			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
-				UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
+				//UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					deltaDate1 = (date2-date1);

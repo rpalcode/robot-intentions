@@ -4,19 +4,17 @@ using System.IO;
 
 public class readData : MonoBehaviour {
 
-	string[] line =new string[16];
-	string[] text = new string[16];
+	string[] line =new string[20];
+	string[] text = new string[20];
 
 	// Use this for initialization
 	void Start () {
 		//
 		 line[1] = "longtermpathselect";
 		 text[1] = System.IO.File.ReadAllText("longtermpathselect.txt");
-		System.Console.WriteLine("{0}", text[1]);
 		//
 		 line[2] = "leftpathmidarrowfloor";
 		 text[2] = System.IO.File.ReadAllText("leftpathmidarrowfloor.txt");
-		System.Console.WriteLine("{0}", text[2]);
 		//
 		 line[3] = "midpathmidarrowfloor";
 		 text[3] = System.IO.File.ReadAllText("midpathmidarrowfloor.txt");
@@ -60,7 +58,18 @@ public class readData : MonoBehaviour {
 		 line[16] = "rightpathshortarrowfloor";
 		 text[16] = System.IO.File.ReadAllText("rightpathshortarrowfloor.txt");
 		//
+		line[17] = "surveyfinalquestions";
+		text[17] = System.IO.File.ReadAllText("surveyfinalquestions.txt");
 
+		using (StreamWriter writer = new StreamWriter("results.txt"))
+		{
+			for(int i=0; i<19; i++)
+			{
+				writer.WriteLine(line[i]);
+				writer.WriteLine(text[i]);
+		
+			}
+		}
 
 	}
 
