@@ -18,10 +18,16 @@ public class scene4b : MonoBehaviour {
 
 	public GameObject rift;
 
-	//
+	//set a veriable position for the GUI
+	public int xpos = 170;
+	public int ypos = 100;
+	public int xsize = 240;
+	public int ysize = 80;
 
-	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
-	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
+	//
+	//initialize the system date and times
+	public System.DateTime date1 = new System.DateTime(1900, 1, 1, 11, 11, 0);
+	public System.DateTime date2 = new System.DateTime(1900, 11, 1, 11, 11, 0);
 	public System.TimeSpan deltaDate1;
 	public System.TimeSpan deltaDate2;
 	public System.TimeSpan deltaDate3;
@@ -94,8 +100,6 @@ public class scene4b : MonoBehaviour {
 
 		StartSide ();
 
-		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
-		//UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
 		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
@@ -123,9 +127,7 @@ public class scene4b : MonoBehaviour {
 			rift.SetActive(true);
 			stop3=1;
 		}
-		//
-		//if(Application.loadedLevel == 4)
-		//{
+
 			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5)
 			{
 				one.SetActive(true);
@@ -200,16 +202,7 @@ public class scene4b : MonoBehaviour {
 			three.SetActive(true);
 			four.SetActive(false);
 		}		
-		/* if (Time.timeSinceLevelLoad > 17.5 && Time.timeSinceLevelLoad < 22)
-		{
-			straight.SetActive(true);
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(false);
-			four.SetActive(false);
-		} */
 
-		//}
 		transform.Translate(0, -5 * Time.deltaTime, 0);
 
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
@@ -286,34 +279,34 @@ public class scene4b : MonoBehaviour {
 		{
 			int choice=0;
 
-			GUI.Box(new Rect(170,250,240,100), "Which way is the robot going to go?\n(From robot's point of view)");
+			GUI.Box(new Rect(xpos,250,xsize,100), "Which way is the robot going to go?\n(From robot's point of view)");
 
 //
 			if(stop1 == 1 && stop2==0 && stop3==0) 
 			{
-				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf1 = GUI.TextField(new Rect(170,    400, 240, 25), conf1, 250);
+				GUI.Box(new Rect(xpos,350,xsize,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				conf1 = GUI.TextField(new Rect(xpos,    400, xsize, 25), conf1, 250);
 				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				//conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
-				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf2 = GUI.TextField(new Rect(170,    400, 240, 25), conf2, 250);
+				GUI.Box(new Rect(xpos,350,xsize,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				conf2 = GUI.TextField(new Rect(xpos,    400, xsize, 25), conf2, 250);
 				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				//conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
-				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf3 = GUI.TextField(new Rect(170,    400, 240, 25), conf3, 250);
+				GUI.Box(new Rect(xpos,350,xsize,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				conf3 = GUI.TextField(new Rect(xpos,    400, xsize, 25), conf3, 250);
 				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				//conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
 			}
 
 //
 
-			if(GUI.Button(new Rect(170,300,80,50), "left")) 
+			if(GUI.Button(new Rect(xpos,300,xsize/3,50), "left")) 
 			{
 
 				if(stop1 == 1 && stop2==0 && stop3==0) 
@@ -331,7 +324,7 @@ public class scene4b : MonoBehaviour {
 				choice=1;
 				
 			}
-			if(GUI.Button(new Rect(250,300,80,50), "forward")) 
+			if(GUI.Button(new Rect(xpos + (xsize/3),300,xsize/3,50), "forward")) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -348,7 +341,7 @@ public class scene4b : MonoBehaviour {
 				choice=1;
 			}
 			
-			if(GUI.Button(new Rect(330,300,80,50), "right")) 
+			if(GUI.Button(new Rect(xpos + 2*(xsize/3),300,80,50), "right")) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -367,7 +360,7 @@ public class scene4b : MonoBehaviour {
 			int enter = 0;
 			if(enter==0) 
 			{ 
-				if(GUI.Button(new Rect(170, 450, 240, 25), "Enter")) { enter=1; choice=1; } 
+				if(GUI.Button(new Rect(xpos, 450, xsize, 25), "Enter")) { enter=1; choice=1; } 
 			}
 			//UnityEngine.Debug.Log ("ENTER = " + enter + " and choice = " + choice);
 

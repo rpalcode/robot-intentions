@@ -83,8 +83,6 @@ public class scene5b : MonoBehaviour {
 
 
 		StartSide();
-		//UnityEngine.Debug.Log("LEVEL = " + Application.loadedLevel);
-		//UnityEngine.Debug.Log(Time.timeSinceLevelLoad);
 
 		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
@@ -116,8 +114,6 @@ public class scene5b : MonoBehaviour {
 
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-		//if(Application.loadedLevel == 8)
-		//{
 		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3) { rightArrow(); }
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5) { leftArrow(); }
 		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 6) { upArrow(); }
@@ -203,22 +199,17 @@ public class scene5b : MonoBehaviour {
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf1 = GUI.TextField(new Rect(170,    400, 240, 25), conf1, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				//conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf2 = GUI.TextField(new Rect(170,    400, 240, 25), conf2, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
-				//conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf3 = GUI.TextField(new Rect(170,    400, 240, 25), conf3, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				//conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
+
 			}
 			
 			//

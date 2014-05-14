@@ -81,8 +81,6 @@ public class scene6b : MonoBehaviour {
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
 
-		//if(Application.loadedLevel == 12)
-		//{
 			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5)
 			{
 				one.SetActive(true);
@@ -152,19 +150,7 @@ public class scene6b : MonoBehaviour {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-		/*
-		if (Time.timeSinceLevelLoad > 16 && Time.timeSinceLevelLoad < 17)
-        {
-            transform.Rotate(0, 0, 45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
-        }
 
-		if (Time.timeSinceLevelLoad > 20 && Time.timeSinceLevelLoad < 21)
-		{
-			transform.Rotate(0, 0, 45 * Time.deltaTime);
-			transform.Translate(0, -5 * Time.deltaTime, 0);
-		}
-		*/ 
 		if (Time.timeSinceLevelLoad >= 20)
         {
 			if(Application.loadedLevel == 13)
@@ -224,22 +210,16 @@ public class scene6b : MonoBehaviour {
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf1 = GUI.TextField(new Rect(170,    400, 240, 25), conf1, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				//conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf2 = GUI.TextField(new Rect(170,    400, 240, 25), conf2, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confiedent are you with your answer? ");
-				//conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf3 = GUI.TextField(new Rect(170,    400, 240, 25), conf3, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				//conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
 			}
 			
 
