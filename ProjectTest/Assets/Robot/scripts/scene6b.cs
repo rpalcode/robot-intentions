@@ -2,7 +2,9 @@
 using System.Collections;
 using System.IO;
 public class scene6b : MonoBehaviour {
-    public GameObject straight;
+	//this class is used for mid term view for path 3
+
+	public GameObject straight;
     public GameObject left;
     public GameObject right;
     public GameObject robot;
@@ -11,7 +13,7 @@ public class scene6b : MonoBehaviour {
 	public GameObject one;
 	public GameObject two;
 	public GameObject three;
-
+ 
 	public System.DateTime date1 = new System.DateTime(1900, 1, 1, 11, 11, 0);
 	public System.DateTime date2 = new System.DateTime(1900, 11, 1, 11, 11, 0);
 	public System.TimeSpan deltaDate1;

@@ -1,1 +1,5 @@
+mid-term robot's eye view without map on screen
+Picked  with a confidence of  with a time of 00:00:01.3090749
+Picked  with a confidence of  with a time of 00:00:01.6570948
+Picked  with a confidence of  with a time of 00:00:01.4910852
  

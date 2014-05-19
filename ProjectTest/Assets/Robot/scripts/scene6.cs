@@ -2,7 +2,9 @@
 using System.Collections;
 using System.IO;
 public class scene6 : MonoBehaviour {
-    public GameObject straight;
+	//this class is used for short term view for path 3
+
+	public GameObject straight;
     public GameObject left;
     public GameObject right;
     public GameObject robot;

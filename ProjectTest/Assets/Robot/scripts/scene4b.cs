@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 //
 using System.IO;
 //
 
 public class scene4b : MonoBehaviour {
+	//this class is used for mid term view for path 1
+
     public GameObject straight;
     public GameObject left;
     public GameObject right;
@@ -219,7 +221,9 @@ public class scene4b : MonoBehaviour {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
-	
+
+
+
 		if (Time.timeSinceLevelLoad >= 22)
 		{
 //
@@ -285,22 +289,17 @@ public class scene4b : MonoBehaviour {
 			{
 				GUI.Box(new Rect(xpos,350,xsize,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf1 = GUI.TextField(new Rect(xpos,    400, xsize, 25), conf1, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				//conf1 = GUI.TextField(new Rect(150+500,500, 300, 25), conf1, 250);
+
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
 				GUI.Box(new Rect(xpos,350,xsize,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf2 = GUI.TextField(new Rect(xpos,    400, xsize, 25), conf2, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				//conf2 = GUI.TextField(new Rect(150+500,500, 300, 25), conf2, 250);
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
 				GUI.Box(new Rect(xpos,350,xsize,100), "From a scale of 1-7\nhow confident are you with your answer? ");
 				conf3 = GUI.TextField(new Rect(xpos,    400, xsize, 25), conf3, 250);
-				//GUI.Box(new Rect(150+500,450,300,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				//conf3 = GUI.TextField(new Rect(150+500,500, 300, 25), conf3, 250);
 			}
 
 //
@@ -361,13 +360,10 @@ public class scene4b : MonoBehaviour {
 			{ 
 				if(GUI.Button(new Rect(xpos, 450, xsize, 25), "Enter")) { enter=1; choice=1; } 
 			}
-			//UnityEngine.Debug.Log ("ENTER = " + enter + " and choice = " + choice);
-
 
 			if(choice==1 && enter==1)
 			{
 				date2 = System.DateTime.Now;
-				//UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					deltaDate1 = (date2-date1);
@@ -383,6 +379,8 @@ public class scene4b : MonoBehaviour {
 				rift.SetActive(false);
 				Time.timeScale =1;
 				pause=0;
+
+
 				option1 ();
 
 			}
@@ -390,9 +388,6 @@ public class scene4b : MonoBehaviour {
 		}
 	}
 
-	//
-
-	// Update is called once per frame
 	void Update () {
 
         option1();

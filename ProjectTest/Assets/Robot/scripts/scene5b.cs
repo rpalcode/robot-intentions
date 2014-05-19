@@ -3,6 +3,8 @@ using System.Collections;
 using System.IO;
 
 public class scene5b : MonoBehaviour {
+	//this class is used for mid term view for path 2
+
     public GameObject straight;
     public GameObject left;
     public GameObject right;
