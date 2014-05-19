@@ -9,7 +9,6 @@ public class scene4b : MonoBehaviour {
     public GameObject left;
     public GameObject right;
     public GameObject robot;
-	public Camera camera01;
 
 	public GameObject one;
 	public GameObject two;
@@ -18,7 +17,7 @@ public class scene4b : MonoBehaviour {
 
 	public GameObject rift;
 
-	//set a veriable position for the GUI
+	//set a variable position for the GUI
 	public int xpos = 170;
 	public int ypos = 100;
 	public int xsize = 240;

@@ -7,18 +7,20 @@ public class scene5 : MonoBehaviour {
     public GameObject left;
     public GameObject right;
     public GameObject robot;
-	public Camera camera01;
-
-    public int choice;
-
-	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
-	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
+	
+	public System.DateTime date1 = new System.DateTime(1900, 1, 1, 11, 11, 0);
+	public System.DateTime date2 = new System.DateTime(1900, 11, 1, 11, 11, 0);
 	public System.TimeSpan deltaDate1;
 	public System.TimeSpan deltaDate2;
 	public System.TimeSpan deltaDate3;
 	public GameObject rift;
 
-	
+	//set a variable position for the GUI
+	public int xpos = 170;
+	public int ypos = 100;
+	public int xsize = 240;
+	public int ysize = 80;
+
 	public int stop1=0;
 	public int stop2=0;
 	public int stop3=0;
