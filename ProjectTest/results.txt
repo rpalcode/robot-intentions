@@ -1,6 +1,8 @@
 
 
 longtermpathselect
+initial longterm path select
+2 00:00:00
  
 
 leftpathmidarrowfloor
@@ -13,12 +15,24 @@ rightpathmidarrowfloor
  
 
 leftrobotseye
+mid-term robot's eye view without map on screen
+Picked  with a confidence of  with a time of 00:00:01.4610021
+Picked  with a confidence of  with a time of 00:00:01.2400018
+Picked  with a confidence of  with a time of 00:00:01.0310015
  
 
 midrobotseye
+mid-term robot's eye view without map on screen
+Picked  with a confidence of  with a time of 00:00:01.3090749
+Picked  with a confidence of  with a time of 00:00:01.6570948
+Picked  with a confidence of  with a time of 00:00:01.4910852
  
 
 rightrobotseye
+mid-term robot's eye view without map on screen
+Picked right with a confidence of  with a time of 00:00:03.4451971
+Picked  with a confidence of  with a time of 00:00:01.8551061
+Picked forward with a confidence of  with a time of 00:00:02.9651696
  
 
 leftpathmidarrowchest

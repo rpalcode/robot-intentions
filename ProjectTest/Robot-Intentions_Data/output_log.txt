@@ -17,29 +17,61 @@ Platform assembly: C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\
 Loading C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Robot-Intentions_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Robot-Intentions_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Robot-Intentions_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
+- Completed reload, in  0.040 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 1.632939 ms
+UnloadTime: 1.579175 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1420.
-Total: 0.737590 ms (FindLiveObjects: 0.092158 ms CreateObjectMapping: 0.015359 ms MarkObjects: 0.125438 ms  DeleteObjects: 0.104958 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1411.
+Total: 0.671349 ms (FindLiveObjects: 0.048319 ms CreateObjectMapping: 0.014079 ms MarkObjects: 0.150717 ms  DeleteObjects: 0.110398 ms)
 
-UnloadTime: 1.539820 ms
+UnloadTime: 1.623335 ms
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1418.
-Total: 0.689591 ms (FindLiveObjects: 0.048319 ms CreateObjectMapping: 0.015039 ms MarkObjects: 0.149118 ms  DeleteObjects: 0.087038 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1409.
+Total: 0.564791 ms (FindLiveObjects: 0.048959 ms CreateObjectMapping: 0.015679 ms MarkObjects: 0.092798 ms  DeleteObjects: 0.090878 ms)
 
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1699)
+UnloadTime: 1.671334 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-UnloadTime: 1.749418 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1319.
+Total: 0.725428 ms (FindLiveObjects: 0.048959 ms CreateObjectMapping: 0.016319 ms MarkObjects: 0.157117 ms  DeleteObjects: 0.158077 ms)
 
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1325.
-Total: 0.655031 ms (FindLiveObjects: 0.049279 ms CreateObjectMapping: 0.016959 ms MarkObjects: 0.130878 ms  DeleteObjects: 0.111358 ms)
+UnloadTime: 1.792292 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1455.
+Total: 0.647030 ms (FindLiveObjects: 0.053759 ms CreateObjectMapping: 0.017599 ms MarkObjects: 0.144317 ms  DeleteObjects: 0.103358 ms)
+
+UnloadTime: 1.360299 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1453.
+Total: 0.639030 ms (FindLiveObjects: 0.053119 ms CreateObjectMapping: 0.020479 ms MarkObjects: 0.147517 ms  DeleteObjects: 0.066238 ms)
+
+UnloadTime: 2.438682 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1301.
+Total: 0.709749 ms (FindLiveObjects: 0.072318 ms CreateObjectMapping: 0.021119 ms MarkObjects: 0.136317 ms  DeleteObjects: 0.152637 ms)
+
+UnloadTime: 1.667814 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1456.
+Total: 0.702069 ms (FindLiveObjects: 0.050879 ms CreateObjectMapping: 0.021439 ms MarkObjects: 0.156157 ms  DeleteObjects: 0.111678 ms)
+
+UnloadTime: 1.414698 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1448.
+Total: 0.693429 ms (FindLiveObjects: 0.053759 ms CreateObjectMapping: 0.023679 ms MarkObjects: 0.174717 ms  DeleteObjects: 0.090558 ms)
+
+UnloadTime: 1.805412 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 269 unused Assets to reduce memory usage. Loaded Objects now: 250.
+Total: 1.351659 ms (FindLiveObjects: 0.019839 ms CreateObjectMapping: 0.015679 ms MarkObjects: 0.101758 ms  DeleteObjects: 0.850546 ms)
 

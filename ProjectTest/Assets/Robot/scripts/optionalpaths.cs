@@ -22,11 +22,6 @@ public class optionalpaths : MonoBehaviour {
 
 	public GameObject holo;
 
-	//for debugging:
-	public GameObject riftObj;
-	public Camera leftCam;
-	public Camera rightCam;
-
 
 	void Start () {
 		red.SetActive(false);
@@ -43,24 +38,21 @@ public class optionalpaths : MonoBehaviour {
 	{
 
 
-		if(Time.timeSinceLevelLoad>3)
+		if(Time.timeSinceLevelLoad>3 && pause != 1)
 		{
 			//camera01.enabled = false;
 			rift.SetActive(true);
-
-			pause = 1;
 			date1 = System.DateTime.Now;
+			pause = 1;
 		}
 		if(pause==1)
 		{
-
 			GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150,400,100,50), "1")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
-				//UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
 
 				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 				{
@@ -75,19 +67,18 @@ public class optionalpaths : MonoBehaviour {
 				}
 				if(b==1)
 				{
-					Application.LoadLevel(18);
+					Application.LoadLevel(17);
 				}
 				if(g==1)
 				{
-					Application.LoadLevel(17);
+					Application.LoadLevel(18);
 				}
 			}
 			if(GUI.Button(new Rect(250,400,100,50), "2")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
-				//UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
-				
+
 				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 				{
 					writer.WriteLine("initial longterm path select");
@@ -100,11 +91,11 @@ public class optionalpaths : MonoBehaviour {
 				}
 				if(b==1)
 				{
-					Application.LoadLevel(18);
+					Application.LoadLevel(17);
 				}
 				if(g==1)
 				{
-					Application.LoadLevel(17);
+					Application.LoadLevel(18);
 				}
 			}
 			
@@ -112,8 +103,7 @@ public class optionalpaths : MonoBehaviour {
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
-				//UnityEngine.Debug.Log ("ELAPSED = " + (deltaDate1));
-				
+
 				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 				{
 					writer.WriteLine("initial longterm path select");
@@ -126,11 +116,11 @@ public class optionalpaths : MonoBehaviour {
 				}
 				if(b==1)
 				{
-					Application.LoadLevel(18);
+					Application.LoadLevel(17);
 				}
 				if(g==1)
 				{
-					Application.LoadLevel(17);
+					Application.LoadLevel(18);
 				}
 			}
 
