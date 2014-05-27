@@ -178,6 +178,7 @@ public class scene4 : MonoBehaviour {
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
+				conf3 = GUI.TextField(new Rect(170,   400, 240, 25), conf2, 250);
 
 			}
 			

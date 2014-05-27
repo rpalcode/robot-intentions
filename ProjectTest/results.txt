@@ -2,7 +2,7 @@
 
 longtermpathselect
 initial longterm path select
-2 00:00:00
+3 00:00:10.5266021
  
 
 leftpathmidarrowfloor
@@ -45,6 +45,10 @@ rightpathmidarrowchest
  
 
 leftpathshortarrowchest
+short-term view with arrows on screen
+Picked forward with a confidence of  4 with a time of 00:00:05.2883025
+Picked right with a confidence of 5 with a time of 00:00:07.1224074
+Picked forward with a confidence of   with a time of 00:00:02.7851593
  
 
 midpathshortarrowchest
@@ -64,7 +68,7 @@ rightpathshortarrowfloor
 
 surveyfinalquestions
 what did you think of the robot?
-What did you think of the robot?
+What did you think of the robot?000
 What do you want to change about the robot so that you would like it more?
 What do you want to change about the robot so that you would like it more?
  

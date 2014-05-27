@@ -170,7 +170,6 @@ public class optionalpaths : MonoBehaviour {
 
 			if(Time.timeSinceLevelLoad>3)
 			{
-				//camera01.enabled = false;
 				rift.SetActive(true);
 				pause = 1;
 
@@ -187,7 +186,6 @@ public class optionalpaths : MonoBehaviour {
 
 				if(Time.timeSinceLevelLoad>3)
 				{
-					//camera01.enabled = false;
 					rift.SetActive(true);
 					pause = 1;
 				}
@@ -203,7 +201,6 @@ public class optionalpaths : MonoBehaviour {
 
 				if(Time.timeSinceLevelLoad>3)
 				{
-					//camera01.enabled = false;
 					rift.SetActive(true);
 					pause = 1;
 					
