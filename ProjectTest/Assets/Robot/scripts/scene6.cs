@@ -121,6 +121,15 @@ public class scene6 : MonoBehaviour {
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
 		*/
+
+		int right1=0; int right2=0; int right3=0;
+		if(res1 == "forward")
+			right1 = 1;
+		if(res2 == "forward")
+			right2 = 1;
+		if(res3 == "forward")
+			right3 = 1;
+
 		if (Time.timeSinceLevelLoad >= 20)
         {
 			if(Application.loadedLevel == 15)
@@ -128,9 +137,9 @@ public class scene6 : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter("rightpathshortarrowchest.txt"))
 				{
 					writer.WriteLine("mid-term view with map on screen");
-					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
-					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2);
-					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3);
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);
 					writer.WriteLine(" ");
 				}
 			}
@@ -140,9 +149,9 @@ public class scene6 : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter("rightpathshortarrowfloor.txt"))
 				{
 					writer.WriteLine("mid-term view without map on screen");
-					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
-					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2);
-					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3);
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);
 					writer.WriteLine(" ");
 				}
 			}

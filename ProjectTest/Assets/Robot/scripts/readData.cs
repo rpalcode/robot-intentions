@@ -61,7 +61,9 @@ public class readData : MonoBehaviour {
 		line[17] = "surveyfinalquestions";
 		text[17] = System.IO.File.ReadAllText("surveyfinalquestions.txt");
 
-		using (StreamWriter writer = new StreamWriter("results.txt"))
+		string fileName = ("Results_for_" + side.username + ".txt");
+
+		using (StreamWriter writer = new StreamWriter(fileName))
 		{
 			for(int i=0; i<19; i++)
 			{

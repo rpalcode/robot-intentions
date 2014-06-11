@@ -1,5 +1,0 @@
-mid-term robot's eye view without map on screen
-Picked forward with a confidence of fwd this works with a time of 00:00:05.9793420
-Picked left with a confidence of 333 with a time of 00:00:04.4672556
-Picked left with a confidence of roger with a time of 00:00:06.4773704
- 

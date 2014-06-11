@@ -1,5 +1,0 @@
-mid-term robot's eye view without map on screen
-Picked right with a confidence of this works  :D with a time of 00:00:12.4337112
-Picked forward with a confidence of I really hope this works :/ with a time of 00:00:08.9295108
-Picked left with a confidence of 444444 with a time of 00:00:09.9225675
- 

@@ -60,7 +60,8 @@ public class optionalpaths : MonoBehaviour {
 					writer.WriteLine("1 " + deltaDate1);
 					writer.WriteLine(" ");
 				}
-
+				LaunchLevel();
+				/*
 				if(r==1)
 				{
 					Application.LoadLevel(16);
@@ -73,6 +74,7 @@ public class optionalpaths : MonoBehaviour {
 				{
 					Application.LoadLevel(18);
 				}
+				*/
 			}
 			if(GUI.Button(new Rect(250,400,100,50), "2")) 
 			{
@@ -85,6 +87,8 @@ public class optionalpaths : MonoBehaviour {
 					writer.WriteLine("2 " + deltaDate1);
 					writer.WriteLine(" ");
 				}
+				LaunchLevel();
+				/*
 				if(r==1)
 				{
 					Application.LoadLevel(16);
@@ -97,6 +101,7 @@ public class optionalpaths : MonoBehaviour {
 				{
 					Application.LoadLevel(18);
 				}
+				*/
 			}
 			
 			if(GUI.Button(new Rect(350,400,100,50), "3")) 
@@ -110,6 +115,8 @@ public class optionalpaths : MonoBehaviour {
 					writer.WriteLine("3 " + deltaDate1);
 					writer.WriteLine(" ");
 				}
+				LaunchLevel();
+				/*
 				if(r==1)
 				{
 					Application.LoadLevel(16);
@@ -122,12 +129,39 @@ public class optionalpaths : MonoBehaviour {
 				{
 					Application.LoadLevel(18);
 				}
+				*/
 			}
 
 				
 
 			
 		}
+	}
+
+	void LaunchLevel()
+	{
+		if(r==1)
+		{
+			if(Application.loadedLevel == 2)
+			   Application.LoadLevel(16);
+			else if(Application.loadedLevel == 3)
+				Application.LoadLevel(5);
+		}
+		if(b==1)
+		{
+			if(Application.loadedLevel == 2)
+				Application.LoadLevel(17);
+			else if(Application.loadedLevel == 3)
+				Application.LoadLevel(9);
+		}
+		if(g==1)
+		{
+			if(Application.loadedLevel == 2)
+				Application.LoadLevel(18);
+			else if(Application.loadedLevel == 3)
+				Application.LoadLevel(13);
+		}
+			
 	}
 
 

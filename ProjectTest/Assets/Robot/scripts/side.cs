@@ -1,7 +1,10 @@
 using UnityEngine;
 using System.Collections;
-
+using System.IO;
 public class side : MonoBehaviour {
+
+	public static string username = "Please enter a username"; 
+
     public int counter = 0;
     public double timediff = 0.0;
     public GameObject straight;
@@ -168,8 +171,47 @@ public class side : MonoBehaviour {
 		}
 
     }
+
+	void OnGUI()
+	{
+		username = GUI.TextField(new Rect(100,     350, 500, 150), username, 250);
+	}
 	// Use this for initialization
 	void Start () {
+		/*
+		using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("leftpathmidarrowfloor.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("midpathmidarrowfloor.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("rightpathmidarrowfloor.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("leftrobotseye.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("midrobotseye.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("rightrobotseye.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("leftpathmidarrowchest.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("midpathmidarrowchest.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("rightpathmidarrowchest.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("leftpathshortarrowchest.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("midpathshortarrowchest.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("rightpathshortarrowchest.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("leftpathshortarrowfloor.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("midpathshortarrowfloor.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("rightpathshortarrowfloor.txt"))
+		{ writer.WriteLine(" "); }
+*/
 		Time.timeScale = 1;
 
 	}

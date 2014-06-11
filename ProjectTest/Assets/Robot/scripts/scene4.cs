@@ -115,18 +115,27 @@ public class scene4 : MonoBehaviour {
 
         }
 
+		int right1=0; int right2=0; int right3=0;
+		if(res1 == "forward")
+			right1 = 1;
+		if(res2 == "forward")
+			right2 = 1;
+		if(res3 == "forward")
+			right3 = 1;
 		
 		if (Time.timeSinceLevelLoad >= 22)
 		{
-
+			Debug.Log("Writing to .txt file 1"); //DEBUG
 			if(Application.loadedLevel == 7)
 			{
+				Debug.Log("LEVEL 7"); //DEBUG
 				using (StreamWriter writer = new StreamWriter("leftpathshortarrowchest.txt"))
 				{
+					Debug.Log ("WRITING TO .TXT FILE 2"); //DEBUG
 					writer.WriteLine("short-term view with arrows on screen");
-					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
-					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2);
-					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3);
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);
 					writer.WriteLine(" ");
 				}
 			}
@@ -136,9 +145,9 @@ public class scene4 : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter("leftpathshortarrowfloor.txt"))
 				{
 					writer.WriteLine("short-term view with arrows on floor");
-					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1);
-					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2);
-					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3);
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);
 					writer.WriteLine(" ");
 				}
 			}
@@ -178,7 +187,7 @@ public class scene4 : MonoBehaviour {
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
 				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf3 = GUI.TextField(new Rect(170,   400, 240, 25), conf2, 250);
+				conf3 = GUI.TextField(new Rect(170,   400, 240, 25), conf3, 250);
 
 			}
 			
