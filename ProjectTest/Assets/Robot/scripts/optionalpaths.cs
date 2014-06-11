@@ -14,7 +14,7 @@ public class optionalpaths : MonoBehaviour {
 	public Camera camera01;
 	public int pause;
 
-	int r=0; int b=0; int g=0;
+	int left=0; int mid=0; int right=0;
 
 	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
 	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
@@ -62,15 +62,15 @@ public class optionalpaths : MonoBehaviour {
 				}
 				LaunchLevel();
 				/*
-				if(r==1)
+				if(left==1)
 				{
 					Application.LoadLevel(16);
 				}
-				if(b==1)
+				if(mid==1)
 				{
 					Application.LoadLevel(17);
 				}
-				if(g==1)
+				if(right==1)
 				{
 					Application.LoadLevel(18);
 				}
@@ -89,15 +89,15 @@ public class optionalpaths : MonoBehaviour {
 				}
 				LaunchLevel();
 				/*
-				if(r==1)
+				if(left==1)
 				{
 					Application.LoadLevel(16);
 				}
-				if(b==1)
+				if(mid==1)
 				{
 					Application.LoadLevel(17);
 				}
-				if(g==1)
+				if(right==1)
 				{
 					Application.LoadLevel(18);
 				}
@@ -117,15 +117,15 @@ public class optionalpaths : MonoBehaviour {
 				}
 				LaunchLevel();
 				/*
-				if(r==1)
+				if(left==1)
 				{
 					Application.LoadLevel(16);
 				}
-				if(b==1)
+				if(mid==1)
 				{
 					Application.LoadLevel(17);
 				}
-				if(g==1)
+				if(right==1)
 				{
 					Application.LoadLevel(18);
 				}
@@ -140,21 +140,21 @@ public class optionalpaths : MonoBehaviour {
 
 	void LaunchLevel()
 	{
-		if(r==1)
+		if(left==1)
 		{
 			if(Application.loadedLevel == 2)
 			   Application.LoadLevel(16);
 			else if(Application.loadedLevel == 3)
 				Application.LoadLevel(5);
 		}
-		if(b==1)
+		if(mid==1)
 		{
 			if(Application.loadedLevel == 2)
 				Application.LoadLevel(17);
 			else if(Application.loadedLevel == 3)
 				Application.LoadLevel(9);
 		}
-		if(g==1)
+		if(right==1)
 		{
 			if(Application.loadedLevel == 2)
 				Application.LoadLevel(18);
@@ -197,7 +197,7 @@ public class optionalpaths : MonoBehaviour {
 			if(choice==1)
 			{
 			red.SetActive(true);
-			r=1;
+			left=1; 
 			blue.SetActive(false);
 			green.SetActive(false);
 			Time.timeScale=1;
@@ -215,7 +215,7 @@ public class optionalpaths : MonoBehaviour {
 				red.SetActive(false);
 				blue.SetActive(false);
 				green.SetActive(true);
-				g=1;
+				mid=1;
 				Time.timeScale=1;
 
 				if(Time.timeSinceLevelLoad>3)
@@ -230,7 +230,7 @@ public class optionalpaths : MonoBehaviour {
 				red.SetActive(false);
 				green.SetActive(false);
 				blue.SetActive(true);
-				b=1;
+				right=1;
 				Time.timeScale=1;
 
 				if(Time.timeSinceLevelLoad>3)

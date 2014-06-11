@@ -147,9 +147,9 @@ public class scene5b : MonoBehaviour {
 		} 
 
 		int right1=0; int right2=0; int right3=0;
-		if(res1 == "forward")
+		if(res1 == "right")
 			right1 = 1;
-		if(res2 == "forward")
+		if(res2 == "left")
 			right2 = 1;
 		if(res3 == "forward")
 			right3 = 1;

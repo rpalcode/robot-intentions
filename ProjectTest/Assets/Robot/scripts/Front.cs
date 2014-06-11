@@ -19,11 +19,11 @@ public class Front : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(0, 0, -90*Time.deltaTime);
+            transform.Rotate(0, 0, 90*Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(0, 0, 90*Time.deltaTime);
+            transform.Rotate(0, 0, -90*Time.deltaTime);
         }
 
 

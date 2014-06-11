@@ -118,9 +118,9 @@ public class scene4 : MonoBehaviour {
 		int right1=0; int right2=0; int right3=0;
 		if(res1 == "forward")
 			right1 = 1;
-		if(res2 == "forward")
+		if(res2 == "right")
 			right2 = 1;
-		if(res3 == "forward")
+		if(res3 == "left")
 			right3 = 1;
 		
 		if (Time.timeSinceLevelLoad >= 22)

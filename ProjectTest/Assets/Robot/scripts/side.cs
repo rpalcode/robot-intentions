@@ -178,7 +178,7 @@ public class side : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-		/*
+
 		using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
 		{ writer.WriteLine(" "); }
 		using (StreamWriter writer = new StreamWriter("leftpathmidarrowfloor.txt"))
@@ -211,7 +211,7 @@ public class side : MonoBehaviour {
 		{ writer.WriteLine(" "); }
 		using (StreamWriter writer = new StreamWriter("rightpathshortarrowfloor.txt"))
 		{ writer.WriteLine(" "); }
-*/
+
 		Time.timeScale = 1;
 
 	}
