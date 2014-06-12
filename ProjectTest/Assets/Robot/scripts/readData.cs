@@ -9,8 +9,10 @@ public class readData : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		line[0] = "longtermpathselect from side";
+		text[0] = System.IO.File.ReadAllText("longtermpathselect2.txt");
 		//
-		 line[1] = "longtermpathselect";
+		 line[1] = "longtermpathselect from robot's eye view";
 		 text[1] = System.IO.File.ReadAllText("longtermpathselect.txt");
 		//
 		 line[2] = "leftpathmidarrowfloor";

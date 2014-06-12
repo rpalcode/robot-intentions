@@ -1,8 +1,11 @@
-
-
-longtermpathselect
+longtermpathselect from side
 initial longterm path select
-3 00:00:02.1031203
+1 00:00:01.7050976
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+1 00:00:01.1580663
  
 
 leftpathmidarrowfloor
@@ -15,10 +18,6 @@ rightpathmidarrowfloor
  
 
 leftrobotseye
-mid-term robot's eye view without map on screen
-Picked forward with a confidence of 1 with a time of 00:00:04.4892568 0
-Picked right with a confidence of 1 with a time of 00:00:03.0801762 0
-Picked right with a confidence of 1 with a time of 00:00:35.2040135 1
  
 
 midrobotseye
@@ -28,24 +27,12 @@ rightrobotseye
  
 
 leftpathmidarrowchest
-mid-term view with map on screen
-Picked left with a confidence of  with a time of 00:00:01.9051090 0
-Picked left with a confidence of  with a time of 00:00:01.5730899 0
-Picked forward with a confidence of  with a time of 00:00:01.9211098 1
  
 
 midpathmidarrowchest
-mid-term view with map on screen
-Picked right with a confidence of 3 with a time of 00:00:02.8491629 1
-Picked right with a confidence of 3 with a time of 00:00:02.8501630 0
-Picked right with a confidence of 4 with a time of 00:00:06.1453515 0
  
 
 rightpathmidarrowchest
-mid-term view with map on screen
-Picked right with a confidence of 2 with a time of 00:00:09.0295165 0
-Picked right with a confidence of 2 with a time of 00:00:03.6942112 0
-Picked forward with a confidence of 3 with a time of 00:00:03.3961942 1
  
 
 leftpathshortarrowchest
@@ -68,9 +55,9 @@ rightpathshortarrowfloor
 
 surveyfinalquestions
 what did you think of the robot?
-Stuff
+What did you think of the robot?111
 What do you want to change about the robot so that you would like it more?
-The robot works!
+What do you want to change about the robot so that you would like it more?
  
 
 

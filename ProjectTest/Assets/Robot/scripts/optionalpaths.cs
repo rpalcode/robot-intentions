@@ -47,6 +47,13 @@ public class optionalpaths : MonoBehaviour {
 		}
 		if(pause==1)
 		{
+			//changes 6-12
+			string txtFile = " ";
+			if(Application.loadedLevel == 2)
+				txtFile = "longtermpathselect";
+			if(Application.loadedLevel == 3)
+				txtFile = "longtermpathselect2";
+			// /changes 6-12
 			GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			
 			if(GUI.Button(new Rect(150,400,100,50), "1")) 
@@ -54,7 +61,7 @@ public class optionalpaths : MonoBehaviour {
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
 
-				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
 					writer.WriteLine("1 " + deltaDate1);
@@ -81,7 +88,7 @@ public class optionalpaths : MonoBehaviour {
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
 
-				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
 					writer.WriteLine("2 " + deltaDate1);
@@ -109,7 +116,7 @@ public class optionalpaths : MonoBehaviour {
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
 
-				using (StreamWriter writer = new StreamWriter("longtermpathselect.txt"))
+				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
 					writer.WriteLine("3 " + deltaDate1);
