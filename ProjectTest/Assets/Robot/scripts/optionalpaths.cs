@@ -150,14 +150,14 @@ public class optionalpaths : MonoBehaviour {
 		if(mid==1)
 		{
 			if(Application.loadedLevel == 2)
-				Application.LoadLevel(17);
+				Application.LoadLevel(18);
 			else if(Application.loadedLevel == 3)
 				Application.LoadLevel(9);
 		}
 		if(right==1)
 		{
 			if(Application.loadedLevel == 2)
-				Application.LoadLevel(18);
+				Application.LoadLevel(17);
 			else if(Application.loadedLevel == 3)
 				Application.LoadLevel(13);
 		}
