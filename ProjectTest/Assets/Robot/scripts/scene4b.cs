@@ -6,6 +6,9 @@ using System.IO;
 
 public class scene4b : MonoBehaviour {
 	//this class is used for mid term view for path 1
+	Texture leftarrows;
+	Texture rightarrows;
+	Texture uparrows;
 
     public GameObject straight;
     public GameObject left;
@@ -279,6 +282,10 @@ public class scene4b : MonoBehaviour {
 
 	void Start () {
 		Time.timeScale=1;
+
+		leftarrows = (Texture)Resources.Load("leftarrow");
+		rightarrows = (Texture)Resources.Load("rightarrow");
+		uparrows = (Texture)Resources.Load("uparrow");
 	}
 
 	//
@@ -310,7 +317,7 @@ public class scene4b : MonoBehaviour {
 
 //
 
-			if(GUI.Button(new Rect(xpos,300,xsize/3,50), "left")) 
+			if(GUI.Button(new Rect(xpos,300,xsize/3,50), leftarrows)) 
 			{
 
 				if(stop1 == 1 && stop2==0 && stop3==0) 
@@ -328,7 +335,7 @@ public class scene4b : MonoBehaviour {
 				choice=1;
 				
 			}
-			if(GUI.Button(new Rect(xpos + (xsize/3),300,xsize/3,50), "forward")) 
+			if(GUI.Button(new Rect(xpos + (xsize/3),300,xsize/3,50), uparrows)) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -345,7 +352,7 @@ public class scene4b : MonoBehaviour {
 				choice=1;
 			}
 			
-			if(GUI.Button(new Rect(xpos + 2*(xsize/3),300,80,50), "right")) 
+			if(GUI.Button(new Rect(xpos + 2*(xsize/3),300,80,50), rightarrows)) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{

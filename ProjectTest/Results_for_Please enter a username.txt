@@ -1,14 +1,18 @@
 longtermpathselect from side
 initial longterm path select
-1 00:00:01.7050976
+2 00:00:00.7280416
  
 
 longtermpathselect from robot's eye view
 initial longterm path select
-1 00:00:01.1580663
+3 00:00:00.7110407
  
 
 leftpathmidarrowfloor
+mid-term view without map on screen
+Picked right with a confidence of 3 with a time of 00:00:30.5777490 0
+Picked forward with a confidence of 3 with a time of 00:00:02.6171496 1
+Picked right with a confidence of 6 with a time of 00:00:02.1861250 1
  
 
 midpathmidarrowfloor
@@ -55,9 +59,9 @@ rightpathshortarrowfloor
 
 surveyfinalquestions
 what did you think of the robot?
-What did you think of the robot?111
+What did you think of the robot?its a decent robot
 What do you want to change about the robot so that you would like it more?
-What do you want to change about the robot so that you would like it more?
+What do you want to change about the robot so that you would like it more? change a few things around
  
 
 

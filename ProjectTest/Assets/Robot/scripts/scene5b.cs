@@ -4,6 +4,9 @@ using System.IO;
 
 public class scene5b : MonoBehaviour {
 	//this class is used for mid term view for path 2
+	Texture leftarrows;
+	Texture rightarrows;
+	Texture uparrows;
 
     public GameObject straight;
     public GameObject left;
@@ -198,6 +201,10 @@ public class scene5b : MonoBehaviour {
 	
 	void Start () {
 		Time.timeScale=1;
+
+		leftarrows = (Texture)Resources.Load("leftarrow");
+		rightarrows = (Texture)Resources.Load("rightarrow");
+		uparrows = (Texture)Resources.Load("uparrow");
 	}
 
 	void OnGUI()
@@ -226,7 +233,7 @@ public class scene5b : MonoBehaviour {
 			}
 			
 			//
-			if(GUI.Button(new Rect(170,300,80,50), "left")) 
+			if(GUI.Button(new Rect(170,300,80,50), leftarrows)) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -243,7 +250,7 @@ public class scene5b : MonoBehaviour {
 				choice=1;
 				
 			}
-			if(GUI.Button(new Rect(250,300,80,50), "forward")) 
+			if(GUI.Button(new Rect(250,300,80,50), uparrows)) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -260,7 +267,7 @@ public class scene5b : MonoBehaviour {
 				choice=1;
 			}
 			
-			if(GUI.Button(new Rect(330,300,80,50), "right")) 
+			if(GUI.Button(new Rect(330,300,80,50), rightarrows)) 
 			{
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
