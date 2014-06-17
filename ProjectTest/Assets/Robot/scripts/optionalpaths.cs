@@ -4,6 +4,7 @@ using System.IO;
 
 
 public class optionalpaths : MonoBehaviour {
+
 	public GameObject red;
 	public GameObject blue;
 	public GameObject green;
@@ -30,6 +31,7 @@ public class optionalpaths : MonoBehaviour {
 		//map.SetActive(false);
 		holo.SetActive(false);
 		Time.timeScale=0;
+
 	}
 
 	// Update is called once per frame
@@ -54,9 +56,10 @@ public class optionalpaths : MonoBehaviour {
 			if(Application.loadedLevel == 3)
 				txtFile = "longtermpathselect2";
 			// /changes 6-12
-			GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
-			
-			if(GUI.Button(new Rect(150,400,100,50), "1")) 
+			//GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
+			//GUI.Box(new Rect(150,300,300,100), robotintent);
+
+			if(GUI.Button(new Rect(350,400,100,50), "1")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
@@ -83,7 +86,7 @@ public class optionalpaths : MonoBehaviour {
 				}
 				*/
 			}
-			if(GUI.Button(new Rect(250,400,100,50), "2")) 
+			if(GUI.Button(new Rect(450,400,100,50), "2")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
@@ -111,7 +114,7 @@ public class optionalpaths : MonoBehaviour {
 				*/
 			}
 			
-			if(GUI.Button(new Rect(350,400,100,50), "3")) 
+			if(GUI.Button(new Rect(550,400,100,50), "3")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);

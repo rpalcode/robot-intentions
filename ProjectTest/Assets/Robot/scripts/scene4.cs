@@ -177,7 +177,7 @@ public class scene4 : MonoBehaviour {
 		{
 			int choice=0;
 			
-			GUI.Box(new Rect(170,250,240,100), "Which way is the robot going to go?\n(From robot's point of view)");
+			GUI.Box(new Rect(170,250,240,100), "");
 			//
 			if(stop1 == 1 && stop2==0 && stop3==0) 
 			{
