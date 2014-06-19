@@ -59,7 +59,7 @@ public class optionalpaths : MonoBehaviour {
 			//GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			//GUI.Box(new Rect(150,300,300,100), robotintent);
 
-			if(GUI.Button(new Rect(350,400,100,50), "1")) 
+			if(GUI.Button(new Rect(250,400,100,50), "1")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
@@ -86,7 +86,7 @@ public class optionalpaths : MonoBehaviour {
 				}
 				*/
 			}
-			if(GUI.Button(new Rect(450,400,100,50), "2")) 
+			if(GUI.Button(new Rect(350,400,100,50), "2")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
@@ -114,7 +114,7 @@ public class optionalpaths : MonoBehaviour {
 				*/
 			}
 			
-			if(GUI.Button(new Rect(550,400,100,50), "3")) 
+			if(GUI.Button(new Rect(450,400,100,50), "3")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
