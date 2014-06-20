@@ -182,7 +182,7 @@ public class scene5b : MonoBehaviour {
 					writer.WriteLine(" ");
 				}
 			}
-			if(Application.loadedLevel == 17)
+			if(Application.loadedLevel == 18)
 			{
 				using (StreamWriter writer = new StreamWriter("midrobotseye.txt"))
 				{

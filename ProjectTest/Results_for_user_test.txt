@@ -1,0 +1,62 @@
+longtermpathselect from side
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+3 00:00:02.6491515
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+What did you think of the robot? its a good robot
+What do you want to change about the robot so that you would like it more?
+What do you want to change about the robot so that you would like it more?
+ 
+
+
+

@@ -1,3 +1,3 @@
 initial longterm path select
-1 00:00:07.0534034
+3 00:00:02.6481515
  

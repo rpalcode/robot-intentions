@@ -1,16 +1,14 @@
 longtermpathselect from side
+initial longterm path select
+2 00:00:00.9100521
  
 
 longtermpathselect from robot's eye view
 initial longterm path select
-2 00:00:29.4836863
+1 00:00:01.6040917
  
 
 leftpathmidarrowfloor
-mid-term view without map on screen
-Picked right with a confidence of  with a time of 00:00:07.7194415 0
-Picked  with a confidence of  with a time of 00:00:03.8272189 0
-Picked right with a confidence of  with a time of 00:00:02.8661640 1
  
 
 midpathmidarrowfloor
@@ -21,9 +19,9 @@ rightpathmidarrowfloor
 
 leftrobotseye
 mid-term robot's eye view without map on screen
-Picked forward with a confidence of 6 with a time of 00:00:58.6633554 0
-Picked forward with a confidence of 4 with a time of 00:00:04.4882567 1
-Picked right with a confidence of  with a time of 00:00:02.3841364 1
+Picked forward with a confidence of 4 with a time of 00:00:02.5991486 0
+Picked right with a confidence of 4 with a time of 00:00:04.1912397 0
+Picked right with a confidence of 3 with a time of 00:00:04.1902396 1
  
 
 midrobotseye
@@ -33,12 +31,24 @@ rightrobotseye
  
 
 leftpathmidarrowchest
+mid-term view with map on screen
+Picked left with a confidence of 6 with a time of 00:00:05.0692899 1
+Picked forward with a confidence of 5 with a time of 00:00:02.8661640 1
+Picked right with a confidence of 6 with a time of 00:00:02.6831534 1
  
 
 midpathmidarrowchest
+mid-term view with map on screen
+Picked right with a confidence of 6 with a time of 00:00:08.9455117 1
+Picked left with a confidence of 5 with a time of 00:00:13.4187675 1
+Picked forward with a confidence of 4 with a time of 00:00:08.2164700 1
  
 
 rightpathmidarrowchest
+mid-term view with map on screen
+Picked right with a confidence of 6 with a time of 00:00:08.9955145 0
+Picked right with a confidence of 5 with a time of 00:00:13.1867542 0
+Picked forward with a confidence of 7 with a time of 00:00:13.2537581 1
  
 
 leftpathshortarrowchest
@@ -61,9 +71,10 @@ rightpathshortarrowfloor
 
 surveyfinalquestions
 what did you think of the robot?
-stuff
+What did you think of the robot? decent
 What do you want to change about the robot so that you would like it more?
-more stuff
+What do you want to change about the robot so that you would like it more? change a few things
+ 
 
 
 
