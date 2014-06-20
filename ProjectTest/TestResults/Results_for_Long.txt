@@ -1,0 +1,71 @@
+longtermpathselect from side
+initial longterm path select
+3 00:00:06.5223730
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+2 00:00:10.1575809
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+mid-term robot's eye view with map on screen
+Picked right with a confidence of 6 with a time of 00:00:08.9455117 1
+Picked right with a confidence of 5 with a time of 00:00:13.4187675 0
+Picked forward with a confidence of 4 with a time of 00:00:08.2164700 1
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+mid-term view with map on screen
+Picked right with a confidence of 6 with a time of 00:00:08.8725075 0
+Picked forward with a confidence of 7 with a time of 00:00:08.8735075 1
+Picked forward with a confidence of 7 with a time of 00:00:07.9044521 1
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+I like the robots speed. It was fairly fassttttt. The robot's shape is pretty cool too. I liked the smooooooooothness of its movement.
+What do you want to change about the robot so that you would like it more?
+COLOR the bot :D. COLOR THE BOT.
+ 
+
+
+

@@ -1,0 +1,71 @@
+longtermpathselect from side
+initial longterm path select
+1 00:00:03.4371966
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+3 00:00:12.9757422
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+mid-term robot's eye view without map on screen
+Picked right with a confidence of 5 with a time of 00:00:03.8592208 0
+Picked right with a confidence of 5 with a time of 00:00:10.5866055 0
+Picked forward with a confidence of 7 with a time of 00:00:05.6443228 1
+
+leftpathmidarrowchest
+mid-term robot's eye view with map on screen
+Picked left with a confidence of 4 with a time of 00:00:09.4755420 1
+Picked forward with a confidence of 7 with a time of 00:00:06.5203730 1
+Picked right with a confidence of 6 with a time of 00:00:05.3873081 1
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+
+What do you want to change about the robot so that you would like it more?
+
+ 
+
+
+

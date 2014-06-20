@@ -1,0 +1,72 @@
+longtermpathselect from side
+initial longterm path select
+2 00:00:07.1724102
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+2 00:00:16.8129616
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+mid-term robot's eye view without map on screen
+Picked right with a confidence of 7 with a time of 00:00:13.0097441 0
+Picked left with a confidence of 7 with a time of 00:00:08.3564780 0
+Picked forward with a confidence of 4 with a time of 00:00:12.1946975 0
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+mid-term view with map on screen
+Picked left with a confidence of 6 with a time of 00:00:10.8766221 0
+Picked forward with a confidence of 5 with a time of 00:00:07.9724560 1
+Picked forward with a confidence of 5 with a time of 00:00:14.4948290 1
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+The robot should have more interesting colors. The robot's map should be more clear so it can be understood. Additionally, stay there enough to see the map. I like it.
+What do you want to change about the robot so that you would like it more?
+I would change the colors and add a female robot.
+ 
+
+
+

@@ -1,0 +1,71 @@
+longtermpathselect from side
+initial longterm path select
+3 00:00:09.3405342
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+3 00:00:20.3661649
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+mid-term robot's eye view without map on screen
+Picked left with a confidence of 6 with a time of 00:00:05.0692899 1
+Picked forward with a confidence of 5 with a time of 00:00:02.8661640 1
+Picked right with a confidence of 6 with a time of 00:00:02.6831534 1 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+mid-term view with map on screen
+Picked left with a confidence of 4 with a time of 00:00:13.3097613 0
+Picked forward with a confidence of 7 with a time of 00:00:14.6278367 1
+Picked forward with a confidence of 6.5 with a time of 00:00:24.4523986 1
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+It is a cool simulation because I have not used the Rift before.
+What do you want to change about the robot so that you would like it more?
+Not so basic, add color and bells and other things. NPCs that move.
+ 
+
+
+

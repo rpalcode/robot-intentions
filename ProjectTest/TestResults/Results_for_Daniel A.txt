@@ -1,0 +1,72 @@
+longtermpathselect from side
+initial longterm path select
+2 00:00:05.3373053
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+1 00:00:03.8522203
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+mid-term robot's eye view without map on screen
+Picked left with a confidence of 7 with a time of 00:00:08.0554608 1
+Picked forward with a confidence of 4 with a time of 00:00:15.0118586 1
+Picked right with a confidence of 7 with a time of 00:00:08.2884741 1
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+mid-term view with map on screen
+Picked right with a confidence of 7 with a time of 00:00:09.5575467 1
+Picked left with a confidence of 7 with a time of 00:00:08.3044750 1
+Picked forward with a confidence of 7 with a time of 00:00:07.5054293 1
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+The robot is reliable and steady.
+What do you want to change about the robot so that you would like it more?
+ability to interact with movable rigidbody objects, slight acceleration and deceleration, but the speed is fine
+ 
+
+
+
