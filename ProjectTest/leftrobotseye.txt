@@ -1,1 +1,5 @@
+mid-term robot's eye view without map on screen
+Picked forward with a confidence of 6 with a time of 00:00:11.5786622 0
+Picked forward with a confidence of 6 with a time of 00:00:05.4993145 1
+Picked forward with a confidence of 5 with a time of 00:00:15.2408718 0
  

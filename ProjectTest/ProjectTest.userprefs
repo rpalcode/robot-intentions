@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\unitytest\Assets\clickobject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Robot\scripts\scene4.cs">
     <Files>
-      <File FileName="..\..\..\unitytest\Assets\clickobject.cs" Line="18" Column="1" />
+      <File FileName="Assets\Robot\scripts\scene4.cs" Line="299" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
