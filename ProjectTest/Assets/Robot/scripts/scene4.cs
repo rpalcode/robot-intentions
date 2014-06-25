@@ -168,6 +168,10 @@ public class scene4 : MonoBehaviour {
 		leftarrows = (Texture)Resources.Load("leftarrow");
 		rightarrows = (Texture)Resources.Load("rightarrow");
 		uparrows = (Texture)Resources.Load("uparrow");
+
+		left.renderer.material.color = Color.yellow;
+		right.renderer.material.color = Color.yellow;
+		straight.renderer.material.color = Color.yellow;
 	}
 	
 	//
@@ -177,24 +181,24 @@ public class scene4 : MonoBehaviour {
 		{
 			int choice=0;
 			
-			GUI.Box(new Rect(170,250,240,100), "");
+			//GUI.Box(new Rect(170,250,240,100), "");
 			//
 			if(stop1 == 1 && stop2==0 && stop3==0) 
 			{
-				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf1 = GUI.TextField(new Rect(170,   400, 240, 25), conf1, 250);
+				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you?");
+				conf1 = GUI.TextField(new Rect(270,   400, 30, 25), conf1, 250);
 
 			}
 			if(stop1 == 1 && stop2==1 && stop3==0)
 			{
-				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf2 = GUI.TextField(new Rect(170,   400, 240, 25), conf2, 250);
+				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you?");
+				conf2 = GUI.TextField(new Rect(270,   400, 30, 25), conf2, 250);
 
 			}
 			if(stop1 == 1 && stop2==1 && stop3==1)
 			{
-				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you with your answer? ");
-				conf3 = GUI.TextField(new Rect(170,   400, 240, 25), conf3, 250);
+				GUI.Box(new Rect(170,350,240,100), "From a scale of 1-7\nhow confident are you?");
+				conf3 = GUI.TextField(new Rect(270,   400, 30, 25), conf3, 250);
 
 			}
 			
