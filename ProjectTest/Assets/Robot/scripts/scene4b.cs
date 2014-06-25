@@ -104,6 +104,16 @@ public class scene4b : MonoBehaviour {
 
 		StartSide ();
 
+		if(Application.loadedLevel == 21)
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(false);
+			four.SetActive(false);
+			straight.SetActive(false);
+			right.SetActive(false);
+			left.SetActive(false);
+		}
 
 		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
 		{
@@ -132,14 +142,14 @@ public class scene4b : MonoBehaviour {
 			stop3=1;
 		}
 
-			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5)
+			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5 && Application.loadedLevel != 21)
 			{
 				one.SetActive(true);
 				two.SetActive(false);
 				three.SetActive(false);
 				four.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 1.5 && Time.timeSinceLevelLoad < 3)
+		if (Time.timeSinceLevelLoad > 1.5 && Time.timeSinceLevelLoad < 3 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
@@ -147,21 +157,21 @@ public class scene4b : MonoBehaviour {
 				four.SetActive(false);
 				left.SetActive(true);
 			}
-			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
+		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(true);
 				three.SetActive(false);
 				four.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5)
+		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(true);
 				three.SetActive(false);
 				four.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 11)
+		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 11 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
@@ -169,7 +179,7 @@ public class scene4b : MonoBehaviour {
 				four.SetActive(false);
 				straight.SetActive(true);
 			}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13)
+		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13 && Application.loadedLevel != 21)
 		{
 			one.SetActive(false);
 			two.SetActive(false);
@@ -177,7 +187,7 @@ public class scene4b : MonoBehaviour {
 			four.SetActive(false);
 			right.SetActive(true);
 		}
-			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
+		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
@@ -185,21 +195,21 @@ public class scene4b : MonoBehaviour {
 				four.SetActive(false);
 				right.SetActive(true);
 			}
-			if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15)
+		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
 				three.SetActive(true);
 				four.SetActive(false);
 			}
-			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 15.5)
+		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 15.5 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
 				three.SetActive(false);
 				four.SetActive(true);
 			}
-		if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 22)
+		if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 22 && Application.loadedLevel != 21)
 		{
 			one.SetActive(false);
 			two.SetActive(false);
@@ -270,6 +280,17 @@ public class scene4b : MonoBehaviour {
 					writer.WriteLine(" ");
 					}
 				}
+			if(Application.loadedLevel == 21)
+			{
+				using (StreamWriter writer = new StreamWriter("leftpathnoarrowrobotseye.txt"))
+				{
+					writer.WriteLine("mid-term view with no arrows");
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);
+					writer.WriteLine(" ");
+				}
+			}
 
 
 //
@@ -410,7 +431,6 @@ public class scene4b : MonoBehaviour {
 	}
 
 	void Update () {
-
         option1();
 	}
 }

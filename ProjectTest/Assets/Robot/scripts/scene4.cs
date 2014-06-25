@@ -292,21 +292,4 @@ public class scene4 : MonoBehaviour {
         option1();
 	}
 
-	void Crasher()
-	{
-		if(Application.loadedLevel == 20)
-		{
-			//execute crash function
-			transform.Translate(0,-5*Time.deltaTime,0);
-			StartCoroutine(WaitRoutine());
-			transform.Translate(0,5*Time.deltaTime,0);
-			StartCoroutine(WaitRoutine());
-		}
-	}
-
-	IEnumerator WaitRoutine()
-	{
-		Debug.Log ("Coroutine works :D ");
-		yield return new WaitForSeconds(1);
-	}
 }

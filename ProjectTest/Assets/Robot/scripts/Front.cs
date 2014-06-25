@@ -20,7 +20,7 @@ public class Front : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(0, 0, 22*force*Time.deltaTime);
+            transform.Rotate(0,0, 22*force*Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -28,7 +28,8 @@ public class Front : MonoBehaviour {
         }
 
 		if(Input.GetKeyUp(KeyCode.UpArrow))
-			force+=1;
+			if(force < 10)
+				force+=1;
 		if(Input.GetKeyUp(KeyCode.DownArrow))
 			force/=2;
 	}

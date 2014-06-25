@@ -62,6 +62,9 @@ public class readData : MonoBehaviour {
 		//
 		line[17] = "surveyfinalquestions";
 		text[17] = System.IO.File.ReadAllText("surveyfinalquestions.txt");
+		//
+		line[18] = "leftpathnoarrowrobotseye";
+		text[18] = System.IO.File.ReadAllText("leftpathnoarrowrobotseye");		
 
 		string fileName = ("Results_for_" + side.username + ".txt");
 

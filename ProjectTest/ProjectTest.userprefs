@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Robot\scripts\Front.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Robot\scripts\col.cs">
     <Files>
-      <File FileName="Assets\Robot\scripts\Front.cs" Line="1" Column="1" />
-      <File FileName="Assets\Robot\scripts\Front.cs" Line="1" Column="1" />
+      <File FileName="Assets\Robot\scripts\col.cs" Line="35" Column="1" />
+      <File FileName="Assets\Robot\scripts\scene5.cs" Line="25" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

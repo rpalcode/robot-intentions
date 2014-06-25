@@ -99,9 +99,18 @@ public class SceneChanger : MonoBehaviour {
 		{
 			Application.LoadLevel(15);
 		}
-		if (Input.GetKeyUp("z"))
+		//just to make sure that survey results are recorded properly
+		if(Application.loadedLevel != 19)
 		{
-			Application.LoadLevel(19);
+			if (Input.GetKeyUp("z"))
+			{
+				Application.LoadLevel(19);
+			}
+		}
+		//this is for the no arrow scene
+		if (Input.GetKeyUp("i"))
+		{
+			Application.LoadLevel(21);
 		}
 	}
 }

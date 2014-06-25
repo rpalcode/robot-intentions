@@ -212,7 +212,8 @@ public class side : MonoBehaviour {
 		{ writer.WriteLine(" "); }
 		using (StreamWriter writer = new StreamWriter("rightpathshortarrowfloor.txt"))
 		{ writer.WriteLine(" "); }
-
+		using (StreamWriter writer = new StreamWriter("leftpathnoarrowrobotseye.txt"))
+		{ writer.WriteLine(" "); }
 		Time.timeScale = 1;
 
 	}
