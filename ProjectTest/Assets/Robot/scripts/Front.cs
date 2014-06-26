@@ -28,7 +28,7 @@ public class Front : MonoBehaviour {
         }
 
 		if(Input.GetKeyUp(KeyCode.UpArrow))
-			if(force < 10)
+			//if(force < 10)
 				force+=1;
 		if(Input.GetKeyUp(KeyCode.DownArrow))
 			force/=2;
