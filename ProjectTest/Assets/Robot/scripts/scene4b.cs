@@ -10,6 +10,12 @@ public class scene4b : MonoBehaviour {
 	Texture rightarrows;
 	Texture uparrows;
 
+	public GameObject person;
+	public GameObject flatperson;
+
+	Texture yes;
+	Texture nope;
+
     public GameObject straight;
     public GameObject left;
     public GameObject right;
@@ -36,11 +42,15 @@ public class scene4b : MonoBehaviour {
 	public System.TimeSpan deltaDate2;
 	public System.TimeSpan deltaDate3;
 
+	public System.TimeSpan deltaDatecol;
+
 	
 	public int stop1=0;
 	public int stop2=0;
 	public int stop3=0;
+	public int stopcol = 0;
 
+	public int pausecol = 0;
 	public int pause=0;
 	public string res1, res2, res3;
 
@@ -48,6 +58,10 @@ public class scene4b : MonoBehaviour {
 	public string conf1 = " ";
 	public string conf2 = " ";
 	public string conf3 = " ";
+
+	public string confcollide = " ";
+	public string collide = " ";
+
 	//
 
 	void StartSide()
@@ -60,6 +74,9 @@ public class scene4b : MonoBehaviour {
 		two.SetActive(false);
 		three.SetActive(false);
 		four.SetActive(false);
+
+		person.SetActive(true);
+		flatperson.SetActive(false);
 	}
 
 	void leftArrow()
@@ -133,7 +150,7 @@ public class scene4b : MonoBehaviour {
 			stop2=1;
 		}
 
-		if ((Time.timeSinceLevelLoad > 13.3 && Time.timeSinceLevelLoad < 13.4) && stop3==0)
+		if ((Time.timeSinceLevelLoad > 13.3 && Time.timeSinceLevelLoad < 13.4) && stop3==0 && Application.loadedLevel != 22)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -142,6 +159,14 @@ public class scene4b : MonoBehaviour {
 			stop3=1;
 		}
 
+		//this pauses simulation to ask user if the robot will collide with the obstacle
+		if((Time.timeSinceLevelLoad > 13.1 && Time.timeSinceLevelLoad < 13.2) && Application.loadedLevel == 22 && stopcol == 0)
+		{
+			date1 = System.DateTime.Now;
+			pausecol=1;
+			Time.timeScale =0;
+			rift.SetActive(true);
+		}
 			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5 && Application.loadedLevel != 21)
 			{
 				one.SetActive(true);
@@ -179,15 +204,11 @@ public class scene4b : MonoBehaviour {
 				four.SetActive(false);
 				straight.SetActive(true);
 			}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13 && Application.loadedLevel != 21)
+
+		//none of this should happen if the level is 22
+		if(Application.loadedLevel != 22)
 		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(false);
-			four.SetActive(false);
-			right.SetActive(true);
-		}
-		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14 && Application.loadedLevel != 21)
+			if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
@@ -195,27 +216,45 @@ public class scene4b : MonoBehaviour {
 				four.SetActive(false);
 				right.SetActive(true);
 			}
-		if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15 && Application.loadedLevel != 21)
+			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14 && Application.loadedLevel != 21)
+				{
+					one.SetActive(false);
+					two.SetActive(false);
+					three.SetActive(false);
+					four.SetActive(false);
+					right.SetActive(true);
+				}
+			if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15 && Application.loadedLevel != 21)
+				{
+					one.SetActive(false);
+					two.SetActive(false);
+					three.SetActive(true);
+					four.SetActive(false);
+				}
+			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 15.5 && Application.loadedLevel != 21)
+				{
+					one.SetActive(false);
+					two.SetActive(false);
+					three.SetActive(false);
+					four.SetActive(true);
+				}
+			if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 22 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
 				two.SetActive(false);
 				three.SetActive(true);
 				four.SetActive(false);
-			}
-		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 15.5 && Application.loadedLevel != 21)
-			{
-				one.SetActive(false);
-				two.SetActive(false);
-				three.SetActive(false);
-				four.SetActive(true);
-			}
-		if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 22 && Application.loadedLevel != 21)
+			}	
+		}
+		else if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 22 && Application.loadedLevel != 21)
+			straight.SetActive(true);
+
+		if(Time.timeSinceLevelLoad > 13)
 		{
-			one.SetActive(false);
-			two.SetActive(false);
-			three.SetActive(true);
-			four.SetActive(false);
-		}		
+			person.SetActive(false);
+			flatperson.SetActive(true);
+		}
+
 
 		transform.Translate(0, -5 * Time.deltaTime, 0);
 
@@ -224,16 +263,19 @@ public class scene4b : MonoBehaviour {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
         }
 
-		if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
-        {
-            transform.Rotate(0, 0, 45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
-        }
-		if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25)
-        {
-            transform.Rotate(0, 0, -45 * Time.deltaTime);
-            transform.Translate(0, -5 * Time.deltaTime, 0);
-        }
+		if(Application.loadedLevel != 22)
+		{
+			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
+	        {
+	            transform.Rotate(0, 0, 45 * Time.deltaTime);
+	            transform.Translate(0, -5 * Time.deltaTime, 0);
+	        }
+			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25)
+	        {
+	            transform.Rotate(0, 0, -45 * Time.deltaTime);
+	            transform.Translate(0, -5 * Time.deltaTime, 0);
+	        }
+		}
 
 		int right1=0; int right2=0; int right3=0;
 		if(res1 == "left")
@@ -291,7 +333,18 @@ public class scene4b : MonoBehaviour {
 					writer.WriteLine(" ");
 				}
 			}
-
+			if(Application.loadedLevel == 22)
+			{
+				using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
+				{
+					writer.WriteLine("mid-term view with no arrows");
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("collision checker");
+					writer.WriteLine("Said that robot will " + collide + " after using up " + deltaDatecol + " of time.");
+					writer.WriteLine(" ");
+				}
+			}
 
 //
 			Application.LoadLevel(2);
@@ -307,6 +360,9 @@ public class scene4b : MonoBehaviour {
 		leftarrows = (Texture)Resources.Load("leftarrow");
 		rightarrows = (Texture)Resources.Load("rightarrow");
 		uparrows = (Texture)Resources.Load("uparrow");
+
+		yes = (Texture)Resources.Load("yes");
+		nope = (Texture)Resources.Load("no");
 
 		left.renderer.material.color = Color.yellow;
 		right.renderer.material.color = Color.yellow;
@@ -400,7 +456,7 @@ public class scene4b : MonoBehaviour {
 			int enter = 0;
 			if(enter==0) 
 			{ 
-				if(GUI.Button(new Rect(xpos, 450, xsize, 25), "Enter")) { enter=1; choice=1; } 
+				if(GUI.Button(new Rect(xpos+50, 425, xsize-100, 25), "Enter")) { enter=1; choice=1; } 
 			}
 
 			if(choice==1 && enter==1)
@@ -428,9 +484,47 @@ public class scene4b : MonoBehaviour {
 			}
 
 		}
+		if(pausecol == 1)
+		{
+			int choice = 0;
+
+			GUI.Box(new Rect(xpos,250,xsize,100), "Will the robot crash\ninto the obstacle?");
+			if(GUI.Button(new Rect(xpos,300,xsize/3,50), yes)) 
+			{
+				collide = "collide with the obstacle";
+				
+			}
+			if(GUI.Button(new Rect(xpos + (xsize/3),300,xsize/3,50), nope)) 
+			{
+				collide = "not collide with the obstacle";
+			}
+
+			GUI.Box(new Rect(xpos,350,xsize,100), "From a scale of 1-7\nhow confident are you?");
+			confcollide = GUI.TextField(new Rect(xpos+100,    400, 30, 25), confcollide, 250);
+
+
+			int enter = 0;
+			if(enter==0) 
+			{ 
+				if(GUI.Button(new Rect(xpos+50, 425, xsize-100, 25), "Enter")) { enter=1; choice=1; } 
+			}
+			
+			if(enter==1)
+			{
+				date2 = System.DateTime.Now;
+
+				rift.SetActive(false);
+				Time.timeScale =1;
+				pausecol=0;
+				stopcol = 1;
+				option1 ();
+				
+			}
+
+		}
 	}
 
 	void Update () {
-        option1();
+		option1(); Debug.Log("Time = " + Time.timeSinceLevelLoad + "!!1");
 	}
 }

@@ -112,5 +112,9 @@ public class SceneChanger : MonoBehaviour {
 		{
 			Application.LoadLevel(21);
 		}
+		if(Input.GetKeyUp("k"))
+		{
+			Application.LoadLevel(22);
+		}
 	}
 }
