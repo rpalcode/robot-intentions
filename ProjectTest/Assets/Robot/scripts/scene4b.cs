@@ -167,44 +167,44 @@ public class scene4b : MonoBehaviour {
 			Time.timeScale =0;
 			rift.SetActive(true);
 		}
-			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5 && Application.loadedLevel != 21)
-			{
-				one.SetActive(true);
-				two.SetActive(false);
-				three.SetActive(false);
-				four.SetActive(false);
-			}
+		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5 && Application.loadedLevel != 21)
+		{
+			one.SetActive(true);
+			two.SetActive(false);
+			three.SetActive(false);
+			four.SetActive(false);
+		}
 		if (Time.timeSinceLevelLoad > 1.5 && Time.timeSinceLevelLoad < 3 && Application.loadedLevel != 21)
-			{
-				one.SetActive(false);
-				two.SetActive(false);
-				three.SetActive(false);
-				four.SetActive(false);
-				left.SetActive(true);
-			}
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(false);
+			four.SetActive(false);
+			left.SetActive(true);
+		}
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4 && Application.loadedLevel != 21)
-			{
-				one.SetActive(false);
-				two.SetActive(true);
-				three.SetActive(false);
-				four.SetActive(false);
-			}
+		{
+			one.SetActive(false);
+			two.SetActive(true);
+			three.SetActive(false);
+			four.SetActive(false);
+		}
 		if (Time.timeSinceLevelLoad > 4 && Time.timeSinceLevelLoad < 5 && Application.loadedLevel != 21)
-			{
-				one.SetActive(false);
-				two.SetActive(true);
-				three.SetActive(false);
-				four.SetActive(false);
-			}
+		{
+			one.SetActive(false);
+			two.SetActive(true);
+			three.SetActive(false);
+			four.SetActive(false);
+		}
 		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 11 && Application.loadedLevel != 21)
-			{
-				one.SetActive(false);
-				two.SetActive(false);
-				three.SetActive(false);
-				four.SetActive(false);
-				straight.SetActive(true);
-			}
-
+		{
+			one.SetActive(false);
+			two.SetActive(false);
+			three.SetActive(false);
+			four.SetActive(false);
+			straight.SetActive(true);
+		}
+		
 		//none of this should happen if the level is 22
 		if(Application.loadedLevel != 22)
 		{
@@ -217,27 +217,27 @@ public class scene4b : MonoBehaviour {
 				right.SetActive(true);
 			}
 			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14 && Application.loadedLevel != 21)
-				{
-					one.SetActive(false);
-					two.SetActive(false);
-					three.SetActive(false);
-					four.SetActive(false);
-					right.SetActive(true);
-				}
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(false);
+				four.SetActive(false);
+				right.SetActive(true);
+			}
 			if (Time.timeSinceLevelLoad > 14 && Time.timeSinceLevelLoad < 15 && Application.loadedLevel != 21)
-				{
-					one.SetActive(false);
-					two.SetActive(false);
-					three.SetActive(true);
-					four.SetActive(false);
-				}
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(true);
+				four.SetActive(false);
+			}
 			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 15.5 && Application.loadedLevel != 21)
-				{
-					one.SetActive(false);
-					two.SetActive(false);
-					three.SetActive(false);
-					four.SetActive(true);
-				}
+			{
+				one.SetActive(false);
+				two.SetActive(false);
+				three.SetActive(false);
+				four.SetActive(true);
+			}
 			if (Time.timeSinceLevelLoad > 15.5 && Time.timeSinceLevelLoad < 22 && Application.loadedLevel != 21)
 			{
 				one.SetActive(false);
@@ -267,12 +267,18 @@ public class scene4b : MonoBehaviour {
 		{
 			if(Time.timeSinceLevelLoad > 17 && Time.timeSinceLevelLoad < 19)
 			{
-				Debug.Log ("moving back!");
-				transform.Translate(0,5*Time.deltaTime,0);
+				transform.Translate(0,10*Time.deltaTime,0);
 			}
-			if(Time.timeSinceLevelLoad > 19)
+			if(Time.timeSinceLevelLoad > 19 && Time.timeSinceLevelLoad < 21)
 			{
-				Debug.Log("moving fwd!");
+				transform.Translate(0,-5*Time.deltaTime,0);
+			}
+			if(Time.timeSinceLevelLoad > 21 && Time.timeSinceLevelLoad < 23)
+			{
+				transform.Translate(0,10*Time.deltaTime,0);
+			}
+			if(Time.timeSinceLevelLoad > 23)
+			{
 				transform.Translate(0,-5*Time.deltaTime,0);
 			}
 		}
@@ -300,7 +306,7 @@ public class scene4b : MonoBehaviour {
 		if(res3 == "right")
 			right3 = 1;
 
-		if (Time.timeSinceLevelLoad >= 22)
+		if (Time.timeSinceLevelLoad >= 22 && Application.loadedLevel != 22)
 		{
 //
 			if(Application.loadedLevel == 5)
@@ -348,20 +354,23 @@ public class scene4b : MonoBehaviour {
 					writer.WriteLine(" ");
 				}
 			}
-			if(Application.loadedLevel == 22)
+
+			if(Time.timeSinceLevelLoad > 23 && Application.loadedLevel == 22)
 			{
-				using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
+				if(Application.loadedLevel == 22)
 				{
-					writer.WriteLine("mid-term view with no arrows");
-					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
-					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
-					writer.WriteLine("collision checker");
-					writer.WriteLine("Said that robot will " + collide + " after using up " + deltaDatecol + " of time.");
-					writer.WriteLine(" ");
+					using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
+					{
+						Debug.Log ("Writing to .txt file");
+						writer.WriteLine("");
+						writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+						writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+						writer.WriteLine("collision checker");
+						writer.WriteLine("Said that robot will " + collide + " after using up " + deltaDatecol + " of time.");
+						writer.WriteLine(" ");
+					}
 				}
 			}
-
-//
 			Application.LoadLevel(2);
 		}         
     }
