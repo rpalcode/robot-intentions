@@ -1,6 +1,6 @@
 mid-term view with no arrows
-Picked  with a confidence of  with a time of 00:00:01.0770616 0
-Picked  with a confidence of  with a time of 00:00:01.3100749 0
+Picked  with a confidence of  with a time of 00:00:01.0950626 0
+Picked  with a confidence of  with a time of 00:00:01.2590720 0
 collision checker
 Said that robot will   after using up 00:00:00 of time.
  

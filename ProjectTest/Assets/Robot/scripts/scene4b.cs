@@ -249,7 +249,7 @@ public class scene4b : MonoBehaviour {
 		else if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 22 && Application.loadedLevel != 21)
 			straight.SetActive(true);
 
-		if(Time.timeSinceLevelLoad > 13)
+		if(Time.timeSinceLevelLoad > 17)
 		{
 			person.SetActive(false);
 			flatperson.SetActive(true);
@@ -263,6 +263,20 @@ public class scene4b : MonoBehaviour {
             transform.Rotate(0, 0, -45 * Time.deltaTime);
         }
 
+		if(Application.loadedLevel == 22)
+		{
+			if(Time.timeSinceLevelLoad > 17 && Time.timeSinceLevelLoad < 19)
+			{
+				Debug.Log ("moving back!");
+				transform.Translate(0,5*Time.deltaTime,0);
+			}
+			if(Time.timeSinceLevelLoad > 19)
+			{
+				Debug.Log("moving fwd!");
+				transform.Translate(0,-5*Time.deltaTime,0);
+			}
+		}
+
 		if(Application.loadedLevel != 22)
 		{
 			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
@@ -275,6 +289,7 @@ public class scene4b : MonoBehaviour {
 	            transform.Rotate(0, 0, -45 * Time.deltaTime);
 	            transform.Translate(0, -5 * Time.deltaTime, 0);
 	        }
+
 		}
 
 		int right1=0; int right2=0; int right3=0;
@@ -525,6 +540,6 @@ public class scene4b : MonoBehaviour {
 	}
 
 	void Update () {
-		option1(); Debug.Log("Time = " + Time.timeSinceLevelLoad + "!!1");
+		option1(); //Debug.Log("Time = " + Time.timeSinceLevelLoad + "!!1");
 	}
 }
