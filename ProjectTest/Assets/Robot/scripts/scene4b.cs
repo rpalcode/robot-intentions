@@ -10,9 +10,11 @@ public class scene4b : MonoBehaviour {
 	Texture rightarrows;
 	Texture uparrows;
 
+	public GameObject guiquestion;
+
 	public GameObject person;
 	public GameObject flatperson;
-
+	
 	Texture yes;
 	Texture nope;
 
@@ -246,7 +248,7 @@ public class scene4b : MonoBehaviour {
 				four.SetActive(false);
 			}	
 		}
-		else if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 22 && Application.loadedLevel != 21)
+		else if (Time.timeSinceLevelLoad > 11 && Application.loadedLevel != 21)
 			straight.SetActive(true);
 
 		if(Time.timeSinceLevelLoad > 17)
@@ -355,24 +357,26 @@ public class scene4b : MonoBehaviour {
 				}
 			}
 
-			if(Time.timeSinceLevelLoad > 23 && Application.loadedLevel == 22)
+			Application.LoadLevel(2);
+		}
+		
+		if(Time.timeSinceLevelLoad > 26 && Application.loadedLevel == 22)
+		{
+			
+			using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
 			{
-				if(Application.loadedLevel == 22)
-				{
-					using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
-					{
-						Debug.Log ("Writing to .txt file");
-						writer.WriteLine("");
-						writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
-						writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
-						writer.WriteLine("collision checker");
-						writer.WriteLine("Said that robot will " + collide + " after using up " + deltaDatecol + " of time.");
-						writer.WriteLine(" ");
-					}
-				}
+				Debug.Log ("Writing to .txt file!");
+				writer.WriteLine("");
+				writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+				writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+				writer.WriteLine("collision checker");
+				writer.WriteLine("Said that robot will " + collide + " after using up " + deltaDatecol + " of time.");
+				writer.WriteLine(" ");
 			}
 			Application.LoadLevel(2);
-		}         
+
+		}
+
     }
 
 
@@ -510,6 +514,7 @@ public class scene4b : MonoBehaviour {
 		}
 		if(pausecol == 1)
 		{
+			guiquestion.SetActive(false);
 			int choice = 0;
 
 			GUI.Box(new Rect(xpos,250,xsize,100), "Will the robot crash\ninto the obstacle?");
@@ -549,6 +554,6 @@ public class scene4b : MonoBehaviour {
 	}
 
 	void Update () {
-		option1(); //Debug.Log("Time = " + Time.timeSinceLevelLoad + "!!1");
+		option1(); 
 	}
 }
