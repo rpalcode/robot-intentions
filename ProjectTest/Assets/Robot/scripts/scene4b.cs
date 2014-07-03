@@ -365,7 +365,7 @@ public class scene4b : MonoBehaviour {
 			
 			using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
 			{
-				Debug.Log ("Writing to .txt file!");
+				Debug.Log ("Writing to .txt file! collide = " + collide + " and time it took was " + deltaDatecol + "! :D");
 				writer.WriteLine("");
 				writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
 				writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
@@ -541,7 +541,7 @@ public class scene4b : MonoBehaviour {
 			if(enter==1)
 			{
 				date2 = System.DateTime.Now;
-
+				deltaDatecol = date2 - date1;
 				rift.SetActive(false);
 				Time.timeScale =1;
 				pausecol=0;
