@@ -77,8 +77,12 @@ public class scene4b : MonoBehaviour {
 		three.SetActive(false);
 		four.SetActive(false);
 
-		person.SetActive(true);
-		flatperson.SetActive(false);
+		if(Application.loadedLevel == 22)
+		{
+			person.SetActive(true);
+			flatperson.SetActive(false);
+	
+		}
 	}
 
 	void leftArrow()
