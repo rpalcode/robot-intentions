@@ -434,6 +434,7 @@ public class scene4b : MonoBehaviour {
 
 			if(GUI.Button(new Rect(xpos,300,xsize/3,50), leftarrows)) 
 			{
+				date2 = System.DateTime.Now;
 
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
@@ -452,6 +453,8 @@ public class scene4b : MonoBehaviour {
 			}
 			if(GUI.Button(new Rect(xpos + (xsize/3),300,xsize/3,50), uparrows)) 
 			{
+				date2 = System.DateTime.Now;
+
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					res1 = "forward";
@@ -469,6 +472,8 @@ public class scene4b : MonoBehaviour {
 			
 			if(GUI.Button(new Rect(xpos + 2*(xsize/3),300,80,50), rightarrows)) 
 			{
+				date2 = System.DateTime.Now;
+
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					res1 = "right";
@@ -491,7 +496,6 @@ public class scene4b : MonoBehaviour {
 
 			if(choice==1 && enter==1)
 			{
-				date2 = System.DateTime.Now;
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					deltaDate1 = (date2-date1);
@@ -522,11 +526,13 @@ public class scene4b : MonoBehaviour {
 			GUI.Box(new Rect(xpos,250,xsize,100), "Will the robot crash\ninto the obstacle?");
 			if(GUI.Button(new Rect(xpos,300,xsize/3,50), yes)) 
 			{
+				date2 = System.DateTime.Now;
 				collide = "collide with the obstacle";
 				
 			}
 			if(GUI.Button(new Rect(xpos + (xsize/3),300,xsize/3,50), nope)) 
 			{
+				date2 = System.DateTime.Now;
 				collide = "not collide with the obstacle";
 			}
 
@@ -545,7 +551,6 @@ public class scene4b : MonoBehaviour {
 			
 			if(enter==1 && choice==1)
 			{
-				date2 = System.DateTime.Now;
 				Debug.Log("date1 = " + date1 + "date2 = " + date2);
 				deltaDatecol = date2 - date1;
 				//Debug.Log("deltaDate = " + deltaDatecol + "!");

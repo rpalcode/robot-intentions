@@ -197,6 +197,8 @@ public class scene5 : MonoBehaviour {
 			//
 			if(GUI.Button(new Rect(170,300,80,50), leftarrows)) 
 			{
+				date2 = System.DateTime.Now;
+
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					res1 = "left";
@@ -214,6 +216,8 @@ public class scene5 : MonoBehaviour {
 			}
 			if(GUI.Button(new Rect(250,300,80,50), uparrows)) 
 			{
+				date2 = System.DateTime.Now;
+
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					res1 = "forward";
@@ -231,6 +235,8 @@ public class scene5 : MonoBehaviour {
 			
 			if(GUI.Button(new Rect(330,300,80,50), rightarrows)) 
 			{
+				date2 = System.DateTime.Now;
+
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{
 					res1 = "right";
@@ -255,7 +261,6 @@ public class scene5 : MonoBehaviour {
 
 			if(choice==1 && enter==1)
 			{
-				date2 = System.DateTime.Now;
 				//UnityEngine.Debug.Log ("ELAPSED = " + (date2-date1));
 				if(stop1 == 1 && stop2==0 && stop3==0) 
 				{

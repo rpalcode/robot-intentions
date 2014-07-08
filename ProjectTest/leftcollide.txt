@@ -1,6 +1,6 @@
 path 1 collision scene
-Picked left with a confidence of 3 with a time of 00:01:18.1794716 1
-Picked forward with a confidence of 6 with a time of 00:00:03.9092236 1
+Picked left with a confidence of 7 with a time of 00:00:02.3521345 1
+Picked forward with a confidence of 7 with a time of 00:00:05.4873139 1
 collision checker
-Said that robot will not collide with the obstacle with a confidence of  5 after using up 00:00:27.1865550 of time.
+Said that robot will not collide with the obstacle with a confidence of  7 after using up 00:00:10.5256020 of time.
  
