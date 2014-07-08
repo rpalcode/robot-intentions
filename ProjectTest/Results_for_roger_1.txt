@@ -50,16 +50,12 @@ rightpathshortarrowfloor
  
 
 leftpathcollide
-path 1 collision scene
-Picked forward with a confidence of 4 with a time of 00:00:02.5561462 0
-Picked forward with a confidence of 3 with a time of 00:00:02.5891481 1
 collision checker
-Said that robot will collide with the obstacle with a confidence of  3 after using up 00:00:02.5041432 of time.
  
 
 surveyfinalquestions
 what did you think of the robot?
-What did you think of the robot?r
+What did you think of the robot?33
 What do you want to change about the robot so that you would like it more?
 What do you want to change about the robot so that you would like it more?
  

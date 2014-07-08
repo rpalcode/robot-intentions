@@ -168,7 +168,8 @@ public class scene4b : MonoBehaviour {
 		//this pauses simulation to ask user if the robot will collide with the obstacle
 		if((Time.timeSinceLevelLoad > 13.1 && Time.timeSinceLevelLoad < 13.2) && Application.loadedLevel == 22 && stopcol == 0)
 		{
-			date1 = System.DateTime.Now;
+			if(pausecol==0)
+				date1 = System.DateTime.Now;
 			pausecol=1;
 			Time.timeScale =0;
 			rift.SetActive(true);
@@ -255,7 +256,7 @@ public class scene4b : MonoBehaviour {
 		else if (Time.timeSinceLevelLoad > 11 && Application.loadedLevel != 21)
 			straight.SetActive(true);
 
-		if(Time.timeSinceLevelLoad > 17)
+		if(Time.timeSinceLevelLoad > 17 && Application.loadedLevel == 22)
 		{
 			person.SetActive(false);
 			flatperson.SetActive(true);
@@ -279,11 +280,7 @@ public class scene4b : MonoBehaviour {
 			{
 				transform.Translate(0,-5*Time.deltaTime,0);
 			}
-			if(Time.timeSinceLevelLoad > 21 && Time.timeSinceLevelLoad < 23)
-			{
-				transform.Translate(0,10*Time.deltaTime,0);
-			}
-			if(Time.timeSinceLevelLoad > 23)
+			if(Time.timeSinceLevelLoad > 21)
 			{
 				transform.Translate(0,-5*Time.deltaTime,0);
 			}
@@ -364,17 +361,17 @@ public class scene4b : MonoBehaviour {
 			Application.LoadLevel(2);
 		}
 		
-		if(Time.timeSinceLevelLoad > 26 && Application.loadedLevel == 22)
+		if(Time.timeSinceLevelLoad > 25 && Application.loadedLevel == 22)
 		{
 			
 			using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
 			{
 				Debug.Log ("Writing to .txt file! collide = " + collide + " and time it took was " + deltaDatecol + "! :D");
-				writer.WriteLine("");
+				writer.WriteLine("path 1 collision scene");
 				writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
 				writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
 				writer.WriteLine("collision checker");
-				writer.WriteLine("Said that robot will " + collide + " after using up " + deltaDatecol + " of time.");
+				writer.WriteLine("Said that robot will " + collide + " with a confidence of " + confcollide + " after using up " + deltaDatecol + " of time.");
 				writer.WriteLine(" ");
 			}
 			Application.LoadLevel(2);
@@ -403,6 +400,7 @@ public class scene4b : MonoBehaviour {
 		two.renderer.material.color = Color.yellow;
 		three.renderer.material.color = Color.yellow;
 		four.renderer.material.color = Color.yellow;
+
 	}
 
 	//
@@ -539,13 +537,18 @@ public class scene4b : MonoBehaviour {
 			int enter = 0;
 			if(enter==0) 
 			{ 
-				if(GUI.Button(new Rect(xpos+50, 425, xsize-100, 25), "Enter")) { enter=1; choice=1; } 
+				if(GUI.Button(new Rect(xpos+50, 425, xsize-100, 25), "Enter")) 
+				{ 
+					enter=1; choice=1;
+				} 
 			}
 			
-			if(enter==1)
+			if(enter==1 && choice==1)
 			{
 				date2 = System.DateTime.Now;
+				Debug.Log("date1 = " + date1 + "date2 = " + date2);
 				deltaDatecol = date2 - date1;
+				//Debug.Log("deltaDate = " + deltaDatecol + "!");
 				rift.SetActive(false);
 				Time.timeScale =1;
 				pausecol=0;
