@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Robot\scripts\optionalpaths.cs">
     <Files>
-      <File FileName="Assets\Robot\scripts\optionalpaths.cs" Line="65" Column="32" />
+      <File FileName="Assets\Robot\scripts\optionalpaths.cs" Line="59" Column="36" />
+      <File FileName="Assets\Robot\scripts\optionalpaths.cs" Line="69" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

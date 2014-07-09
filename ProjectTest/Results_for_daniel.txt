@@ -1,0 +1,80 @@
+longtermpathselect from side
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+1 00:00:00 1
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+mid-term view without map on screen
+Picked right with a confidence of 6 with a time of 00:00:03.1361793 0
+Picked forward with a confidence of 5 with a time of 00:00:03.1191784 1
+Picked forward with a confidence of 7 with a time of 00:00:03.0841764 1
+ 
+
+leftrobotseye
+mid-term robot's eye view without map on screen
+Picked right with a confidence of 6 with a time of 00:00:07.4054235 0
+Picked right with a confidence of 6 with a time of 00:00:04.4872567 0
+Picked right with a confidence of 6 with a time of 00:00:05.1552949 1
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+mid-term view with arrow on screen
+Picked right with a confidence of  6 with a time of 00:00:04.5212586 1
+Picked forward with a confidence of  3 with a time of 00:00:04.5702614 1
+Picked left with a confidence of  4 with a time of 00:00:04.0022289 0
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 1 with a time of 00:00:02.4851421 1
+Picked right with a confidence of 1 with a time of 00:00:03.2031832 0
+collision checker
+Said that robot will not collide with the obstacle with a confidence of  1 after using up 00:00:09.7745591 of time.
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+The robot has improved its movement by avoiding people.
+What do you want to change about the robot so that you would like it more?
+For the grooves in raised floors, the robot should make a decision whether to cross the gap or not, depending on the height or depth of depression or change in surface depth.
+ 
+

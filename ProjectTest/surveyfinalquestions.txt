@@ -1,5 +1,5 @@
 what did you think of the robot?
-What did you think of the robot? its awesome. It looks like R2D2.
+The robot has improved its movement by avoiding people.
 What do you want to change about the robot so that you would like it more?
-What do you want to change about the robot so that you would like it more? I would add sound. I would add more color to it. 
+For the grooves in raised floors, the robot should make a decision whether to cross the gap or not, depending on the height or depth of depression or change in surface depth.
  

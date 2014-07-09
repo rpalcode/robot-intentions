@@ -15,10 +15,13 @@ public class optionalpaths : MonoBehaviour {
 	public Camera camera01;
 	public int pause;
 
+	public 	int choice=0;
+
+
 	int left=0; int mid=0; int right=0;
 
-	public System.DateTime date1 = new System.DateTime(1996, 6, 3, 22, 15, 0);
-	public System.DateTime date2 = new System.DateTime(1996, 12, 6, 13, 2, 0);
+	public System.DateTime date1 = new System.DateTime(2000, 1, 1, 1, 1, 0);
+	public System.DateTime date2 = new System.DateTime(2000, 1, 1, 1, 1, 0);
 	public System.TimeSpan deltaDate1;
 
 	public GameObject holo;
@@ -43,8 +46,8 @@ public class optionalpaths : MonoBehaviour {
 		if(Time.timeSinceLevelLoad>3 && pause != 1)
 		{
 			//camera01.enabled = false;
+
 			rift.SetActive(true);
-			date1 = System.DateTime.Now;
 			pause = 1;
 		}
 		if(pause==1)
@@ -59,15 +62,17 @@ public class optionalpaths : MonoBehaviour {
 			//GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			//GUI.Box(new Rect(150,300,300,100), robotintent);
 
-			if(GUI.Button(new Rect(250,400,100,50), "1")) 
+			if(GUI.Button(new Rect(250,400,50,50), "1")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
+				Debug.Log("time = " + date1 + "->" + date2 + "->" + deltaDate1 + "!");
+				int check = 0; if(choice == 1) { check = 1; }
 
 				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("1 " + deltaDate1);
+					writer.WriteLine("1 " + deltaDate1 + " " + check);
 					writer.WriteLine(" ");
 				}
 				LaunchLevel();
@@ -86,15 +91,16 @@ public class optionalpaths : MonoBehaviour {
 				}
 				*/
 			}
-			if(GUI.Button(new Rect(350,400,100,50), "2")) 
+			if(GUI.Button(new Rect(300,400,50,50), "2")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
+				int check = 0; if(choice == 2) { check = 1; }
 
 				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("2 " + deltaDate1);
+					writer.WriteLine("2 " + deltaDate1 + " " + check);
 					writer.WriteLine(" ");
 				}
 				LaunchLevel();
@@ -114,15 +120,16 @@ public class optionalpaths : MonoBehaviour {
 				*/
 			}
 			
-			if(GUI.Button(new Rect(450,400,100,50), "3")) 
+			if(GUI.Button(new Rect(350,400,50,50), "3")) 
 			{
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
+				int check = 0; if(choice == 3) { check = 1; }
 
 				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("3 " + deltaDate1);
+					writer.WriteLine("3 " + deltaDate1 + " " + check);
 					writer.WriteLine(" ");
 				}
 				LaunchLevel();
@@ -179,7 +186,6 @@ public class optionalpaths : MonoBehaviour {
 		//rotate camera
 		//Debug.Log(Time.timeSinceLevelLoad);
 		//change paths
-		int choice=0;
 		if (Input.GetKeyDown("e"))
 		{
 			choice=1;
@@ -214,6 +220,8 @@ public class optionalpaths : MonoBehaviour {
 
 			if(Time.timeSinceLevelLoad>3)
 			{
+				Debug.Log("This works :D");
+				date1 = System.DateTime.Now;
 				rift.SetActive(true);
 				pause = 1;
 
