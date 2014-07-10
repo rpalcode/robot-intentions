@@ -15,8 +15,11 @@ public class optionalpaths : MonoBehaviour {
 	public Camera camera01;
 	public int pause;
 
+	public bool timed = false;
+
 	public 	int choice=0;
 
+	public string conf = " ";
 
 	int left=0; int mid=0; int right=0;
 
@@ -61,9 +64,12 @@ public class optionalpaths : MonoBehaviour {
 			// /changes 6-12
 			//GUI.Box(new Rect(150,350,300,100), "Which way is the robot going to go?\n(From robot's point of view)");
 			//GUI.Box(new Rect(150,300,300,100), robotintent);
+			GUI.Box(new Rect(250,450,150,100), "From a scale of 1-7\nhow confident are you?");
+			conf = GUI.TextField(new Rect(310,   500, 30, 25), conf, 250);
 
 			if(GUI.Button(new Rect(250,400,50,50), "1")) 
 			{
+				Debug.Log("clicked!");
 				date2 = System.DateTime.Now;
 				deltaDate1 = (date2-date1);
 				Debug.Log("time = " + date1 + "->" + date2 + "->" + deltaDate1 + "!");
@@ -72,7 +78,7 @@ public class optionalpaths : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("1 " + deltaDate1 + " " + check);
+					writer.WriteLine("1 " + deltaDate1 + " " + check + " with a confidence of " + conf);
 					writer.WriteLine(" ");
 				}
 				LaunchLevel();
@@ -100,7 +106,7 @@ public class optionalpaths : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("2 " + deltaDate1 + " " + check);
+					writer.WriteLine("2 " + deltaDate1 + " " + check + " with a confidence of " + conf);
 					writer.WriteLine(" ");
 				}
 				LaunchLevel();
@@ -129,7 +135,7 @@ public class optionalpaths : MonoBehaviour {
 				using (StreamWriter writer = new StreamWriter(txtFile + ".txt"))
 				{
 					writer.WriteLine("initial longterm path select");
-					writer.WriteLine("3 " + deltaDate1 + " " + check);
+					writer.WriteLine("3 " + deltaDate1 + " " + check + " with a confidence of " + conf);
 					writer.WriteLine(" ");
 				}
 				LaunchLevel();
@@ -148,7 +154,6 @@ public class optionalpaths : MonoBehaviour {
 				}
 				*/
 			}
-
 				
 
 			
@@ -220,8 +225,6 @@ public class optionalpaths : MonoBehaviour {
 
 			if(Time.timeSinceLevelLoad>3)
 			{
-				Debug.Log("This works :D");
-				date1 = System.DateTime.Now;
 				rift.SetActive(true);
 				pause = 1;
 
@@ -273,6 +276,16 @@ public class optionalpaths : MonoBehaviour {
 		{
 			Application.LoadLevel(3);
 		}
+
+		TakeTime();
+
+	}
+
+	//do a more percise time calculation
+	void TakeTime()
+	{
+		if(rift.activeSelf && !timed) 
+		{ date1 = System.DateTime.Now; Debug.Log("date1 = " + date1); timed = true; }
 
 	}
 
