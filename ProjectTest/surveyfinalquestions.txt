@@ -1,5 +1,5 @@
 what did you think of the robot?
-The robot has improved its movement by avoiding people.
+What did you think of the robot? needed tires
 What do you want to change about the robot so that you would like it more?
-For the grooves in raised floors, the robot should make a decision whether to cross the gap or not, depending on the height or depth of depression or change in surface depth.
+What do you want to change about the robot so that you would like it more? color
  

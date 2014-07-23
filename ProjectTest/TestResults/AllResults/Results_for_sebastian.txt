@@ -1,0 +1,71 @@
+longtermpathselect from side
+  
+
+longtermpathselect from robot's eye view
+initial longterm path select
+1 00:00:18.5810628
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+mid-term robot's eye view without map on screen
+Picked left with a confidence of 1 with a time of 00:00:08.7394999 0
+Picked right with a confidence of 7 with a time of 00:00:06.7043835 0
+Picked forward with a confidence of 1 with a time of 00:00:10.9586268 1
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 7 with a time of 00:00:02.3521345 1
+Picked forward with a confidence of 7 with a time of 00:00:05.4873139 1
+collision checker
+Said that robot will not collide with the obstacle with a confidence of  7 after using up 00:00:10.5256020 of time.
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+What did you think of the robot? its awesome. It looks like R2D2.
+What do you want to change about the robot so that you would like it more?
+What do you want to change about the robot so that you would like it more? I would add sound. I would add more color to it. 
+ 

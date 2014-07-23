@@ -1,0 +1,77 @@
+longtermpathselect from side
+initial longterm path select
+1 00:00:07.9414542 1 with a confidence of  7
+
+
+longtermpathselect from robot's eye view
+initial longterm path select
+2 00:00:03.6352079 1 with a confidence of 7
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+mid-term robot's eye view with map on screen
+Picked right with a confidence of 7 with a time of 00:00:08.3894799 1
+Picked left with a confidence of 7 with a time of 00:00:02.2691298 1
+Picked forward with a confidence of 7 with a time of 00:00:03.7032119 1
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+short-term view with map on screen
+Picked left with a confidence of 7 with a time of 00:00:02.9701698 1
+Picked forward with a confidence of 7 with a time of 00:00:03.1021774 1
+Picked right with a confidence of 5 with a time of 00:00:03.6702099 1 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 1 with a time of 00:00:02.4851421 1
+Picked right with a confidence of 1 with a time of 00:00:03.2031832 0
+collision checker
+Said that robot will not collide with the obstacle with a confidence of  1 after using up 00:00:09.7745591 of time.
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+What did you think of the robot? needed tires
+What do you want to change about the robot so that you would like it more?
+What do you want to change about the robot so that you would like it more? color
+ 
+
