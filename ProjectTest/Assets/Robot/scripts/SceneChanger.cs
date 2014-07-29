@@ -107,7 +107,7 @@ public class SceneChanger : MonoBehaviour {
 				Application.LoadLevel(19);
 			}
 		}
-		//this is for the no arrow scene
+		//this is for the no arrow scenes
 		if (Input.GetKeyUp("i"))
 		{
 			Application.LoadLevel(21);
@@ -115,6 +115,14 @@ public class SceneChanger : MonoBehaviour {
 		if(Input.GetKeyUp("k"))
 		{
 			Application.LoadLevel(22);
+		}
+		if (Input.GetKeyUp("o"))
+		{
+			Application.LoadLevel(23);
+		}
+		if(Input.GetKeyUp("p"))
+		{
+			Application.LoadLevel(24);
 		}
 	}
 }

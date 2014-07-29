@@ -121,14 +121,17 @@ public class scene5b : MonoBehaviour {
 
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-		if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3) { rightArrow(); }
-		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5) { leftArrow(); }
-		if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 6) { upArrow(); }
-		if (Time.timeSinceLevelLoad > 6 && Time.timeSinceLevelLoad < 7){ midArrow(); } 
-		if (Time.timeSinceLevelLoad > 7 && Time.timeSinceLevelLoad < 9){ leftArrow(); } 
-		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 12){ rightArrow(); } 
-		if (Time.timeSinceLevelLoad > 12 && Time.timeSinceLevelLoad < 18) { upArrow(); }
-		//}
+		if(Application.loadedLevel != 23)
+		{
+			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 3) { rightArrow(); }
+			if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5) { leftArrow(); }
+			if (Time.timeSinceLevelLoad > 5 && Time.timeSinceLevelLoad < 6) { upArrow(); }
+			if (Time.timeSinceLevelLoad > 6 && Time.timeSinceLevelLoad < 7){ midArrow(); } 
+			if (Time.timeSinceLevelLoad > 7 && Time.timeSinceLevelLoad < 9){ leftArrow(); } 
+			if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 12){ rightArrow(); } 
+			if (Time.timeSinceLevelLoad > 12 && Time.timeSinceLevelLoad < 18) { upArrow(); }
+		}
+
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
 		{
 			transform.Rotate(0, 0, 90 * Time.deltaTime);
@@ -185,6 +188,18 @@ public class scene5b : MonoBehaviour {
 			if(Application.loadedLevel == 18)
 			{
 				using (StreamWriter writer = new StreamWriter("midrobotseye.txt"))
+				{
+					writer.WriteLine("mid-term robot's eye view with map on screen");
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);
+					writer.WriteLine(" ");
+				}
+			}
+
+			if(Application.loadedLevel == 23)
+			{
+				using (StreamWriter writer = new StreamWriter("midrobotseyenoarrow.txt"))
 				{
 					writer.WriteLine("mid-term robot's eye view with map on screen");
 					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);

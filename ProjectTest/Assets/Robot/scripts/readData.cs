@@ -4,8 +4,8 @@ using System.IO;
 
 public class readData : MonoBehaviour {
 
-	string[] line =new string[21];
-	string[] text = new string[21];
+	string[] line =new string[22];
+	string[] text = new string[22];
 
 	// Use this for initialization
 	void Start () {
@@ -63,11 +63,17 @@ public class readData : MonoBehaviour {
 		line[17] = "leftpathnoarrowrobotseye";
 		text[17] = System.IO.File.ReadAllText("leftpathnoarrowrobotseye.txt");	
 		//
-		line[17] = "leftpathcollide";
-		text[17] = System.IO.File.ReadAllText("leftcollide.txt");	
+		line[18] = "leftpathcollide";
+		text[18] = System.IO.File.ReadAllText("leftcollide.txt");	
 		//
-		line[18] = "surveyfinalquestions";
-		text[18] = System.IO.File.ReadAllText("surveyfinalquestions.txt");
+		line[19] = "midrobotseyenoarrow";
+		text[19] = System.IO.File.ReadAllText("midrobotseyenoarrow.txt");
+		//
+		line[20] = "rightrobotseyenoarrow";
+		text[20] = System.IO.File.ReadAllText("rightrobotseyenoarrow.txt");	
+		//
+		line[21] = "surveyfinalquestions";
+		text[21] = System.IO.File.ReadAllText("surveyfinalquestions.txt");
 	
 
 		string fileName = ("Results_for_" + side.username + ".txt");

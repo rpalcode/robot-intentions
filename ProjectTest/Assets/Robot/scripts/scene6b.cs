@@ -89,7 +89,8 @@ public class scene6b : MonoBehaviour {
 
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-
+		if(Application.loadedLevel != 24)
+		{
 			if (Time.timeSinceLevelLoad > 0 && Time.timeSinceLevelLoad < 1.5)
 			{
 				one.SetActive(true);
@@ -147,7 +148,8 @@ public class scene6b : MonoBehaviour {
 				two.SetActive(false);
 				three.SetActive(true);
 			}
-	    //}
+
+	    }
 
 		
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
@@ -197,6 +199,17 @@ public class scene6b : MonoBehaviour {
 			if(Application.loadedLevel == 17)
 			{
 				using (StreamWriter writer = new StreamWriter("rightrobotseye.txt"))
+				{
+					writer.WriteLine("mid-term robot's eye view without map on screen");
+					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
+					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
+					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);
+					writer.WriteLine(" ");
+				}
+			}
+			if(Application.loadedLevel == 24)
+			{
+				using (StreamWriter writer = new StreamWriter("rightrobotseyenoarrow.txt"))
 				{
 					writer.WriteLine("mid-term robot's eye view without map on screen");
 					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
