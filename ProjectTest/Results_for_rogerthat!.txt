@@ -1,0 +1,95 @@
+longtermpathselect from side
+initial longterm path select
+2 00:00:03.0361736 0 with a confidence of 3 
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+1 00:00:02.9021660 1 with a confidence of  4
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+mid-term robot's eye view without map on screen
+Picked left with a confidence of 4 with a time of 00:00:01.1850678 1
+Picked right with a confidence of 5 with a time of 00:00:02.0681183 0
+Picked left with a confidence of 6 with a time of 00:00:02.5681469 0
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+mid-term view with map on screen
+Picked right with a confidence of 2 with a time of 00:00:00.9670553 0
+Picked forward with a confidence of 2 with a time of 00:00:00.8840505 1
+Picked forward with a confidence of 7 with a time of 00:00:00.9510544 1
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathnoarrowrobotseye
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 6 with a time of 00:00:03.6192070 1
+Picked forward with a confidence of 6 with a time of 00:00:06.3543634 1
+collision checker
+Said that robot will collide with the obstacle with a confidence of  7 after using up 00:00:09.8415629 of time.
+ 
+
+midrobotseyenoarrow
+view with no arrows path 2
+Picked forward with a confidence of 2 with a time of 00:00:00.7850449 0
+Picked forward with a confidence of 4 with a time of 00:00:01.8691069 0
+Picked forward with a confidence of 4 with a time of 00:00:01.1850677 1
+ 
+
+rightrobotseyenoarrow
+view with no arrows path 3
+Picked forward with a confidence of 3 with a time of 00:00:04.5522604 1
+Picked forward with a confidence of 4 with a time of 00:00:02.7531574 1
+Picked forward with a confidence of 4 with a time of 00:00:01.1510658 1
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+good robot!
+What do you want to change about the robot so that you would like it more?
+hope that it recorded everything to the .txt file!
+ 
+

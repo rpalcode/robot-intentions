@@ -80,7 +80,7 @@ public class readData : MonoBehaviour {
 
 		using (StreamWriter writer = new StreamWriter(fileName))
 		{
-			for(int i=0; i<19; i++)
+			for(int i=0; i<22; i++)
 			{
 				writer.WriteLine(line[i]);
 				writer.WriteLine(text[i]);

@@ -2,6 +2,8 @@ longtermpathselect from side
  
 
 longtermpathselect from robot's eye view
+initial longterm path select
+2 00:00:03.1471800 1 with a confidence of  7
  
 
 leftpathmidarrowfloor
@@ -49,18 +51,14 @@ midpathshortarrowfloor
 rightpathshortarrowfloor
  
 
-leftpathcollide
-path 1 collision scene
-Picked forward with a confidence of 4 with a time of 00:00:02.5561462 0
-Picked forward with a confidence of 3 with a time of 00:00:02.5891481 1
-collision checker
-Said that robot will collide with the obstacle with a confidence of  3 after using up 00:00:02.5041432 of time.
+leftpathnoarrowrobotseye
  
 
-surveyfinalquestions
-what did you think of the robot?
-What did you think of the robot?r
-What do you want to change about the robot so that you would like it more?
-What do you want to change about the robot so that you would like it more?
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 6 with a time of 00:00:03.6192070 1
+Picked forward with a confidence of 6 with a time of 00:00:06.3543634 1
+collision checker
+Said that robot will collide with the obstacle with a confidence of  7 after using up 00:00:09.8415629 of time.
  
 

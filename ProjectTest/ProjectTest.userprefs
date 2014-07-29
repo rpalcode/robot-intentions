@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Robot\scripts\readData.cs">
     <Files>
-      <File FileName="Assets\Robot\scripts\scene5b.cs" Line="202" Column="71" />
-      <File FileName="Assets\Robot\scripts\scene6b.cs" Line="205" Column="37" />
-      <File FileName="Assets\Robot\scripts\side.cs" Line="219" Column="71" />
-      <File FileName="Assets\Robot\scripts\readData.cs" Line="81" Column="52" />
+      <File FileName="Assets\Robot\scripts\readData.cs" Line="88" Column="5" />
+      <File FileName="Assets\Robot\scripts\scene5b.cs" Line="1" Column="1" />
+      <File FileName="Assets\Robot\scripts\scene6b.cs" Line="214" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

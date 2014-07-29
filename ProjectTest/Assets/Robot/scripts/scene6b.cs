@@ -211,7 +211,7 @@ public class scene6b : MonoBehaviour {
 			{
 				using (StreamWriter writer = new StreamWriter("rightrobotseyenoarrow.txt"))
 				{
-					writer.WriteLine("mid-term robot's eye view without map on screen");
+					writer.WriteLine("view with no arrows path 3");
 					writer.WriteLine("Picked " + res1 + " with a confidence of " + conf1 + " with a time of " + deltaDate1 + " " + right1);
 					writer.WriteLine("Picked " + res2 + " with a confidence of " + conf2 + " with a time of " + deltaDate2 + " " + right2);
 					writer.WriteLine("Picked " + res3 + " with a confidence of " + conf3 + " with a time of " + deltaDate3 + " " + right3);

@@ -1,0 +1,64 @@
+longtermpathselect from side
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+2 00:00:00.7840448 0 with a confidence of  
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathnoarrowrobotseye
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 6 with a time of 00:00:03.6192070 1
+Picked forward with a confidence of 6 with a time of 00:00:06.3543634 1
+collision checker
+Said that robot will collide with the obstacle with a confidence of  7 after using up 00:00:09.8415629 of time.
+ 
+
