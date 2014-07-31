@@ -8,6 +8,9 @@ public class scene5 : MonoBehaviour {
 	Texture rightarrows;
 	Texture uparrows;
 
+	public OVRCameraController ovr;
+	public float i = 0.0f;
+
 	public GameObject straight;
     public GameObject left;
     public GameObject right;
@@ -66,7 +69,7 @@ public class scene5 : MonoBehaviour {
         upArrow();
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
-		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
+		if ((Time.timeSinceLevelLoad > 1.9 && Time.timeSinceLevelLoad < 2.0) && stop1==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -84,7 +87,7 @@ public class scene5 : MonoBehaviour {
 			stop2=1;
 		}
 		
-		if ((Time.timeSinceLevelLoad > 10.8 && Time.timeSinceLevelLoad < 10.9) && stop3==0)
+		if ((Time.timeSinceLevelLoad > 11.05 && Time.timeSinceLevelLoad < 11.15) && stop3==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -101,21 +104,33 @@ public class scene5 : MonoBehaviour {
 		
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
 		{
+			ovr.SetYRotation(i+=1.5f);
+
 			transform.Rotate(0, 0, 90 * Time.deltaTime);
+
 		}
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
 		{
+			ovr.SetYRotation(i+=-.75f);
+
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
+
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
 		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 11)
 		{
+			ovr.SetYRotation(i+=-.75f);
+
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
+
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
-		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 18)
+		if (Time.timeSinceLevelLoad > 11.15 && Time.timeSinceLevelLoad < 13.2)
 		{
+			ovr.SetYRotation(i+=.75f);
+
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
+
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
 
@@ -169,6 +184,9 @@ public class scene5 : MonoBehaviour {
 		left.renderer.material.color = Color.yellow;
 		right.renderer.material.color = Color.yellow;
 		straight.renderer.material.color = Color.yellow;
+
+		ovr = GameObject.Find("OVRCameraController").GetComponent<OVRCameraController>();
+
 	}
 	void OnGUI()
 	{

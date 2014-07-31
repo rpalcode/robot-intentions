@@ -15,6 +15,9 @@ public class scene4b : MonoBehaviour {
 	public GameObject person;
 	public GameObject flatperson;
 	
+	public OVRCameraController ovr;
+	public float i = 0.0f;
+
 	Texture yes;
 	Texture nope;
 
@@ -156,7 +159,7 @@ public class scene4b : MonoBehaviour {
 			stop2=1;
 		}
 
-		if ((Time.timeSinceLevelLoad > 13.3 && Time.timeSinceLevelLoad < 13.4) && stop3==0 && Application.loadedLevel != 22)
+		if ((Time.timeSinceLevelLoad > 14.1 && Time.timeSinceLevelLoad < 14.2) && stop3==0 && Application.loadedLevel != 22)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -267,6 +270,8 @@ public class scene4b : MonoBehaviour {
 
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 4)
         {
+			if(Application.loadedLevel == 5)
+				ovr.SetYRotation(i+=-0.75f);
             transform.Rotate(0, 0, -45 * Time.deltaTime);
         }
 
@@ -290,11 +295,16 @@ public class scene4b : MonoBehaviour {
 		{
 			if (Time.timeSinceLevelLoad > 13 && Time.timeSinceLevelLoad < 14)
 	        {
+				if(Application.loadedLevel == 5)
+					ovr.SetYRotation(i+=0.75f);
 	            transform.Rotate(0, 0, 45 * Time.deltaTime);
 	            transform.Translate(0, -5 * Time.deltaTime, 0);
 	        }
 			if (Time.timeSinceLevelLoad > 15 && Time.timeSinceLevelLoad < 16.25)
 	        {
+				if(Application.loadedLevel == 5)
+					ovr.SetYRotation(i+=-0.75f);
+
 	            transform.Rotate(0, 0, -45 * Time.deltaTime);
 	            transform.Translate(0, -5 * Time.deltaTime, 0);
 	        }
@@ -400,6 +410,8 @@ public class scene4b : MonoBehaviour {
 		two.renderer.material.color = Color.yellow;
 		three.renderer.material.color = Color.yellow;
 		four.renderer.material.color = Color.yellow;
+
+		ovr = GameObject.Find("OVRCameraController").GetComponent<OVRCameraController>();
 
 	}
 

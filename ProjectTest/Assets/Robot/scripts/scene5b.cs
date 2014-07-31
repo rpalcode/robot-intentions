@@ -13,6 +13,9 @@ public class scene5b : MonoBehaviour {
     public GameObject right;
     public GameObject robot;
 	public GameObject rift;
+	
+	public OVRCameraController ovr;
+	public float i = 0.0f;
 
 	public GameObject two;
 
@@ -91,7 +94,7 @@ public class scene5b : MonoBehaviour {
 
 		StartSide();
 
-		if ((Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 2.1) && stop1==0)
+		if ((Time.timeSinceLevelLoad > 1.9 && Time.timeSinceLevelLoad < 2.0) && stop1==0)
 		{
 			date1 = System.DateTime.Now;
 			pause=1;
@@ -134,20 +137,30 @@ public class scene5b : MonoBehaviour {
 
 		if (Time.timeSinceLevelLoad > 2 && Time.timeSinceLevelLoad < 3)
 		{
+			if(Application.loadedLevel == 9)
+				ovr.SetYRotation(i+=1.5f);
 			transform.Rotate(0, 0, 90 * Time.deltaTime);
 		}
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 5)
 		{
+			if(Application.loadedLevel == 9)
+				ovr.SetYRotation(i+=-0.75f);
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
 		if (Time.timeSinceLevelLoad > 9 && Time.timeSinceLevelLoad < 11)
 		{
+			if(Application.loadedLevel == 9)
+				ovr.SetYRotation(i+=-0.75f);
+
 			transform.Rotate(0, 0, -45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		}
 		if (Time.timeSinceLevelLoad > 11 && Time.timeSinceLevelLoad < 13.5)
 		{
+			if(Application.loadedLevel == 9)
+				ovr.SetYRotation(i+=0.75f);
+
 			transform.Rotate(0, 0, 45 * Time.deltaTime);
 			transform.Translate(0, -5 * Time.deltaTime, 0);
 		} 
@@ -225,6 +238,9 @@ public class scene5b : MonoBehaviour {
 		right.renderer.material.color = Color.yellow;
 		straight.renderer.material.color = Color.yellow;
 		two.renderer.material.color = Color.yellow;
+
+		ovr = GameObject.Find("OVRCameraController").GetComponent<OVRCameraController>();
+
 	}
 
 	void OnGUI()

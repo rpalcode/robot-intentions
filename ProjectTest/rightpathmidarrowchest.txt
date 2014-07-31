@@ -1,5 +1,5 @@
 mid-term view with map on screen
-Picked right with a confidence of 2 with a time of 00:00:00.9670553 0
-Picked forward with a confidence of 2 with a time of 00:00:00.8840505 1
-Picked forward with a confidence of 7 with a time of 00:00:00.9510544 1
+Picked  with a confidence of  with a time of -41545.00:42:20.1645333 0
+Picked  with a confidence of  with a time of -41545.00:42:24.9528072 0
+Picked  with a confidence of  with a time of -41545.00:42:36.5494704 0
  

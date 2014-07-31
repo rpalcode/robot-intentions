@@ -1,1 +1,5 @@
+short-term view with arrows on floor
+Picked  with a confidence of   with a time of -41545.00:22:37.3628809 0
+Picked  with a confidence of   with a time of -41545.00:22:45.5143471 0
+Picked  with a confidence of   with a time of -41545.00:22:49.7225878 0
  

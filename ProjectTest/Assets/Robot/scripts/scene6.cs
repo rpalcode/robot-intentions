@@ -7,6 +7,9 @@ public class scene6 : MonoBehaviour {
 	Texture rightarrows;
 	Texture uparrows;
 
+	public OVRCameraController ovr;
+	public float i = 0.0f;
+
 	public GameObject straight;
     public GameObject left;
     public GameObject right;
@@ -104,10 +107,14 @@ public class scene6 : MonoBehaviour {
 		if (Time.timeSinceLevelLoad > 3 && Time.timeSinceLevelLoad < 3.6)
         {
             transform.Rotate(0, 0, 90 * Time.deltaTime);
+			ovr.SetYRotation(i+=1.5f);
+
         }
 		if (Time.timeSinceLevelLoad > 10 && Time.timeSinceLevelLoad < 10.25)
         {
             transform.Rotate(0, 0, 45 * Time.deltaTime);
+			ovr.SetYRotation(i+=.75f);
+
             transform.Translate(0, -5 * Time.deltaTime, 0);
         }
 		/*
@@ -175,6 +182,9 @@ public class scene6 : MonoBehaviour {
 		left.renderer.material.color = Color.yellow;
 		right.renderer.material.color = Color.yellow;
 		straight.renderer.material.color = Color.yellow;
+
+		ovr = GameObject.Find("OVRCameraController").GetComponent<OVRCameraController>();
+
 	}
 
 	void OnGUI()
