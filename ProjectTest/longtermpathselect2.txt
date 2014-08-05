@@ -1,1 +1,3 @@
+initial longterm path select
+2 00:00:04.7992745 0 with a confidence of  5
  

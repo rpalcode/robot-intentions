@@ -178,13 +178,20 @@ public class scene4 : MonoBehaviour {
 		rightarrows = (Texture)Resources.Load("rightarrow");
 		uparrows = (Texture)Resources.Load("uparrow");
 
+		/*
 		left.renderer.material.color = Color.yellow;
 		right.renderer.material.color = Color.yellow;
 		straight.renderer.material.color = Color.yellow;
+*/
+		Debug.Log("it works! :D");
+		left.renderer.material.color = transparent(renderer.material.color);
+		right.renderer.material.color = transparent(renderer.material.color);
+		straight.renderer.material.color = transparent(renderer.material.color);
 
 		ovr = GameObject.Find("OVRCameraController").GetComponent<OVRCameraController>();
 
 	}
+
 	
 	//
 	void OnGUI()
@@ -303,10 +310,22 @@ public class scene4 : MonoBehaviour {
 		}
 	}
 
+
 	// Update is called once per frame
 	void Update () {
 
         option1();
+	}
+
+	Color transparent(Color color)
+	{
+		// (1, 0.92, 0.016, 1)
+
+		color.r = 0.999f;
+		color.g = 0.92f;
+		color.b = 0.016f;
+		color.a = 0.01f;
+		return color;
 	}
 
 }

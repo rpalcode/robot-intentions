@@ -216,8 +216,13 @@ public class side : MonoBehaviour {
 		{ writer.WriteLine(" "); }
 		using (StreamWriter writer = new StreamWriter("midrobotseyenoarrow.txt"))
 		{ writer.WriteLine(" "); }
-		using (StreamWriter writer = new StreamWriter("rightrobotseyenoarrow.txt"))
+		using (StreamWriter writer = new StreamWriter("leftcollide.txt"))
 		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("leftpathnoarrowrobotseye.txt"))
+		{ writer.WriteLine(" "); }
+		using (StreamWriter writer = new StreamWriter("surveyfinalquestions.txt"))
+		{ writer.WriteLine(" "); }
+
 		Time.timeScale = 1;
 
 	}

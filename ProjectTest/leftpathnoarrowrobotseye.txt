@@ -1,1 +1,5 @@
+view with no arrows path 1
+Picked left with a confidence of 5 with a time of 00:00:01.0960626 1
+Picked forward with a confidence of 7 with a time of 00:00:01.1140637 1
+Picked forward with a confidence of 7 with a time of 00:00:01.2510715 0
  
