@@ -1,0 +1,95 @@
+longtermpathselect from side
+initial longterm path select
+1 00:00:07.3014176 1 with a confidence of 7 
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+2 00:00:17.7150132 1 with a confidence of  7
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+mid-term robot's eye view with map on screen
+Picked right with a confidence of 7 with a time of 00:00:02.8011602 1
+Picked left with a confidence of 7 with a time of 00:00:02.8831649 1
+Picked forward with a confidence of 7 with a time of 00:00:02.6191498 1
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+mid-term view with map on screen
+Picked left with a confidence of 7 with a time of 00:00:04.1832392 1
+Picked forward with a confidence of 7 with a time of 00:00:02.5961485 1
+Picked forward with a confidence of 6 with a time of 00:00:06.4833709 0
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+mid-term view without map on screen
+Picked right with a confidence of  7 with a time of 00:00:02.0501173 1
+Picked forward with a confidence of  7 with a time of 00:00:02.6801533 1
+Picked forward with a confidence of  7 with a time of 00:00:03.0141724 1
+ 
+
+leftpathnoarrowrobotseye
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 7 with a time of 00:00:02.0501172 1
+Picked forward with a confidence of 7 with a time of 00:00:03.1341793 1
+collision checker
+Said that robot will not collide with the obstacle with a confidence of 6   after using up 00:00:40.1672974 of time.
+ 
+
+midrobotseyenoarrow
+ 
+
+rightrobotseyenoarrow
+view with no arrows path 3
+Picked forward with a confidence of 7 with a time of 00:00:27.3125622 1
+Picked forward with a confidence of 7 with a time of 00:00:02.1831249 1
+Picked forward with a confidence of 6 with a time of 00:00:06.7663870 1
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+It was good at displaying its direction in a manner that could be observed with good confidence.
+What do you want to change about the robot so that you would like it more?
+Nothing other than make it so the robot avoids collisions.
+ 
+

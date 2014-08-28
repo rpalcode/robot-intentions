@@ -1,1 +1,5 @@
+mid-term robot's eye view with map on screen
+Picked right with a confidence of 7 with a time of 00:00:02.8011602 1
+Picked left with a confidence of 7 with a time of 00:00:02.8831649 1
+Picked forward with a confidence of 7 with a time of 00:00:02.6191498 1
  

@@ -1,5 +1,5 @@
 what did you think of the robot?
-What did you think of the robot? ..
+It was good at displaying its direction in a manner that could be observed with good confidence.
 What do you want to change about the robot so that you would like it more?
-What do you want to change about the robot so that you would like it more? ..
+Nothing other than make it so the robot avoids collisions.
  
