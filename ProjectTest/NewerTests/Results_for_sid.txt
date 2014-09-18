@@ -1,0 +1,99 @@
+longtermpathselect from side
+initial longterm path select
+2 00:00:11.6986692 0 with a confidence of  5
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+2 00:00:34.4159685 0 with a confidence of  5
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+mid-term robot's eye view without map on screen
+Picked right with a confidence of 7 with a time of 00:00:08.0014577 0
+Picked right with a confidence of 7 with a time of 00:00:06.2183556 0
+Picked forward with a confidence of 7 with a time of 00:00:04.4332536 1
+ 
+
+leftpathmidarrowchest
+mid-term view with map on screen
+Picked forward with a confidence of 5 with a time of 00:00:08.8845082 0
+Picked forward with a confidence of 7 with a time of 00:00:04.3462486 1
+Picked forward with a confidence of 7 with a time of 00:00:04.0642324 0
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+short-term view with arrows on screen
+Picked forward with a confidence of  7 with a time of 00:00:03.1161782 1
+Picked left with a confidence of  7 with a time of 00:00:02.7161553 0
+Picked forward with a confidence of  7 with a time of 00:00:04.2342422 0
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+mid-term view with arrow on floor
+Picked right with a confidence of  7 with a time of 00:00:02.3491344 1
+Picked forward with a confidence of  7 with a time of 00:00:03.4361966 1
+Picked right with a confidence of  7 with a time of 00:00:02.7821591 1
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathnoarrowrobotseye
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 7 with a time of 00:00:02.1971256 1
+Picked forward with a confidence of 7 with a time of 00:00:05.7053263 1
+collision checker
+Said that robot will not collide with the obstacle with a confidence of  7 after using up 00:00:13.2507579 of time.
+ 
+
+midrobotseyenoarrow
+ 
+
+rightrobotseyenoarrow
+view with no arrows path 3
+Picked left with a confidence of 7 with a time of 00:00:02.2851307 0
+Picked left with a confidence of 7 with a time of 00:00:02.3181326 0
+Picked forward with a confidence of 7 with a time of 00:00:04.5672612 1
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+The robot was nicely animated and it was visible clearly from the distance. However, I found the map to be hard to figure  out since it did not had any legend. Maybe adding a key or tiny robot on the map so that it would be easier for the viewer.
+What do you want to change about the robot so that you would like it more?
+I would add more color and texture and maybe throw a smiley face so that it is not so boring looking.
+ 
+

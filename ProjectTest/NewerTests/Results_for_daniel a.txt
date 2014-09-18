@@ -1,0 +1,99 @@
+longtermpathselect from side
+initial longterm path select
+2 00:00:09.8325624 1 with a confidence of  7
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+1 00:00:16.5169447 1 with a confidence of  5
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+mid-term robot's eye view without map on screen
+Picked left with a confidence of 7 with a time of 00:00:07.8344481 1
+Picked right with a confidence of 6 with a time of 00:00:02.0671183 0
+Picked left with a confidence of 7 with a time of 00:00:05.7513289 0
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+mid-term view with map on screen
+Picked right with a confidence of 7 with a time of 00:00:03.5802047 1
+Picked left with a confidence of 7 with a time of 00:00:04.0792334 1
+Picked forward with a confidence of 7 with a time of 00:00:02.9821706 1
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+mid-term view with arrow on screen
+Picked right with a confidence of  5 with a time of 00:00:03.1161782 1
+Picked left with a confidence of  6 with a time of 00:00:05.5503175 0
+Picked right with a confidence of  7 with a time of 00:00:04.7662726 1
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+short-term view with arrows on floor
+Picked right with a confidence of  4 with a time of 00:00:05.3323050 0
+Picked left with a confidence of  5 with a time of 00:00:09.1495233 0
+Picked left with a confidence of  7 with a time of 00:00:09.7155557 1
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathnoarrowrobotseye
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 7 with a time of 00:00:04.4672555 1
+Picked right with a confidence of 6 with a time of 00:00:05.8003317 0
+collision checker
+Said that robot will collide with the obstacle with a confidence of  5 after using up 00:00:05.2172984 of time.
+ 
+
+midrobotseyenoarrow
+ 
+
+rightrobotseyenoarrow
+view with no arrows path 3
+Picked right with a confidence of 5 with a time of 00:00:13.3967662 0
+Picked forward with a confidence of 3 with a time of 00:00:05.2162984 1
+Picked forward with a confidence of 7 with a time of 00:00:03.8672211 1
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+For the ragdoll scene, the collider box shrank to the robot's size because the scene terminated after the projector light exited the room.
+What do you want to change about the robot so that you would like it more?
+textures! unpredictability
+ 
+

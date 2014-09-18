@@ -1,0 +1,103 @@
+longtermpathselect from side
+initial longterm path select
+3 00:00:07.2814165 1 with a confidence of  7
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+1 00:00:11.7336711 1 with a confidence of  7
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+mid-term robot's eye view without map on screen
+Picked left with a confidence of 7 with a time of 00:00:08.8515062 1
+Picked forward with a confidence of 7 with a time of 00:00:04.9172813 1
+Picked left with a confidence of 7 with a time of 00:00:09.9675701 0
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+ 
+
+leftpathmidarrowchest
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+mid-term view with map on screen
+Picked right with a confidence of 7 with a time of 00:00:04.1482373 0
+Picked forward with a confidence of 7 with a time of 00:00:03.9672269 1
+Picked forward with a confidence of 7 with a time of 00:00:03.3651925 1
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+mid-term view with arrow on screen
+Picked right with a confidence of  7 with a time of 00:00:05.0992916 1
+Picked forward with a confidence of  7 with a time of 00:00:04.5502602 1
+Picked right with a confidence of  7 with a time of 00:00:03.9332249 1
+ 
+
+rightpathshortarrowchest
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+ 
+
+rightpathshortarrowfloor
+mid-term view without map on screen
+Picked right with a confidence of  7 with a time of 00:00:03.4491973 1
+Picked forward with a confidence of  7 with a time of 00:00:03.2501859 1
+Picked forward with a confidence of  7 with a time of 00:00:02.7331563 1
+ 
+
+leftpathnoarrowrobotseye
+view with no arrows path 1
+Picked right with a confidence of 7 with a time of 00:00:11.9286823 0
+Picked forward with a confidence of 7 with a time of 00:00:07.5164300 1
+Picked left with a confidence of 7 with a time of 00:00:05.0352880 0
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 7 with a time of 00:00:05.1502946 1
+Picked forward with a confidence of 7 with a time of 00:00:04.4822564 1
+collision checker
+Said that robot will not collide with the obstacle with a confidence of  7 after using up 00:00:04.1512375 of time.
+ 
+
+midrobotseyenoarrow
+ 
+
+rightrobotseyenoarrow
+view with no arrows path 3
+Picked left with a confidence of 7 with a time of 00:00:02.2851307 0
+Picked left with a confidence of 7 with a time of 00:00:02.3181326 0
+Picked forward with a confidence of 7 with a time of 00:00:04.5672612 1
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+What did you think of the robot? - The robot thinks its cool because it defies physics, but the robot is pretty cool because the bonus simulation allowed it to kill somebody
+What do you want to change about the robot so that you would like it more?
+What do you want to change about the robot so that you would like it more? -  add some voices to each turn and when it intrects with the guy in the bonus scenes, like some r2d2 noises would be nice
+ 
+

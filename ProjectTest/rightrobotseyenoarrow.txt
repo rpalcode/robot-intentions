@@ -1,5 +1,5 @@
 view with no arrows path 3
-Picked forward with a confidence of 7 with a time of 00:00:27.3125622 1
-Picked forward with a confidence of 7 with a time of 00:00:02.1831249 1
-Picked forward with a confidence of 6 with a time of 00:00:06.7663870 1
+Picked left with a confidence of 7 with a time of 00:00:02.2851307 0
+Picked left with a confidence of 7 with a time of 00:00:02.3181326 0
+Picked forward with a confidence of 7 with a time of 00:00:04.5672612 1
  

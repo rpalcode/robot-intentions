@@ -17,71 +17,67 @@ Platform assembly: C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\
 Loading C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Robot-Intentions_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Robot-Intentions_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Robot-Intentions_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.043 seconds
+- Completed reload, in  0.079 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 1.817577 ms
+UnloadTime: 1.721573 ms
 System memory in use before: 19.5 MB.
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 18.6 MB.
 
 Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3452.
-Total: 0.972467 ms (FindLiveObjects: 0.102718 ms CreateObjectMapping: 0.017919 ms MarkObjects: 0.187517 ms  DeleteObjects: 0.193917 ms)
+Total: 0.967025 ms (FindLiveObjects: 0.101118 ms CreateObjectMapping: 0.015359 ms MarkObjects: 0.178237 ms  DeleteObjects: 0.179837 ms)
 
-UnloadTime: 4.574982 ms
-System memory in use before: 19.5 MB.
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 18.7 MB.
+UnloadTime: 4.488571 ms
+System memory in use before: 18.8 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 17.8 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1567.
-Total: 0.884148 ms (FindLiveObjects: 0.083838 ms CreateObjectMapping: 0.017279 ms MarkObjects: 0.172797 ms  DeleteObjects: 0.171517 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 512.
+Total: 0.738868 ms (FindLiveObjects: 0.020159 ms CreateObjectMapping: 0.011519 ms MarkObjects: 0.160637 ms  DeleteObjects: 0.131517 ms)
 
-UnloadTime: 1.616939 ms
+UnloadTime: 1.448937 ms
+System memory in use before: 18.5 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 17.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 510.
+Total: 0.762548 ms (FindLiveObjects: 0.020799 ms CreateObjectMapping: 0.011199 ms MarkObjects: 0.201276 ms  DeleteObjects: 0.113598 ms)
+
+UnloadTime: 1.573095 ms
 System memory in use before: 19.5 MB.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 18.7 MB.
+System memory in use after: 18.6 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1565.
-Total: 0.823669 ms (FindLiveObjects: 0.050879 ms CreateObjectMapping: 0.017919 ms MarkObjects: 0.170237 ms  DeleteObjects: 0.117118 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3464.
+Total: 0.963505 ms (FindLiveObjects: 0.099198 ms CreateObjectMapping: 0.019519 ms MarkObjects: 0.220156 ms  DeleteObjects: 0.161597 ms)
 
-date1 = 8/28/2014 4:04:17 PM
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-optionalpaths:TakeTime() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\optionalpaths.cs:288)
-optionalpaths:Update() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\optionalpaths.cs:280)
- 
-(Filename: C Line: 0)
-
-UnloadTime: 2.144613 ms
-System memory in use before: 19.7 MB.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+UnloadTime: 4.587449 ms
+System memory in use before: 19.5 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 18.8 MB.
 
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1499.
-Total: 0.957108 ms (FindLiveObjects: 0.053119 ms CreateObjectMapping: 0.020479 ms MarkObjects: 0.198717 ms  DeleteObjects: 0.231037 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3461.
+Total: 0.925105 ms (FindLiveObjects: 0.101118 ms CreateObjectMapping: 0.021759 ms MarkObjects: 0.210236 ms  DeleteObjects: 0.115518 ms)
 
-UnloadTime: 1.913576 ms
-System memory in use before: 19.9 MB.
+UnloadTime: 4.365692 ms
+System memory in use before: 19.6 MB.
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.0 MB.
+System memory in use after: 18.9 MB.
 
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 1579.
-Total: 0.950708 ms (FindLiveObjects: 0.052799 ms CreateObjectMapping: 0.022399 ms MarkObjects: 0.179197 ms  DeleteObjects: 0.203517 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1579.
+Total: 0.871666 ms (FindLiveObjects: 0.051519 ms CreateObjectMapping: 0.022079 ms MarkObjects: 0.180797 ms  DeleteObjects: 0.132157 ms)
 
-The referenced script on this Behaviour is missing!
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
-
-UnloadTime: 2.320611 ms
-System memory in use before: 19.8 MB.
+UnloadTime: 2.105887 ms
+System memory in use before: 19.6 MB.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.0 MB.
+System memory in use after: 18.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1586.
-Total: 0.828789 ms (FindLiveObjects: 0.053439 ms CreateObjectMapping: 0.023359 ms MarkObjects: 0.185277 ms  DeleteObjects: 0.115838 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1577.
+Total: 0.789747 ms (FindLiveObjects: 0.049599 ms CreateObjectMapping: 0.022719 ms MarkObjects: 0.166717 ms  DeleteObjects: 0.116158 ms)
 
-date1 = 8/28/2014 4:05:55 PM
+date1 = 9/18/2014 2:18:07 PM
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 optionalpaths:TakeTime() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\optionalpaths.cs:288)
@@ -96,149 +92,213 @@ optionalpaths:OnGUI() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\Proje
  
 (Filename: C Line: 0)
 
-time = 8/28/2014 4:05:55 PM->8/28/2014 4:06:02 PM->00:00:07.3014176!
+time = 9/18/2014 2:18:07 PM->9/18/2014 2:18:18 PM->00:00:11.7336711!
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 optionalpaths:OnGUI() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\optionalpaths.cs:75)
  
 (Filename: C Line: 0)
 
-The referenced script on this Behaviour is missing!
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
-
-UnloadTime: 2.665566 ms
+UnloadTime: 2.247325 ms
 System memory in use before: 19.9 MB.
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 18.9 MB.
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 1468.
-Total: 0.895988 ms (FindLiveObjects: 0.055039 ms CreateObjectMapping: 0.024319 ms MarkObjects: 0.166397 ms  DeleteObjects: 0.192317 ms)
-
-UnloadTime: 2.539808 ms
-System memory in use before: 20.0 MB.
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1597.
-Total: 0.916468 ms (FindLiveObjects: 0.053439 ms CreateObjectMapping: 0.024319 ms MarkObjects: 0.191997 ms  DeleteObjects: 0.177597 ms)
-
-UnloadTime: 2.324130 ms
-System memory in use before: 19.9 MB.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 19.0 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 1428.
-Total: 0.924468 ms (FindLiveObjects: 0.049279 ms CreateObjectMapping: 0.024959 ms MarkObjects: 0.225917 ms  DeleteObjects: 0.202877 ms)
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1549.
+Total: 1.104623 ms (FindLiveObjects: 0.090238 ms CreateObjectMapping: 0.039039 ms MarkObjects: 0.221116 ms  DeleteObjects: 0.181117 ms)
 
-UnloadTime: 1.794217 ms
-System memory in use before: 19.8 MB.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1426.
-Total: 0.853109 ms (FindLiveObjects: 0.049919 ms CreateObjectMapping: 0.049599 ms MarkObjects: 0.203517 ms  DeleteObjects: 0.122878 ms)
-
-UnloadTime: 2.432609 ms
-System memory in use before: 20.0 MB.
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1609.
-Total: 0.910068 ms (FindLiveObjects: 0.052159 ms CreateObjectMapping: 0.028479 ms MarkObjects: 0.227837 ms  DeleteObjects: 0.132158 ms)
-
-UnloadTime: 2.133733 ms
-System memory in use before: 20.1 MB.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1564.
-Total: 0.981427 ms (FindLiveObjects: 0.053119 ms CreateObjectMapping: 0.028799 ms MarkObjects: 0.203517 ms  DeleteObjects: 0.213757 ms)
-
-UnloadTime: 2.124453 ms
-System memory in use before: 19.9 MB.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1562.
-Total: 0.878389 ms (FindLiveObjects: 0.049599 ms CreateObjectMapping: 0.052799 ms MarkObjects: 0.234877 ms  DeleteObjects: 0.113918 ms)
-
-UnloadTime: 2.743325 ms
-System memory in use before: 20.1 MB.
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1621.
-Total: 0.973747 ms (FindLiveObjects: 0.067839 ms CreateObjectMapping: 0.054399 ms MarkObjects: 0.210877 ms  DeleteObjects: 0.207997 ms)
-
-UnloadTime: 2.066854 ms
-System memory in use before: 20.1 MB.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1546.
-Total: 0.943028 ms (FindLiveObjects: 0.050559 ms CreateObjectMapping: 0.029119 ms MarkObjects: 0.201917 ms  DeleteObjects: 0.223677 ms)
-
-UnloadTime: 2.094373 ms
-System memory in use before: 19.9 MB.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1544.
-Total: 0.918388 ms (FindLiveObjects: 0.050559 ms CreateObjectMapping: 0.054399 ms MarkObjects: 0.270716 ms  DeleteObjects: 0.122558 ms)
-
-UnloadTime: 1.877736 ms
-System memory in use before: 20.1 MB.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1594.
-Total: 0.937908 ms (FindLiveObjects: 0.054719 ms CreateObjectMapping: 0.032319 ms MarkObjects: 0.217277 ms  DeleteObjects: 0.147198 ms)
-
-UnloadTime: 1.919016 ms
-System memory in use before: 19.9 MB.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 19.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1590.
-Total: 0.921268 ms (FindLiveObjects: 0.053439 ms CreateObjectMapping: 0.032959 ms MarkObjects: 0.249596 ms  DeleteObjects: 0.119358 ms)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
-
-UnloadTime: 2.197412 ms
+UnloadTime: 2.481881 ms
 System memory in use before: 20.2 MB.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 19.3 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 1955.
-Total: 1.223664 ms (FindLiveObjects: 0.123198 ms CreateObjectMapping: 0.059519 ms MarkObjects: 0.261436 ms  DeleteObjects: 0.214717 ms)
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 1591.
+Total: 0.958705 ms (FindLiveObjects: 0.050559 ms CreateObjectMapping: 0.028799 ms MarkObjects: 0.175997 ms  DeleteObjects: 0.230716 ms)
 
 The referenced script on this Behaviour is missing!
  
 (Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
 
-UnloadTime: 2.318371 ms
+UnloadTime: 2.247965 ms
 System memory in use before: 20.0 MB.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 19.3 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1951.
-Total: 0.950388 ms (FindLiveObjects: 0.059519 ms CreateObjectMapping: 0.057919 ms MarkObjects: 0.264636 ms  DeleteObjects: 0.117438 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1598.
+Total: 0.867506 ms (FindLiveObjects: 0.050879 ms CreateObjectMapping: 0.028479 ms MarkObjects: 0.256956 ms  DeleteObjects: 0.100478 ms)
 
-date1 = 8/28/2014 4:10:19 PMdate2 = 8/28/2014 4:10:59 PM
+date1 = 9/18/2014 2:20:02 PM
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+optionalpaths:TakeTime() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\optionalpaths.cs:288)
+optionalpaths:Update() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\optionalpaths.cs:280)
+ 
+(Filename: C Line: 0)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
+
+UnloadTime: 3.446347 ms
+System memory in use before: 20.1 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.2 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 1473.
+Total: 0.939505 ms (FindLiveObjects: 0.069118 ms CreateObjectMapping: 0.033599 ms MarkObjects: 0.183037 ms  DeleteObjects: 0.190077 ms)
+
+UnloadTime: 2.183326 ms
+System memory in use before: 20.1 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1609.
+Total: 0.865906 ms (FindLiveObjects: 0.052799 ms CreateObjectMapping: 0.030719 ms MarkObjects: 0.186237 ms  DeleteObjects: 0.156477 ms)
+
+UnloadTime: 2.589720 ms
+System memory in use before: 20.0 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.2 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 1427.
+Total: 1.000944 ms (FindLiveObjects: 0.056959 ms CreateObjectMapping: 0.038719 ms MarkObjects: 0.240316 ms  DeleteObjects: 0.223996 ms)
+
+UnloadTime: 2.406683 ms
+System memory in use before: 19.9 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1425.
+Total: 0.834867 ms (FindLiveObjects: 0.047999 ms CreateObjectMapping: 0.029439 ms MarkObjects: 0.186557 ms  DeleteObjects: 0.116798 ms)
+
+UnloadTime: 1.890850 ms
+System memory in use before: 20.8 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 20.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1621.
+Total: 0.906866 ms (FindLiveObjects: 0.055359 ms CreateObjectMapping: 0.034559 ms MarkObjects: 0.241276 ms  DeleteObjects: 0.135997 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
+
+UnloadTime: 2.272605 ms
+System memory in use before: 20.8 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 20.0 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 1490.
+Total: 0.982064 ms (FindLiveObjects: 0.048959 ms CreateObjectMapping: 0.049279 ms MarkObjects: 0.204156 ms  DeleteObjects: 0.199676 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
+
+UnloadTime: 2.060128 ms
+System memory in use before: 20.6 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 20.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1488.
+Total: 0.857266 ms (FindLiveObjects: 0.050559 ms CreateObjectMapping: 0.031999 ms MarkObjects: 0.198396 ms  DeleteObjects: 0.122878 ms)
+
+UnloadTime: 2.418522 ms
+System memory in use before: 20.7 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1458.
+Total: 0.890226 ms (FindLiveObjects: 0.048319 ms CreateObjectMapping: 0.033919 ms MarkObjects: 0.195197 ms  DeleteObjects: 0.175037 ms)
+
+UnloadTime: 2.038368 ms
+System memory in use before: 20.6 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1456.
+Total: 0.906226 ms (FindLiveObjects: 0.089278 ms CreateObjectMapping: 0.034559 ms MarkObjects: 0.194877 ms  DeleteObjects: 0.116158 ms)
+
+UnloadTime: 1.953249 ms
+System memory in use before: 20.8 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1639.
+Total: 0.959665 ms (FindLiveObjects: 0.061759 ms CreateObjectMapping: 0.031359 ms MarkObjects: 0.231676 ms  DeleteObjects: 0.136637 ms)
+
+UnloadTime: 2.253725 ms
+System memory in use before: 20.9 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1604.
+Total: 0.980784 ms (FindLiveObjects: 0.053119 ms CreateObjectMapping: 0.031039 ms MarkObjects: 0.231996 ms  DeleteObjects: 0.187837 ms)
+
+UnloadTime: 2.062688 ms
+System memory in use before: 20.7 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1602.
+Total: 0.937265 ms (FindLiveObjects: 0.050879 ms CreateObjectMapping: 0.030399 ms MarkObjects: 0.280315 ms  DeleteObjects: 0.111358 ms)
+
+UnloadTime: 2.514521 ms
+System memory in use before: 20.9 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 1651.
+Total: 0.999344 ms (FindLiveObjects: 0.054079 ms CreateObjectMapping: 0.032639 ms MarkObjects: 0.234876 ms  DeleteObjects: 0.239676 ms)
+
+UnloadTime: 2.702358 ms
+System memory in use before: 21.0 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1606.
+Total: 1.059823 ms (FindLiveObjects: 0.052799 ms CreateObjectMapping: 0.031039 ms MarkObjects: 0.303355 ms  DeleteObjects: 0.186877 ms)
+
+UnloadTime: 2.503001 ms
+System memory in use before: 20.7 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1604.
+Total: 0.878706 ms (FindLiveObjects: 0.051839 ms CreateObjectMapping: 0.031039 ms MarkObjects: 0.232956 ms  DeleteObjects: 0.111358 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
+
+UnloadTime: 1.812772 ms
+System memory in use before: 21.1 MB.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 1977.
+Total: 1.040624 ms (FindLiveObjects: 0.061439 ms CreateObjectMapping: 0.031359 ms MarkObjects: 0.252796 ms  DeleteObjects: 0.203516 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/Runtime/Mono/MonoBehaviour.cpp Line: 1699)
+
+UnloadTime: 2.504281 ms
+System memory in use before: 20.8 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 19.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1975.
+Total: 0.966065 ms (FindLiveObjects: 0.059199 ms CreateObjectMapping: 0.030079 ms MarkObjects: 0.292795 ms  DeleteObjects: 0.152637 ms)
+
+date1 = 9/18/2014 2:24:34 PMdate2 = 9/18/2014 2:24:38 PM
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 scene4b:OnGUI() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\scene4b.cs:566)
  
 (Filename: C Line: 0)
 
-Writing to .txt file! collide = not collide with the obstacle and time it took was 00:00:40.1672974! :D
+Writing to .txt file! collide = not collide with the obstacle and time it took was 00:00:04.1512375! :D
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 scene4b:option1() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTest\Assets\Robot\scripts\scene4b.cs:379)
@@ -246,35 +306,35 @@ scene4b:Update() (at C:\Users\SAGE2\Documents\GitHub\robot-intentions\ProjectTes
  
 (Filename: C Line: 0)
 
-UnloadTime: 2.621727 ms
-System memory in use before: 21.4 MB.
+UnloadTime: 2.810836 ms
+System memory in use before: 20.9 MB.
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 20.6 MB.
+System memory in use after: 19.9 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1645.
-Total: 0.979507 ms (FindLiveObjects: 0.052479 ms CreateObjectMapping: 0.035199 ms MarkObjects: 0.213757 ms  DeleteObjects: 0.182077 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1669.
+Total: 0.973105 ms (FindLiveObjects: 0.055999 ms CreateObjectMapping: 0.033279 ms MarkObjects: 0.258876 ms  DeleteObjects: 0.183997 ms)
 
-UnloadTime: 2.132133 ms
-System memory in use before: 21.4 MB.
+UnloadTime: 2.556440 ms
+System memory in use before: 20.9 MB.
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 20.5 MB.
+System memory in use after: 19.9 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1710.
-Total: 0.955188 ms (FindLiveObjects: 0.056959 ms CreateObjectMapping: 0.032319 ms MarkObjects: 0.287356 ms  DeleteObjects: 0.139198 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1734.
+Total: 1.042543 ms (FindLiveObjects: 0.054399 ms CreateObjectMapping: 0.032319 ms MarkObjects: 0.292475 ms  DeleteObjects: 0.172477 ms)
 
-UnloadTime: 2.101733 ms
-System memory in use before: 21.3 MB.
+UnloadTime: 1.788452 ms
+System memory in use before: 20.8 MB.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 20.4 MB.
+System memory in use after: 19.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1708.
-Total: 0.892788 ms (FindLiveObjects: 0.055999 ms CreateObjectMapping: 0.032319 ms MarkObjects: 0.246396 ms  DeleteObjects: 0.114878 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1732.
+Total: 0.966385 ms (FindLiveObjects: 0.053759 ms CreateObjectMapping: 0.031359 ms MarkObjects: 0.297595 ms  DeleteObjects: 0.119038 ms)
 
-UnloadTime: 2.548768 ms
-System memory in use before: 21.0 MB.
+UnloadTime: 2.366363 ms
+System memory in use before: 20.5 MB.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-System memory in use after: 14.1 MB.
+System memory in use after: 13.6 MB.
 
-Unloading 272 unused Assets to reduce memory usage. Loaded Objects now: 320.
-Total: 1.848616 ms (FindLiveObjects: 0.023039 ms CreateObjectMapping: 0.029759 ms MarkObjects: 0.205117 ms  DeleteObjects: 1.167345 ms)
+Unloading 272 unused Assets to reduce memory usage. Loaded Objects now: 344.
+Total: 1.917730 ms (FindLiveObjects: 0.021759 ms CreateObjectMapping: 0.071678 ms MarkObjects: 0.187837 ms  DeleteObjects: 1.172461 ms)
 

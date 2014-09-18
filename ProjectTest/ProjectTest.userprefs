@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\vtei-edits\VTEI\Assets\Editor\TexturePlacerJS.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="D:\vtei-edits\VTEI\Assets\Editor\TexturePlacerJS.js">
     <Files>
-      <File FileName="..\..\vtei-edits\VTEI\Assets\Editor\TexturePlacerJS.js" Line="21" Column="40" />
+      <File FileName="D:\vtei-edits\VTEI\Assets\Scripts\LoadImages.cs" Line="58" Column="25" />
+      <File FileName="D:\vtei-edits\VTEI\Assets\Scripts\LoadCoords.cs" Line="51" Column="10" />
+      <File FileName="D:\vtei-edits\VTEI\Assets\Scripts\moviecontroller.cs" Line="1" Column="1" />
+      <File FileName="D:\vtei-edits\VTEI\Assets\Editor\TexturePlacerJS.js" Line="32" Column="139" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
