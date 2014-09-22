@@ -1,0 +1,99 @@
+longtermpathselect from side
+initial longterm path select
+1 00:00:15.1668675 1 with a confidence of  4
+ 
+
+longtermpathselect from robot's eye view
+initial longterm path select
+3 00:00:22.7653021 1 with a confidence of  5
+ 
+
+leftpathmidarrowfloor
+ 
+
+midpathmidarrowfloor
+ 
+
+rightpathmidarrowfloor
+ 
+
+leftrobotseye
+ 
+
+midrobotseye
+ 
+
+rightrobotseye
+mid-term robot's eye view without map on screen
+Picked right with a confidence of 4 with a time of 00:00:17.0969779 0
+Picked forward with a confidence of 6 with a time of 00:00:08.0824623 1
+Picked forward with a confidence of 6 with a time of 00:00:03.7482144 1
+ 
+
+leftpathmidarrowchest
+mid-term view with map on screen
+Picked left with a confidence of 6 with a time of 00:00:11.7316710 1
+Picked forward with a confidence of 7 with a time of 00:00:07.3144183 1
+Picked forward with a confidence of 7 with a time of 00:00:01.8811076 0
+ 
+
+midpathmidarrowchest
+ 
+
+rightpathmidarrowchest
+ 
+
+leftpathshortarrowchest
+ 
+
+midpathshortarrowchest
+ 
+
+rightpathshortarrowchest
+mid-term view with map on screen
+Picked right with a confidence of  7 with a time of 00:00:10.1655815 1
+Picked forward with a confidence of  7 with a time of 00:00:01.9821134 1
+Picked forward with a confidence of  7 with a time of 00:00:02.1501230 1
+ 
+
+leftpathshortarrowfloor
+ 
+
+midpathshortarrowfloor
+mid-term view with arrow on floor
+Picked right with a confidence of  6 with a time of 00:00:20.0861488 1
+Picked forward with a confidence of  7 with a time of 00:00:03.1831821 1
+Picked right with a confidence of  7 with a time of 00:00:01.9191098 1
+ 
+
+rightpathshortarrowfloor
+ 
+
+leftpathnoarrowrobotseye
+ 
+
+leftpathcollide
+path 1 collision scene
+Picked left with a confidence of 7 with a time of 00:00:01.7340992 1
+Picked forward with a confidence of 7 with a time of 00:00:02.3661354 1
+collision checker
+Said that robot will collide with the obstacle with a confidence of  5 after using up 00:00:19.0180877 of time.
+ 
+
+midrobotseyenoarrow
+ 
+
+rightrobotseyenoarrow
+view with no arrows path 3
+Picked left with a confidence of 7 with a time of 00:00:02.4111379 0
+Picked right with a confidence of 7 with a time of 00:00:13.2817596 0
+Picked forward with a confidence of 7 with a time of 00:00:02.6171497 1
+ 
+
+surveyfinalquestions
+what did you think of the robot?
+Robot was awesome.
+What do you want to change about the robot so that you would like it more?
+What about a female robot?
+ 
+

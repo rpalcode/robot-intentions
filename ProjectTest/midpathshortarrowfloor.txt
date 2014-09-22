@@ -1,1 +1,5 @@
+mid-term view with arrow on floor
+Picked right with a confidence of  6 with a time of 00:00:20.0861488 1
+Picked forward with a confidence of  7 with a time of 00:00:03.1831821 1
+Picked right with a confidence of  7 with a time of 00:00:01.9191098 1
  
